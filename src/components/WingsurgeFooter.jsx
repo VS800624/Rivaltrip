@@ -8,10 +8,12 @@ const WingsurgeFooter = () => {
    return <section className="max-w-[1450px] mx-auto">
              <div className="flex md:flex-row flex-col bg-slate-900 md:pb-[70px]  ">
                <div className="md:w-[20%] md:ml-[80px] ml-[20px] lg:ml-[120px] mt-[60px] md:mt-[100px]">
+                <Link to="/">
                    <div className="flex flex-col w-[120px] md:w-[160px] mx-auto   ">
                                        <img src= {logo} className=" w-full object-cover object-center" alt="" />
                                        <p className="text-[1.4rem] text-center text-white font-semibold mb-[6px]">RIVALTRIP</p>
                                    </div>       
+                </Link>
                    <p className="text-white w text-[0.9rem] ">www.rivaltrip.com, operated by Telspace LLC, is a premier travel agency providing seamless flight and hotel bookings, exceptional service, competitive prices, and a hassle-free travel experience worldwide.</p>
                </div>
                 <div className="text-white lg:w-[20%] md:w-[25%] md:block mt-[34px] md:ml-[70px] md:mt-[120px] ml-[20px]">
@@ -19,7 +21,7 @@ const WingsurgeFooter = () => {
                    <ul  className="list-disc pl-5 text-[0.95rem] flex flex-col">
                     {
                         quickLinks.map((heading , index) => {
-                            const updateURL = heading.split(" ").join("")
+                            const updateURL = heading.split(" ").join("-").toLowerCase()
                             return <Link className="relative  w-fit  group" key = { heading + index} to = {`/${heading == 'Home'?'': updateURL}`}><li  className="mb-[6px] hover:text-blue-400 hover:transition-all hover:duration-300 hover:ease-in-out cursor-pointer active:text-red-600">{ heading }
                             <span className="absolute left-0 bottom-0 h-[2px] bg-blue-400 w-0 group-hover:w-full transition-all duration-300 ease-in-out"></span>
                             </li>
@@ -33,7 +35,7 @@ const WingsurgeFooter = () => {
                         <ul  className="list-disc pl-5 text-[0.95rem] flex flex-col ">
                          {
                         usefulLinks.map((heading , index) => {
-                            const updateURL = heading.split(" ").join("")
+                            const updateURL = heading.split(" ").join("-").toLowerCase()
                             return <Link className="relative  w-fit  group"  key = { heading + index} to = {`/${updateURL}`}><li className="mb-[6px] hover:text-blue-400 hover:transition-all hover:duration-300 hover:ease-in-out cursor-pointer active:text-red-600">{heading}
                             <span className="absolute left-0 bottom-0 h-[2px] bg-blue-400 w-0 group-hover:w-full transition-all duration-300 ease-in-out"></span>
                             </li>
@@ -47,7 +49,7 @@ const WingsurgeFooter = () => {
                         <ul  className="list-disc pl-5 text-[0.95rem] flex flex-col">
                             {
                                 airlines.map((heading , index) => {
-                                    const updateURL = heading.split(" ").join("")
+                                    const updateURL = heading.split(" ").join("-").toLowerCase()
                                  return <Link className="relative  w-fit  group"  key = { heading + index} to = {`/${updateURL}`}> <li   className="mb-[6px] hover:text-blue-400 hover:transition-all hover:duration-300 hover:ease-in-out cursor-pointer active:text-red-600">{heading}
                                  <span className="absolute left-0 bottom-0 h-[2px] bg-blue-400 w-0 group-hover:w-full transition-all duration-300 ease-in-out"></span>
                                  </li>

@@ -53,7 +53,7 @@ const rout = createBrowserRouter([
           </Suspense>
         },
         {
-          path: '/AboutUs',
+          path: '/about-us',
           element: (
             <Suspense fallback = {<div>loading...</div>}>
               <AboutUs/>
@@ -61,7 +61,7 @@ const rout = createBrowserRouter([
           )
         },
         {
-          path: '/Services',
+          path: '/services',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <Services />
@@ -69,7 +69,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/BestDeals',
+          path: '/best-deals',
           element: (
             <Suspense fallback = {<div>loading...</div>}>
               <BestDealsPage/>
@@ -77,7 +77,7 @@ const rout = createBrowserRouter([
           )
         },
         {
-          path: '/BusinessClass',
+          path: '/business-class',
           element:  (
             <Suspense fallback = {<div>loading...</div>}>
               <BusinessClassPage/>
@@ -85,7 +85,7 @@ const rout = createBrowserRouter([
           )
         },
         {
-          path: 'Destination',
+          path: '/destination',
           element:  (
             <Suspense fallback = {<div>loading...</div>}>
               <DestinationPage/>
@@ -93,7 +93,7 @@ const rout = createBrowserRouter([
           )
         },
         {
-          path: '/Faqs',
+          path: '/faqs',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <Faqs />
@@ -101,7 +101,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: 'ContactUs',
+          path: '/contact-Us',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <ContactUs />
@@ -109,7 +109,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/CookiePolicy',
+          path: '/cookie-policy',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <CookiePolicy />
@@ -117,7 +117,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/DataProtectionPolicy',
+          path: '/data-protection-policy',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <DataProtectionPolicy />
@@ -125,7 +125,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/Disclaimer',
+          path: '/disclaimer',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <Disclaimer />
@@ -133,7 +133,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/RefundPolicy',
+          path: '/refund-policy',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <RefundPolicy />
@@ -141,7 +141,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/PrivacyPolicy',
+          path: '/privacy-policy',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <PrivacyPolicy />
@@ -149,7 +149,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/TermsAndCondition',
+          path: '/terms-and-condition',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <TermsAndConditions />
@@ -157,7 +157,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/SiteMap',
+          path: '/siteMap',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <SiteMap />
@@ -165,7 +165,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/AirFrance',
+          path: '/air-france',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <AirFrance />
@@ -173,7 +173,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/AlaskaAirlines',
+          path: '/alaska-airlines',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <AlaskaAirlines />
@@ -181,7 +181,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/AmericanAirlines',
+          path: '/american-airlines',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <AmericanAirlines />
@@ -189,7 +189,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/DeltaAirlines',
+          path: '/delta-airlines',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <DeltaAirlines />
@@ -197,7 +197,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/FrontierAirlines',
+          path: '/frontier-airlines',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <FrontierAirlines />
@@ -205,7 +205,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/JetBlueAirlines',
+          path: '/jetblue-airlines',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <JetBlueAirlines />
@@ -213,7 +213,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/KLMAirlines',
+          path: '/klm-airlines',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <KlmAirlines />
@@ -221,7 +221,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/SouthwestAirline',
+          path: '/southwest-airline',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <SouthwestAirlines />
@@ -229,7 +229,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/SpiritAirlines',
+          path: '/spirit-airlines',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <SpiritAirlines />
@@ -237,7 +237,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/UnitedAirlines',
+          path: '/united-airlines',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <UnitedAirlines />
@@ -245,7 +245,7 @@ const rout = createBrowserRouter([
           ),
         },
         {
-          path: '/FlightBooking',
+          path: '/flight-booking',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <FlightBooking />
@@ -253,7 +253,7 @@ const rout = createBrowserRouter([
           ),
         },  
         {
-          path: '/DestinationInfo/:id',
+          path: '/destination-info/:id',
           element: (
             <Suspense fallback={<div>loading...</div>}>
               <DestinationInfo />
@@ -264,7 +264,7 @@ const rout = createBrowserRouter([
       ]
     },
     {
-      path: '/Login',
+      path: '/login',
       element: (
         <Suspense fallback={<div>loading...</div>}>
           <LoginPage />
@@ -272,7 +272,7 @@ const rout = createBrowserRouter([
       ),
     },
     {
-      path: '/SignUp',
+      path: '/sign-up',
       element: (
         <Suspense fallback={<div>loading...</div>}>
           <SignUpPage />

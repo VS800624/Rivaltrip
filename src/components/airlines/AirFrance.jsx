@@ -1,8 +1,8 @@
 
 
 const AirFrance = () => {
-    return <section className="md:mt-[160px] mx-auto max-w-[1400px]">
-        <div className="bg-[url('https://images.unsplash.com/photo-1483304528321-0674f0040030?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center h-[200px] flex  items-center justify-center ">   
+    return <section className="md:mt-[160px] mx-auto max-w-[1450px]">
+        <div className="bg-[url('https://images.unsplash.com/photo-1483304528321-0674f0040030?q=80&w=1700&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center h-[200px] flex  items-center justify-center ">   
         <h3 className="text-[1.67em] text-gray-700 font-semibold ">Air France</h3>
         </div>
         <div className="flex flex-col  md:flex-row shrink mx-[30px] md:mx-[40px] items-center mt-[120px] gap-[20px]  text-gray-500 ">
@@ -12,7 +12,7 @@ const AirFrance = () => {
                 <span className=" w-[95%] md:mx-auto ml-[16px] block text-[0.8rem] text-gray-500 cursor-pointer hover:text-blue-400 hover:transition-all hover:duration-300 hover:ease-in-out mb-[30px] ">Book Now <i className="fa-solid fa-angles-right text-[0.8rem]"></i></span>
             </div>
             <div className=" md:w-[50%]   ">
-                <img loading="lazy" className="h-full w-full  object-cover object-center  rounded-[10px]" src="https://plus.unsplash.com/premium_photo-1682091907070-4985a6fbe6d2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM5fHx8ZW58MHx8fHx8" alt="Began our voyage" />
+                <img loading="lazy" className="h-full w-full  object-cover object-center  rounded-[10px]" src="https://plus.unsplash.com/premium_photo-1682091907070-4985a6fbe6d2?w=850&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM5fHx8ZW58MHx8fHx8" alt="Began our voyage" />
             </div>
         </div>
         <div className="flex flex-col-reverse mx-[30px] mb:mx-[40px] shrink items-center md:flex-row-reverse mt-[120px] gap-[20px]  text-gray-500">
@@ -22,7 +22,7 @@ const AirFrance = () => {
                 <span className=" w-[95%] md:mx-auto ml-[16px] mb-[30px]  block text-[0.8rem] text-gray-500 cursor-pointer hover:text-blue-400 hover:transition-all hover:duration-300 hover:ease-in-out">Book Now <i className="fa-solid fa-angles-right text-[0.8rem]"></i></span>
             </div>
             <div className="md:w-[50%]   ">
-                <img loading="lazy" className="h-full w-full object-cover object-center  rounded-[10px]" src="https://images.unsplash.com/photo-1580674565491-cdd49b746ceb?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Air-france plane" />
+                <img loading="lazy" className="h-full w-full object-cover object-center  rounded-[10px]" src="https://images.unsplash.com/photo-1580674565491-cdd49b746ceb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Air-france plane" />
             </div>
         </div>
         <div className="flex flex-col md:flex-row shrink mx-[30px] md:mx-[40px] items-center mt-[120px] gap-[20px]  text-gray-500 mb-[90px]">
@@ -32,7 +32,7 @@ const AirFrance = () => {
                 <span className=" w-[95%] md:mx-auto ml-[16px] block text-[0.8rem] text-gray-500 cursor-pointer hover:text-blue-400 hover:transition-all hover:duration-300 hover:ease-in-out mb-[30px] ">Book Now <i className="fa-solid fa-angles-right text-[0.8rem]"></i></span>
             </div>
             <div className=" md:w-[50%]  ">
-                <img loading="lazy" className="h-full w-full object-cover object-center  rounded-[10px]" src="https://img.freepik.com/free-photo/businessman-big-office_53876-144319.jpg?t=st=1744004803~exp=1744008403~hmac=90c0020ce9fc8164652fa421153c869e736f7461a647cb976b45d4ba3001cc9d&w=996" alt="striving for perfection" />
+                <img loading="lazy" className="h-full w-full object-cover object-center  rounded-[10px]" src="https://img.freepik.com/free-photo/businessman-big-office_53876-144319.jpg?t=st=1744004803~exp=1744008403~hmac=90c0020ce9fc8164652fa421153c869e736f7461a647cb976b45d4ba3001cc9d&w=900" alt="striving for perfection" />
             </div>
         </div>
     </section>

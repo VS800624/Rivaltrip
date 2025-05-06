@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { destinationCountriesPage, popularCountries } from "../../utils/data";
+import {  popularCountries } from "../../utils/data";
 
 const DestinationPage = () => {
    return <section className=" md:mt-[160px] mx-auto max-w-[1400px]">
@@ -19,12 +19,12 @@ const DestinationPage = () => {
                                     <img loading="lazy" className="object-cover  object-center cursor-pointer h-full w-full transition-transform duration-300 ease-in-out active:scale-[1.2]  md:group-hover:scale-[1.1]" src= {img} alt={city} />
                                 </div>
                                 <div className="border-[1px] border-gray-200  pb-[20px] ">
-                                <Link to={`/DestinationInfo/${id}`}>
+                                <Link to={`/destination-info/${id.toLowerCase()}`}>
                                         <p className=" mt-[14px] mb-[14px] ml-[30px] items-center font-semibold cursor-pointer hover:text-blue-400 hover:transition-all hover:duration-300 hover:ease-in-out">
                                         <i className="fa-solid fa-location-dot mr-[5px]"></i>{city}, {countryName}         
                                     </p>
                                     </Link>
-                                    <Link to = '/FlightBooking'>
+                                    <Link to = '/flight-booking'>
                                         <span className=" ml-[30px] text-[0.8rem] text-gray-500 cursor-pointer hover:text-blue-400 hover:transition-all hover:duration-300 hover:ease-in-out">Book Now <i className="fa-solid fa-angles-right text-[0.8rem"></i></span>
                                     </Link>
                                 </div>

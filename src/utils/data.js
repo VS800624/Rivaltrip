@@ -8,17 +8,17 @@ export const airlines = ['Air France', 'Alaska Airlines', 'American Airlines', '
 
 export const popularCountries = [
   {
-    id: 'Lisbon',
+    id: 'lisbon',
     countryName: 'Portugal',
     city: 'Lisbon',
-    img: 'https://images.unsplash.com/photo-1588535684923-900727736ac0?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlzYm9ufGVufDB8fDB8fHww',
-    headerImg: "https://images.unsplash.com/photo-1548707309-dcebeab9ea9b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: 'https://images.unsplash.com/photo-1588535684923-900727736ac0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlzYm9ufGVufDB8fDB8fHww',
+    headerImg: "https://images.unsplash.com/photo-1548707309-dcebeab9ea9b?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     data: [
       {
         title1: 'Discover Lisbon - The Heart of Portugal',
         description1:
           `Lisbon, the sun-kissed and stunning capital of Portugal, is a vibrant coastal city where ancient history and modern energy dance in perfect harmony. Set across seven picturesque hills and overlooking the shimmering Atlantic Ocean, Lisbon enchants visitors with its colorful streets, charming tile-covered buildings, and breathtaking viewpoints at every turn. This timeless city offers a captivating mix of traditional architecture, such as majestic cathedrals and Moorish castles, alongside a thriving contemporary culture filled with art, music, and innovation. From wandering through the historic neighborhoods of <strong>Alfama</strong> and <strong>Bairro Alto</strong> to experiencing the soulful sounds of <strong>fado</strong>, Lisbon invites travelers to slow down, soak in its atmosphere, and discover hidden gems around every corner.`,
-        image1: 'https://images.unsplash.com/photo-1501927023255-9063be98970c?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image1: 'https://images.unsplash.com/photo-1501927023255-9063be98970c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
         title2: 'A City of History & Culture',
@@ -36,7 +36,7 @@ export const popularCountries = [
           {
             iconicSight2: 'São Jorge Castle',
             description2: 'Offering panoramic views over red rooftops and the Tagus River.',
-            image2: 'https://cdn-imgix.headout.com/media/images/c78811b923d7d22809ec69778dc4fa98-Sao%20Jorge%20castle%20aerial.jpg?auto=format&w=1069.6000000000001&h=687.6&q=90&fit=crop&ar=14%3A9&crop=faces',
+            image2: 'https://cdn-imgix.headout.com/media/images/c78811b923d7d22809ec69778dc4fa98-Sao%20Jorge%20castle%20aerial.jpg?auto=format&w=800.6000000000001&h=687.6&q=90&fit=crop&ar=14%3A9&crop=faces',
           },
           {
             iconicSight3: 'Ponte 25 de Abril',
@@ -75,7 +75,7 @@ export const popularCountries = [
           {
             name1: 'Pastéis de Nata',
             description: 'Flaky custard tarts from Pastéis de Belém.',
-            image1: 'https://images.unsplash.com/photo-1591107576521-87091dc07797?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image1: 'https://images.unsplash.com/photo-1591107576521-87091dc07797?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             name2: 'Bacalhau à Brás',
@@ -85,7 +85,7 @@ export const popularCountries = [
           {
             name3: 'Grilled sardines',
             description: 'Best enjoyed during the June festivals.',
-            image3: 'https://img.freepik.com/free-photo/grilled-fish-with-vegetable-salad-orange_114579-3656.jpg?t=st=1745047320~exp=1745050920~hmac=4ac8c62182d3c6555bd2cec4dca6b68da17e000a27acfffb62a4a8a9c39a1ab9&w=1380',
+            image3: 'https://img.freepik.com/free-photo/grilled-fish-with-vegetable-salad-orange_114579-3656.jpg?t=st=1745047320~exp=1745050920~hmac=4ac8c62182d3c6555bd2cec4dca6b68da17e000a27acfffb62a4a8a9c39a1ab9&w=',
           },
           {
             name4: 'Ameijoas à Bulhão Pato',
@@ -120,40 +120,40 @@ export const popularCountries = [
     id: 'Moscow',
     countryName: 'Russia',
     city: 'Moscow',
-    img: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9zY293fGVufDB8fDB8fHww',
-    headerImg: "https://images.unsplash.com/photo-1580837119756-563d608dd119?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=550&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9zY293fGVufDB8fDB8fHww',
+    headerImg: "https://images.unsplash.com/photo-1580837119756-563d608dd119?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     data: [
       {
         title1: 'Discover Moscow – The Majestic Capital of Russia',
         description1: "Moscow, the grand and captivating capital of Russia, is a city where history and modernity intertwine in magnificent harmony. Set along the mighty Moskva River, Moscow dazzles with its iconic landmarks, from the grandeur of the <strong>Kremlin</strong> and <strong>Red Square</strong> to the enchanting <strong>Saint Basil’s Cathedral</strong> with its vibrant, onion-shaped domes. This dynamic metropolis is a living museum, with majestic imperial architecture standing alongside sleek skyscrapers, offering a stunning contrast between the past and the future. The city’s charming streets are lined with grand boulevards, vibrant markets, and hidden courtyards, inviting visitors to explore its rich cultural heritage. From the timeless elegance of Gorky Park to the bustling energy of <strong>Arbat Street</strong>, Moscow pulses with a unique blend of old-world charm and contemporary flair. With a thriving art scene, world-class theaters like the <strong>Bolshoi</strong>, and a wealth of museums and galleries, Moscow captivates the senses, inviting travelers to immerse themselves in the city's vibrant spirit and rich history at every turn.",
-        image1: 'https://images.unsplash.com/photo-1566663614145-5748c8ee70df?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image1: 'https://images.unsplash.com/photo-1566663614145-5748c8ee70df?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
         title2: 'A City of History & Culture',
         description2: "Moscow, one of the oldest cities in Russia, is a treasure trove of <strong>history</strong> and <strong>culture</strong>. Wander through its ancient streets, where <strong>imperial architecture</strong> meets <strong>Soviet-era landmarks</strong>. Explore the iconic <strong>Red Square</strong>, home to the majestic <strong>St. Basil's Cathedral</strong> and the historic <strong>Kremlin</strong>. Visit the world-renowned <strong>Bolshoi Theatre</strong>, a symbol of Russian artistic excellence, and dive into the heritage of <strong>Russian art and literature</strong> in its many museums. Moscow's blend of <strong>old-world charm</strong> and modern sophistication creates a cultural journey like no other.",
-        image2: 'https://images.unsplash.com/photo-1630405721513-e4f33eb07fac?q=80&w=2334&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image2: 'https://images.unsplash.com/photo-1630405721513-e4f33eb07fac?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
         iconicSights: [
           {
             iconicSight1: 'The Kremlin',
             description1: 'Russia’s political and historical heart, home to palaces, cathedrals, and museums.',
-            image1: 'https://images.unsplash.com/photo-1686590078310-6bfdd8bed658?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image1: 'https://images.unsplash.com/photo-1686590078310-6bfdd8bed658?q=80&w=750&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             iconicSight2: 'Saint Basil’s Cathedral',
             description2: 'Famous for its colorful onion domes and striking architecture.',
-            image2: 'https://images.unsplash.com/photo-1701364591565-9cd843fcae4d?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image2: 'https://images.unsplash.com/photo-1701364591565-9cd843fcae4d?q=80&w=750&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             iconicSight3: 'Bolshoi Theatre',
             description3: 'A legendary venue for opera and ballet performances.',
-            image3: 'https://images.unsplash.com/photo-1730114299846-f10a32d73ba2?q=80&w=2233&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image3: 'https://images.unsplash.com/photo-1730114299846-f10a32d73ba2?q=80&w=750&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             iconicSight4: 'GUM Department Store',
             description4: 'Historic shopping arcade on Red Square with elegant architecture.',
-            image4: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/GUM%2C_Moscow%2C_Russia.jpg/1200px-GUM%2C_Moscow%2C_Russia.jpg',
+            image4: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/GUM%2C_Moscow%2C_Russia.jpg/800px-GUM%2C_Moscow%2C_Russia.jpg',
           },
         ],
       },
@@ -193,12 +193,12 @@ export const popularCountries = [
           {
             name3: 'Blini',
             description: 'Thin pancakes often served with caviar, jam, or sour cream.',
-            image3: 'https://images.unsplash.com/photo-1673646961466-2a6cf9b55f0b?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image3: 'https://images.unsplash.com/photo-1673646961466-2a6cf9b55f0b?q=80&w=700&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             name4: 'Shashlik',
             description: 'Grilled skewers of marinated meat, popular in Russian street food.',
-            image4: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Shashlik.jpg/1200px-Shashlik.jpg',
+            image4: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Shashlik.jpg/700px-Shashlik.jpg',
           },
         ],
       },
@@ -228,20 +228,20 @@ export const popularCountries = [
     id: 'Cuba',
     countryName: 'Cuba',
     city: 'Havana',
-    img: 'https://images.unsplash.com/photo-1583691837385-84f8b6ca9ebf?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGN1YmF8ZW58MHx8MHx8fDA%3D',
-    headerImg:"https://images.unsplash.com/photo-1705782456474-1ff5a5ca2b9e?q=80&w=2338&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: 'https://images.unsplash.com/photo-1583691837385-84f8b6ca9ebf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGN1YmF8ZW58MHx8MHx8fDA%3D',
+    headerImg:"https://images.unsplash.com/photo-1705782456474-1ff5a5ca2b9e?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     data: [
       {
         title1: 'Discover Havana - The Soul of Cuba',
         description1:
           `Havana, the vibrant capital of Cuba, is a city that pulses with color, culture, and charisma. From its iconic vintage cars and pastel-hued colonial buildings to the rhythmic sounds of salsa and son echoing through the streets, Havana is an immersive journey through time. The city’s charm lies in its contrasts — decaying grandeur meets infectious energy, and history comes alive in every corner of <strong>Old Havana</strong> (Habana Vieja), a UNESCO World Heritage Site. Whether you’re strolling along the <strong>Malecón</strong>, sipping a mojito at a Hemingway-frequented bar, or dancing into the night, Havana invites you to experience life with rhythm and soul.`,
-        image1: 'https://images.unsplash.com/photo-1539052846768-df7f61fd253f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image1: 'https://images.unsplash.com/photo-1539052846768-df7f61fd253f?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
         title2: 'A City of Stories & Spirit',
         description2:
           'Havana is a living museum where centuries of colonial architecture, revolutionary spirit, and Afro-Cuban heritage intertwine. Explore the cobbled streets of <strong>Habana Vieja</strong>, visit the iconic <strong>Plaza de la Revolución</strong>, and marvel at the opulence of the <strong>Gran Teatro</strong>. Each building, plaza, and mural tells a story of resilience, revolution, and cultural pride.',
-        image2: 'https://images.unsplash.com/photo-1552593054-dcb095f6c2d6?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image2: 'https://images.unsplash.com/photo-1552593054-dcb095f6c2d6?q=80&w=750&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
         iconicSights: [
@@ -253,12 +253,12 @@ export const popularCountries = [
           {
             iconicSight2: 'Malecón',
             description2: 'A sweeping seaside promenade perfect for sunset walks and local vibes.',
-            image2: 'https://images.unsplash.com/photo-1585072822091-171b4d3aa1f2?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image2: 'https://images.unsplash.com/photo-1585072822091-171b4d3aa1f2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             iconicSight3: 'Castle of the Three Kings of Morro',
             description3: 'A fortress guarding Havana Bay, offering panoramic views.',
-            image3: 'https://images.unsplash.com/photo-1724910727535-115147d5fb78?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image3: 'https://images.unsplash.com/photo-1724910727535-115147d5fb78?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             iconicSight4: 'Plaza Vieja',
@@ -337,25 +337,25 @@ export const popularCountries = [
     id: 'MexicoCity',
     countryName: 'Mexico',
     city: 'Mexico City',
-    img: 'https://images.unsplash.com/photo-1628301764660-af899e6151bb?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    headerImg: 'https://images.unsplash.com/photo-1628301764660-af899e6151bb?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    img: 'https://images.unsplash.com/photo-1628301764660-af899e6151bb?q=80&w=550&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    headerImg: 'https://images.unsplash.com/photo-1628301764660-af899e6151bb?q=80&w=1850&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     data: [
       {
         title1: 'Experience the Energy of Mexico City',
         description1: `Mexico City, the dynamic heart of Mexico, is a sprawling capital bursting with color, flavor, and deep-rooted history. Ancient ruins meet cutting-edge architecture, and every neighborhood offers something unique. Walk through the lively <strong>Zócalo</strong>, admire Diego Rivera’s murals, or take a boat ride through the canals of <strong>Xochimilco</strong>. With its endless museums, mouthwatering street food, and vibrant culture, Mexico City is a feast for all senses.`,
-        image1: 'https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image1: 'https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
         title2: 'A City Steeped in History and Culture',
         description2: 'From the pre-Columbian splendor of <strong>Teotihuacan</strong> to the colonial-era charm of <strong>Coyoacán</strong>, Mexico City is a historical and cultural treasure. Visit the <strong>National Palace</strong> to witness political history and iconic art, and don’t miss the <strong>Frida Kahlo Museum</strong> for a glimpse into the life of the beloved artist.',
-        image2: 'https://images.unsplash.com/photo-1619541706844-5733a50bdab3?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/photo-1558125990-b7d3c6bda45b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
+        image2: 'https://images.unsplash.com/photo-1619541706844-5733a50bdab3?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/photo-1558125990-b7d3c6bda45b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
       },
       {
         iconicSights: [
           {
             iconicSight1: 'Palacio de Bellas Artes',
             description1: 'An iconic cultural venue with art deco architecture and Rivera murals.',
-            image1: 'https://images.unsplash.com/photo-1601158582452-df217c5245d9?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image1: 'https://images.unsplash.com/photo-1601158582452-df217c5245d9?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             iconicSight2: 'Basilica of Our Lady of Guadalupe',
@@ -370,7 +370,7 @@ export const popularCountries = [
           {
             iconicSight4: 'Zócalo',
             description4: 'One of the world’s largest city squares, surrounded by historic buildings.',
-            image4: 'https://images.unsplash.com/photo-1645921441624-3d8f9098a2a5?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image4: 'https://images.unsplash.com/photo-1645921441624-3d8f9098a2a5?q=80&w=850&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
         ],
       },
@@ -444,8 +444,8 @@ export const popularCountries = [
     id: 'Hanoi',
     countryName: 'Vietnam',
     city: 'Hanoi',
-    img: 'https://images.unsplash.com/photo-1553851919-596510268b99?q=80&w=2188&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    headerImg: 'https://images.unsplash.com/photo-1504805526346-8d03d1ca73de?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    img: 'https://images.unsplash.com/photo-1553851919-596510268b99?q=80&w=550&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    headerImg: 'https://images.unsplash.com/photo-1504805526346-8d03d1ca73de?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     data: [
       {
         title1: 'Discover the Timeless Charm of Hanoi',
@@ -462,12 +462,12 @@ export const popularCountries = [
           {
             iconicSight1: 'Hoan Kiem Lake',
             description1: 'A peaceful lake in the city center, home to the iconic red bridge and Ngoc Son Temple.',
-            image1: 'https://images.unsplash.com/photo-1611195328596-d8dcf57f5cea?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image1: 'https://images.unsplash.com/photo-1611195328596-d8dcf57f5cea?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             iconicSight2: 'Ho Chi Minh Mausoleum',
             description2: 'The final resting place of revolutionary leader Ho Chi Minh, located in Ba Dinh Square.',
-            image2: 'https://images.unsplash.com/photo-1727939052658-7e3c757cee84?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image2: 'https://images.unsplash.com/photo-1727939052658-7e3c757cee84?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             iconicSight3: 'Temple of Literature',
@@ -477,7 +477,7 @@ export const popularCountries = [
           {
             iconicSight4: 'Train Street',
             description4: 'A narrow residential street where a train passes just inches from homes and cafes.',
-            image4: 'https://images.unsplash.com/photo-1712876055009-526cc40987b1?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image4: 'https://images.unsplash.com/photo-1712876055009-526cc40987b1?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
         ],
       },
@@ -506,7 +506,7 @@ export const popularCountries = [
           {
             name1: 'Phở',
             description: 'Vietnam’s national noodle soup, typically made with beef or chicken in a savory broth.',
-            image1: 'https://images.unsplash.com/photo-1636474498689-27e2d3ecf8d7?q=80&w=2257&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image1: 'https://images.unsplash.com/photo-1636474498689-27e2d3ecf8d7?q=80&w=750&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             name2: 'Bún Chả',
@@ -551,37 +551,37 @@ export const popularCountries = [
     id: 'Phuket',
     countryName: 'Thailand',
     city: 'Phuket',
-    img: 'https://images.unsplash.com/photo-1601225612316-b4733315a717?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGh1a2V0fGVufDB8fDB8fHww',
-    headerImg:"https://images.unsplash.com/photo-1587691254941-bbd1faa13154?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: 'https://images.unsplash.com/photo-1601225612316-b4733315a717?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGh1a2V0fGVufDB8fDB8fHww',
+    headerImg:"https://images.unsplash.com/photo-1587691254941-bbd1faa13154?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     data: [
       {
         title1: 'Phuket – Thailand’s Island Paradise',
         description1:
           `Phuket, the largest island in Thailand, is a tropical dreamscape known for its white-sand beaches, turquoise waters, and vibrant nightlife. Nestled in the Andaman Sea, this island offers a stunning blend of natural beauty, cultural charm, and luxurious relaxation. Whether you're soaking up the sun at <strong>Patong Beach</strong>, exploring hidden coves, or enjoying a beachfront Thai massage, Phuket delivers unforgettable moments at every turn.`,
-        image1: 'https://images.unsplash.com/photo-1741232896872-753d4c785d16?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image1: 'https://images.unsplash.com/photo-1741232896872-753d4c785d16?q=80&w=950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
         title2: 'Where Culture Meets Coastal Bliss',
         description2:
           'Beyond the beaches, Phuket is rich with culture and tradition. Explore the historic streets of <strong>Old Phuket Town</strong>, admire ornate Buddhist temples like <strong>Wat Chalong</strong>, and gaze upon the island from the towering <strong>Big Buddha</strong> statue. Phuket’s diversity makes it a perfect destination for adventurers, families, and romantic getaways alike.',
-        image2: 'https://images.unsplash.com/photo-1560359614-870d1a7ea91d?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image2: 'https://images.unsplash.com/photo-1560359614-870d1a7ea91d?q=80&w=950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
         iconicSights: [
           {
             iconicSight1: 'Big Buddha',
             description1: 'A 45-meter-tall marble statue offering panoramic island views.',
-            image1: 'https://images.unsplash.com/photo-1586820672103-2272d8490ade?q=80&w=2247&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image1: 'https://images.unsplash.com/photo-1586820672103-2272d8490ade?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             iconicSight2: 'Wat Chalong',
             description2: 'Phuket’s most important Buddhist temple with intricate architecture.',
-            image2: 'https://images.unsplash.com/photo-1740198828863-71fff82d3123?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image2: 'https://images.unsplash.com/photo-1740198828863-71fff82d3123?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             iconicSight3: 'Phi Phi Islands (via boat tour)',
             description3: 'Famous for crystal-clear waters, snorkeling, and dramatic cliffs.',
-            image3: 'https://images.unsplash.com/photo-1637565661298-22bec2dd47f6?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image3: 'https://images.unsplash.com/photo-1637565661298-22bec2dd47f6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             iconicSight4: 'Phang Nga Bay',
@@ -660,20 +660,20 @@ export const popularCountries = [
     id: 'Vancouver',
     countryName: 'Canada',
     city: 'Vancouver',
-    img: 'https://images.unsplash.com/photo-1617911804986-1e18eb78d770?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fFZhbmNvdXZlcnxlbnwwfHwwfHx8MA%3D%3D',
-    headerImg:"https://images.unsplash.com/photo-1559511260-66a654ae982a?q=80&w=2418&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: 'https://images.unsplash.com/photo-1617911804986-1e18eb78d770?w=540&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fFZhbmNvdXZlcnxlbnwwfHwwfHx8MA%3D%3D',
+    headerImg:"https://images.unsplash.com/photo-1559511260-66a654ae982a?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     data: [
       {
         title1: 'Vancouver – A Nature Lover’s Dream',
         description1:
           `Vancouver, a vibrant city nestled between the Pacific Ocean and the towering Coast Mountains, offers a dynamic fusion of urban sophistication and nature’s beauty. Known for its stunning landscapes, Vancouver is the perfect place to explore towering skyscrapers, scenic parks, lush forests, and sandy beaches all in one place. Whether you're walking around Stanley Park or enjoying world-class dining in Yaletown, Vancouver has something to offer everyone.`,
-        image1: 'https://images.unsplash.com/photo-1578961509811-1f55a380e31f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image1: 'https://images.unsplash.com/photo-1578961509811-1f55a380e31f?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
         title2: 'Explore a World-Class City',
         description2:
           'Vancouver is a modern city with an outdoor lifestyle. Whether you’re skiing in the winter, cycling along the Seawall in the summer, or exploring the vibrant neighborhoods like <strong>Gastown</strong> and <strong>Granville Island</strong>, Vancouver is one of the most livable cities in the world. Don’t miss the lively food scene, multicultural atmosphere, and outdoor adventures that Vancouver is famous for.',
-        image2: 'https://images.unsplash.com/photo-1560814304-4f05b62af116?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image2: 'https://images.unsplash.com/photo-1560814304-4f05b62af116?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
         iconicSights: [
@@ -729,7 +729,7 @@ export const popularCountries = [
           {
             name2: 'Salmon',
             description: 'Fresh Pacific salmon, often served in sushi, grilled, or smoked.',
-            image2: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dg',
+            image2: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=700&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dg',
           },
           {
             name3: 'BC Roll (Sushi)',
@@ -769,8 +769,8 @@ export const popularCountries = [
     id: 'Kyoto',
     countryName: 'Japan',
     city: 'Kyoto',
-    img: 'https://images.unsplash.com/photo-1624253346805-df69ad2b3d7f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8a3lvdG98ZW58MHx8MHx8fDA%3D',
-    headerImg:"https://images.unsplash.com/photo-1710575235598-66ff4a2309fb?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: 'https://images.unsplash.com/photo-1624253346805-df69ad2b3d7f?w=560&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8a3lvdG98ZW58MHx8MHx8fDA%3D',
+    headerImg:"https://images.unsplash.com/photo-1710575235598-66ff4a2309fb?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     data: [
       {
         title1: 'Kyoto – The Cultural Heart of Japan',
@@ -782,14 +782,14 @@ export const popularCountries = [
         title2: 'A Journey through Time and Tradition',
         description2:
           'Kyoto is a city steeped in tradition, with over 1,000 temples and shrines, each with its own story to tell. Wander through the peaceful <strong>Zen gardens</strong> of <strong>Ryoan-ji</strong>, explore the iconic <strong>Kinkaku-ji</strong> (Golden Pavilion), or take a stroll through the traditional geisha district of <strong>Gion</strong>. Kyoto’s blend of nature and culture offers a deep and enriching experience.',
-        image2: 'https://images.unsplash.com/photo-1652877280292-bef8a336e02c?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        image2: 'https://images.unsplash.com/photo-1652877280292-bef8a336e02c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
       {
         iconicSights: [
           {
             iconicSight1: 'Kinkaku-ji (Golden Pavilion)',
             description1: 'A breathtaking Zen Buddhist temple covered in gold leaf.',
-            image1: 'https://images.unsplash.com/photo-1743756252453-99447bb42342?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image1: 'https://images.unsplash.com/photo-1743756252453-99447bb42342?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           },
           {
             iconicSight2: 'Fushimi Inari Shrine',
@@ -843,7 +843,7 @@ export const popularCountries = [
           {
             name3: 'Matcha Sweets',
             description: 'Kyoto is famous for its green tea, and you can enjoy matcha-flavored desserts like cakes, ice cream, and chocolates.',
-            image3: 'https://int.japanesetaste.com/cdn/shop/articles/matcha-sweets-the-complete-guide-to-japanese-green-tea-desserts-japanese-taste.jpg?v=1741276964&width=5760',
+            image3: 'https://int.japanesetaste.com/cdn/shop/articles/matcha-sweets-the-complete-guide-to-japanese-green-tea-desserts-japanese-taste.jpg?v=1741276964&width=760',
           },
           {
             name4: 'Kyo-Wagashi',
@@ -881,8 +881,8 @@ export const bestDealsCountries = [
     id: 'Seoul',
     countryName: 'South Korea',
     city: 'Seoul',
-    img: 'https://plus.unsplash.com/premium_photo-1661886333708-877148b43ae1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VvdWx8ZW58MHx8MHx8fDA%3D',
-    headerImg: 'https://images.unsplash.com/photo-1583833008338-31a6657917ab?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    img: 'https://plus.unsplash.com/premium_photo-1661886333708-877148b43ae1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VvdWx8ZW58MHx8MHx8fDA%3D',
+    headerImg: 'https://images.unsplash.com/photo-1583833008338-31a6657917ab?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     discount: '15-60',
     price: '1,929',
     data: [
@@ -890,30 +890,30 @@ export const bestDealsCountries = [
         title1: 'Seoul – The Dynamic Soul of South Korea',
         description1:
           `Seoul, the vibrant capital of South Korea, is a city where cutting-edge modernity meets rich tradition. From towering skyscrapers to ancient palaces, Seoul offers a unique blend of K-pop culture, historic landmarks, and bustling street markets. Explore serene temples, indulge in spicy street food, and immerse yourself in the energy of this global metropolis. Seoul is a must-visit for those seeking a dynamic urban adventure with a touch of history.`,
-        image1: 'https://images.unsplash.com/photo-1540998145333-e2eef1a9822d?q=80&w=2166&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        image1: 'https://images.unsplash.com/photo-1540998145333-e2eef1a9822d?q=80&w=950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title2: 'A Fusion of Tradition and Innovation',
         description2:
           'Seoul is a city of contrasts, where ancient palaces like <strong>Gyeongbokgung</strong> stand alongside futuristic districts like <strong>Gangnam</strong>. Wander through the traditional <strong>Bukchon Hanok Village</strong>, shop in the vibrant <strong>Myeongdong</strong> district, or hike up <strong>Namsan Mountain</strong> for panoramic city views. Seoul’s blend of old and new creates an unforgettable experience.',
-        image2: 'https://images.unsplash.com/photo-1583833008338-31a6657917ab?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        image2: 'https://images.unsplash.com/photo-1583833008338-31a6657917ab?q=80&w=940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         iconicSights: [
           {
             iconicSight1: 'Gyeongbokgung Palace',
             description1: 'A stunning Joseon-era palace with intricate architecture and serene gardens.',
-            image1: 'https://images.unsplash.com/photo-1638964663550-e2123ac8900b?q=80&w=2350&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image1: 'https://images.unsplash.com/photo-1638964663550-e2123ac8900b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             iconicSight2: 'N Seoul Tower',
             description2: 'An iconic landmark offering breathtaking views of Seoul’s skyline.',
-            image2: 'https://images.unsplash.com/photo-1685761341534-b155d516eb80?q=80&w=2356&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image2: 'https://images.unsplash.com/photo-1685761341534-b155d516eb80?q=80&w=856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             iconicSight3: 'Bukchon Hanok Village',
             description3: 'A preserved neighborhood of traditional Korean houses, perfect for a cultural stroll.',
-            image3: 'https://images.unsplash.com/photo-1535189043414-47a3c49a0bed?q=80&w=2231&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image3: 'https://images.unsplash.com/photo-1535189043414-47a3c49a0bed?q=80&w=851&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             iconicSight4: 'Dongdaemun Design Plaza',
@@ -947,12 +947,12 @@ export const bestDealsCountries = [
           {
             name1: 'Bibimbap with Kimichi',
             description: 'A colorful rice bowl topped with vegetables, meat, and spicy gochujang sauce with Kimichi is a traditional Korean fermented dish made from vegetables',
-            image1: 'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image1: 'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             name2: 'Korean BBQ',
             description: 'Grill your own meat at the table, served with banchan (side dishes).',
-            image2: 'https://img.freepik.com/free-photo/fresh-grilled-pork-steak-with-vegetables-wood-generated-by-ai_188544-10368.jpg?t=st=1745999646~exp=1746003246~hmac=9d3e0cc4cfdaeb3a4d118575741c4bc0de707444d281e2a19e982fed2e90555a&w=1380'
+            image2: 'https://img.freepik.com/free-photo/fresh-grilled-pork-steak-with-vegetables-wood-generated-by-ai_188544-10368.jpg?t=st=1745999646~exp=1746003246~hmac=9d3e0cc4cfdaeb3a4d118575741c4bc0de707444d281e2a19e982fed2e90555a&w=780'
           },
           {
             name3: 'Tteokbokki',
@@ -989,10 +989,10 @@ export const bestDealsCountries = [
     ]
   },
   {
-    id: 'SanFrancisco',
+    id: 'San-Francisco',
     countryName: 'USA',
     city: 'San Francisco',
-    img: 'https://images.unsplash.com/photo-1719858403527-e171e237fe59?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHNhbnMlMjBmcmFuY2lzY298ZW58MHx8MHx8fDA%3D',
+    img: 'https://images.unsplash.com/photo-1719858403527-e171e237fe59?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHNhbnMlMjBmcmFuY2lzY298ZW58MHx8MHx8fDA%3D',
     headerImg: '',
     discount: '20-55',
     price: '2,250',
@@ -1100,7 +1100,7 @@ export const bestDealsCountries = [
     ]
   },
   {
-      id: 'Punta Cana',
+      id: 'Punta-Cana',
       countryName: 'Dominican Republic',
       city: 'Punta Cana',
       discount: '10-35',
@@ -1215,8 +1215,8 @@ export const businessClassCountries = [
     id: 'Delhi',
     countryName: 'India',
     city: 'Delhi',
-    img: 'https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    headerImg: 'https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    img: 'https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    headerImg: 'https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     discount: '15-30',
     price: '1,200',
     data: [
@@ -1224,7 +1224,7 @@ export const businessClassCountries = [
         title1: 'Delhi – The Vibrant Heart of India',
         description1:
           `Delhi, India’s bustling capital, is a city where history and modernity collide. From ancient monuments to sprawling markets, Delhi offers a sensory overload of colors, flavors, and cultures. Explore Mughal-era landmarks, savor street food in lively bazaars, and experience the warmth of Indian hospitality. Delhi is a captivating destination for travelers seeking a deep dive into India’s rich heritage and dynamic present.`,
-        image1: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        image1: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title2: 'A Tapestry of History and Culture',
@@ -1237,22 +1237,22 @@ export const businessClassCountries = [
           {
             iconicSight1: 'Red Fort',
             description1: 'A UNESCO World Heritage Site and a majestic Mughal fortress.',
-            image1: 'https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image1: 'https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=850&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             iconicSight2: 'Qutub Minar',
             description2: 'A towering 12th-century minaret and UNESCO World Heritage Site.',
-            image2: 'https://images.unsplash.com/photo-1667849521402-efb9b61ddf73?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image2: 'https://images.unsplash.com/photo-1667849521402-efb9b61ddf73?q=80&w=940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             iconicSight3: 'India Gate',
             description3: 'An iconic war memorial and gathering place in the heart of New Delhi.',
-            image3: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image3: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=850&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             iconicSight4: 'Lotus Temple',
             description4: 'A stunning Bahá’í House of Worship known for its flower-like architecture.',
-            image4: 'https://images.unsplash.com/photo-1595928607828-6fdaee9c0942?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image4: 'https://images.unsplash.com/photo-1595928607828-6fdaee9c0942?q=80&w=820&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           }
         ]
       },
@@ -1281,17 +1281,17 @@ export const businessClassCountries = [
           {
             name1: 'Butter Chicken',
             description: 'A creamy, spiced chicken curry served with naan or rice.',
-            image1: 'https://img.freepik.com/free-photo/curry-with-chicken-onions-indian-food-asian-cuisine-top-view_2829-4414.jpg?t=st=1745837852~exp=1745841452~hmac=5812e8f7572582b817fff7acd4fc92adb32db638056543dc2debde65c73017fe&w=1480'
+            image1: 'https://img.freepik.com/free-photo/curry-with-chicken-onions-indian-food-asian-cuisine-top-view_2829-4414.jpg?t=st=1745837852~exp=1745841452~hmac=5812e8f7572582b817fff7acd4fc92adb32db638056543dc2debde65c73017fe&w=740'
           },
           {
             name2: 'Chaat',
             description: 'A savory street food snack with tangy and spicy flavors.',
-            image2: 'https://images.unsplash.com/photo-1703073184516-bb83a107e7cf?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image2: 'https://images.unsplash.com/photo-1703073184516-bb83a107e7cf?q=80&w=740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             name3: 'Paratha',
             description: 'Flaky, stuffed flatbread often served with yogurt and pickles.',
-            image3: 'https://images.unsplash.com/photo-1683533746199-9e3920bf3eab?q=80&w=2338&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image3: 'https://images.unsplash.com/photo-1683533746199-9e3920bf3eab?q=80&w=740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             name4: 'Rabri Jalebi',
@@ -1323,10 +1323,10 @@ export const businessClassCountries = [
     ]
   },
   {
-    id: 'NewYork',
+    id: 'New-York',
     countryName: 'USA',
     city: 'New York',
-    img: 'https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmV3JTIweW9ya3xlbnwwfHwwfHx8MA%3D%3D',
+    img: 'https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?w=620&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmV3JTIweW9ya3xlbnwwfHwwfHx8MA%3D%3D',
     headerImg: '',
     discount: '10-55',
     price: '2,250',
@@ -1549,11 +1549,11 @@ export const businessClassCountries = [
 
 export const bestDealsCountriesPage = [
   {
-    id: 'Seoul2',
+    id: 'Seoul',
     countryName: 'South Korea',
     city: 'Seoul',
-    img: 'https://plus.unsplash.com/premium_photo-1661886333708-877148b43ae1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VvdWx8ZW58MHx8MHx8fDA%3D',
-    headerImg: '',
+    img: 'https://plus.unsplash.com/premium_photo-1661886333708-877148b43ae1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VvdWx8ZW58MHx8MHx8fDA%3D',
+    headerImg: 'https://images.unsplash.com/photo-1583833008338-31a6657917ab?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     discount: '15-60',
     price: '1,929',
     data: [
@@ -1561,35 +1561,35 @@ export const bestDealsCountriesPage = [
         title1: 'Seoul – The Dynamic Soul of South Korea',
         description1:
           `Seoul, the vibrant capital of South Korea, is a city where cutting-edge modernity meets rich tradition. From towering skyscrapers to ancient palaces, Seoul offers a unique blend of K-pop culture, historic landmarks, and bustling street markets. Explore serene temples, indulge in spicy street food, and immerse yourself in the energy of this global metropolis. Seoul is a must-visit for those seeking a dynamic urban adventure with a touch of history.`,
-        image1: 'https://images.unsplash.com/photo-1517150517612-7871c6b07c9d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2VvdWx8ZW58MHx8MHx8fDA%3D'
+        image1: 'https://images.unsplash.com/photo-1540998145333-e2eef1a9822d?q=80&w=950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title2: 'A Fusion of Tradition and Innovation',
         description2:
           'Seoul is a city of contrasts, where ancient palaces like <strong>Gyeongbokgung</strong> stand alongside futuristic districts like <strong>Gangnam</strong>. Wander through the traditional <strong>Bukchon Hanok Village</strong>, shop in the vibrant <strong>Myeongdong</strong> district, or hike up <strong>Namsan Mountain</strong> for panoramic city views. Seoul’s blend of old and new creates an unforgettable experience.',
-        image2: 'https://i.ibb.co/3zXgZ7J/seoul-cityscape.jpg'
+        image2: 'https://images.unsplash.com/photo-1583833008338-31a6657917ab?q=80&w=940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         iconicSights: [
           {
             iconicSight1: 'Gyeongbokgung Palace',
             description1: 'A stunning Joseon-era palace with intricate architecture and serene gardens.',
-            image1: 'https://images.unsplash.com/photo-1610983142859-8c4b0e532462?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3'
+            image1: 'https://images.unsplash.com/photo-1638964663550-e2123ac8900b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             iconicSight2: 'N Seoul Tower',
             description2: 'An iconic landmark offering breathtaking views of Seoul’s skyline.',
-            image2: 'https://i.ibb.co/4JqG6kP/n-seoul-tower.jpg'
+            image2: 'https://images.unsplash.com/photo-1685761341534-b155d516eb80?q=80&w=856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             iconicSight3: 'Bukchon Hanok Village',
             description3: 'A preserved neighborhood of traditional Korean houses, perfect for a cultural stroll.',
-            image3: 'https://i.ibb.co/7bYpL3H/bukchon-hanok.jpg'
+            image3: 'https://images.unsplash.com/photo-1535189043414-47a3c49a0bed?q=80&w=851&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             iconicSight4: 'Dongdaemun Design Plaza',
             description4: 'A futuristic architectural marvel and hub for design and innovation.',
-            image4: 'https://i.ibb.co/2tM5ZxW/dongdaemun-plaza.jpg'
+            image4: 'https://upload.wikimedia.org/wikipedia/en/8/8f/Dongdaemun_Design_Plaza_at_night%2C_Seoul%2C_Korea.jpg'
           }
         ]
       },
@@ -1616,24 +1616,24 @@ export const bestDealsCountriesPage = [
       {
         foodItems: [
           {
-            name1: 'Bibimbap',
-            description: 'A colorful rice bowl topped with vegetables, meat, and spicy gochujang sauce.',
-            image1: 'https://images.unsplash.com/photo-1604339459998-63e3555fb669?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3'
+            name1: 'Bibimbap with Kimichi',
+            description: 'A colorful rice bowl topped with vegetables, meat, and spicy gochujang sauce with Kimichi is a traditional Korean fermented dish made from vegetables',
+            image1: 'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             name2: 'Korean BBQ',
             description: 'Grill your own meat at the table, served with banchan (side dishes).',
-            image2: 'https://i.ibb.co/6Z5YqQw/korean-bbq.jpg'
+            image2: 'https://img.freepik.com/free-photo/fresh-grilled-pork-steak-with-vegetables-wood-generated-by-ai_188544-10368.jpg?t=st=1745999646~exp=1746003246~hmac=9d3e0cc4cfdaeb3a4d118575741c4bc0de707444d281e2a19e982fed2e90555a&w=780'
           },
           {
             name3: 'Tteokbokki',
             description: 'Spicy cylindrical rice cakes stir-fried in a sweet and tangy sauce.',
-            image3: 'https://i.ibb.co/4gV2F9L/tteokbokki.jpg'
+            image3: 'https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipes%2F2024-09-tteokbokki%2Ftteokbokki-523'
           },
           {
             name4: 'Bingsu',
             description: 'A refreshing shaved ice dessert topped with fruit, red beans, or matcha.',
-            image4: 'https://i.ibb.co/9YkC2xG/bingsu.jpg'
+            image4: 'https://www.thatcutedish.com/wp-content/uploads/2023/05/mango-bingsu-korean-shaved-iced-6.jpg'
           }
         ]
       },
@@ -1660,7 +1660,7 @@ export const bestDealsCountriesPage = [
     ]
   },
   {
-    id: 'SanFrancisco2',
+    id: 'San-Francisco',
     countryName: 'USA',
     city: 'San Francisco',
     img: 'https://images.unsplash.com/photo-1719858403527-e171e237fe59?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHNhbnMlMjBmcmFuY2lzY298ZW58MHx8MHx8fDA%3D',
@@ -1771,7 +1771,7 @@ export const bestDealsCountriesPage = [
     ]
   },
   {
-      id: 'Punta Cana2',
+      id: 'Punta-Cana',
       countryName: 'Dominican Republic',
       city: 'Punta Cana',
       discount: '10-35',
@@ -1883,8 +1883,8 @@ export const bestDealsCountriesPage = [
       id: 'Venice',
       countryName: 'Italy',
       city: 'Venice',
-      img: 'https://images.unsplash.com/photo-1545157000-85f257f7b040?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1545157000-85f257f7b040?q=80&w=940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1545157000-85f257f7b040?q=80&w=1940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '18-50%',
       price: '2,000',
       data: [
@@ -1994,8 +1994,8 @@ export const bestDealsCountriesPage = [
       id: 'Athens',
       countryName: 'Greece',
       city: 'Athens',
-      img: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2276&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '12-40',
       price: '1,700',
       data: [
@@ -2102,11 +2102,11 @@ export const bestDealsCountriesPage = [
       ]
     },
     {
-      id: 'RioDeJannerio',
+      id: 'Rio-De-Jannerio',
       countryName: 'Brazil',
       city: 'Rio de Janeiro',
-      img: 'https://images.unsplash.com/photo-1596573677494-accc8fbe89e8?q=80&w=2336&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1596573677494-accc8fbe89e8?q=80&w=956&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1596573677494-accc8fbe89e8?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '20-55',
       price: '2,350',
       data: [
@@ -2213,11 +2213,11 @@ export const bestDealsCountriesPage = [
       ]
     },
     {
-      id: 'LosAngeles',
+      id: 'Los-Angeles',
       countryName: 'USA',
       city: 'Los Angeles',
       img: 'https://plus.unsplash.com/premium_photo-1697730143625-cc36da7bc150?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bG9zJTIwYW5nZWxlc3xlbnwwfHwwfHx8MA%3D%3D',
-      headerImg: '',
+      headerImg: 'https://plus.unsplash.com/premium_photo-1697730143625-cc36da7bc150?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bG9zJTIwYW5nZWxlc3xlbnwwfHwwfHx8MA%3D%3D',
       discount: '10-35',
       price: '1,550',
       data: [
@@ -2327,8 +2327,8 @@ export const bestDealsCountriesPage = [
       id: 'Paris',
       countryName: 'France',
       city: 'Paris',
-      img: 'https://images.unsplash.com/photo-1431274172761-fca41d930114?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: 'https://img.freepik.com/free-photo/arch-triumph-night-paris-france_268835-878.jpg?t=st=1745900333~exp=1745903933~hmac=f31333e997a8944f17bcdc4535a76154889eb39c15c14d3c158ba7e6929db639&w=1380',
+      img: 'https://images.unsplash.com/photo-1431274172761-fca41d930114?q=80&w=740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://i.ibb.co/HDQvtJtS/arch-triumph-night-paris-france-268835-878.jpg',
       discount: '10-45',
       price: '1,850',
       data: [
@@ -2438,8 +2438,8 @@ export const bestDealsCountriesPage = [
       id: 'Zurich',
       countryName: 'Switzerland',
       city: 'Zürich',
-      img: 'https://images.unsplash.com/photo-1620563092215-0fbc6b55cfc5?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1620563092215-0fbc6b55cfc5?q=80&w=942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1620563092215-0fbc6b55cfc5?q=80&w=1942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '10-45',
       price: '1,850',
       data: [
@@ -2549,8 +2549,8 @@ export const bestDealsCountriesPage = [
       id: 'Cairo',
       countryName: 'Egypt',
       city: 'Cairo',
-      img: 'https://images.unsplash.com/photo-1630201187972-dc4136076c6c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1630201187972-dc4136076c6c?fm=jpg&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1630201187972-dc4136076c6c?fm=jpg&q=60&w=1900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '10-45',
       price: '1,850',
       data: [
@@ -2660,8 +2660,8 @@ export const bestDealsCountriesPage = [
       id: 'Shanghai',
       countryName: 'China',
       city: 'Shanghai',
-      img: 'https://images.unsplash.com/photo-1548919973-5cef591cdbc9?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1548919973-5cef591cdbc9?q=80&w=940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1548919973-5cef591cdbc9?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '10-45',
       price: '1,850',
       data: [
@@ -2771,8 +2771,8 @@ export const bestDealsCountriesPage = [
       id: 'Jaipur',
       countryName: 'India',
       city: 'Jaipur',
-      img: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=1840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '10-45',
       price: '1,850',
       data: [
@@ -2882,11 +2882,11 @@ export const bestDealsCountriesPage = [
 
 export const businessClassCountriesPage = [
   {
-    id: 'Delhi2',
+    id: 'Delhi',
     countryName: 'India',
     city: 'Delhi',
-    img: 'https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    headerImg: 'https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    img: 'https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=640&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    headerImg: 'https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=2040&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     discount: '15-30',
     price: '1,200',
     data: [
@@ -2894,7 +2894,7 @@ export const businessClassCountriesPage = [
         title1: 'Delhi – The Vibrant Heart of India',
         description1:
           `Delhi, India’s bustling capital, is a city where history and modernity collide. From ancient monuments to sprawling markets, Delhi offers a sensory overload of colors, flavors, and cultures. Explore Mughal-era landmarks, savor street food in lively bazaars, and experience the warmth of Indian hospitality. Delhi is a captivating destination for travelers seeking a deep dive into India’s rich heritage and dynamic present.`,
-        image1: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        image1: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       },
       {
         title2: 'A Tapestry of History and Culture',
@@ -2907,22 +2907,22 @@ export const businessClassCountriesPage = [
           {
             iconicSight1: 'Red Fort',
             description1: 'A UNESCO World Heritage Site and a majestic Mughal fortress.',
-            image1: 'https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image1: 'https://plus.unsplash.com/premium_photo-1661919589683-f11880119fb7?q=80&w=850&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             iconicSight2: 'Qutub Minar',
             description2: 'A towering 12th-century minaret and UNESCO World Heritage Site.',
-            image2: 'https://images.unsplash.com/photo-1667849521402-efb9b61ddf73?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image2: 'https://images.unsplash.com/photo-1667849521402-efb9b61ddf73?q=80&w=940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             iconicSight3: 'India Gate',
             description3: 'An iconic war memorial and gathering place in the heart of New Delhi.',
-            image3: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image3: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=850&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             iconicSight4: 'Lotus Temple',
             description4: 'A stunning Bahá’í House of Worship known for its flower-like architecture.',
-            image4: 'https://images.unsplash.com/photo-1595928607828-6fdaee9c0942?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image4: 'https://images.unsplash.com/photo-1595928607828-6fdaee9c0942?q=80&w=820&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           }
         ]
       },
@@ -2951,17 +2951,17 @@ export const businessClassCountriesPage = [
           {
             name1: 'Butter Chicken',
             description: 'A creamy, spiced chicken curry served with naan or rice.',
-            image1: 'https://img.freepik.com/free-photo/curry-with-chicken-onions-indian-food-asian-cuisine-top-view_2829-4414.jpg?t=st=1745837852~exp=1745841452~hmac=5812e8f7572582b817fff7acd4fc92adb32db638056543dc2debde65c73017fe&w=1480'
+            image1: 'https://img.freepik.com/free-photo/curry-with-chicken-onions-indian-food-asian-cuisine-top-view_2829-4414.jpg?t=st=1745837852~exp=1745841452~hmac=5812e8f7572582b817fff7acd4fc92adb32db638056543dc2debde65c73017fe&w=740'
           },
           {
             name2: 'Chaat',
             description: 'A savory street food snack with tangy and spicy flavors.',
-            image2: 'https://images.unsplash.com/photo-1703073184516-bb83a107e7cf?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image2: 'https://images.unsplash.com/photo-1703073184516-bb83a107e7cf?q=80&w=740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             name3: 'Paratha',
             description: 'Flaky, stuffed flatbread often served with yogurt and pickles.',
-            image3: 'https://images.unsplash.com/photo-1683533746199-9e3920bf3eab?q=80&w=2338&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image3: 'https://images.unsplash.com/photo-1683533746199-9e3920bf3eab?q=80&w=740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
           },
           {
             name4: 'Rabri Jalebi',
@@ -2993,7 +2993,7 @@ export const businessClassCountriesPage = [
     ]
   },
   {
-    id: 'NewYork2',
+    id: 'New-York',
     countryName: 'USA',
     city: 'New York',
     img: 'https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmV3JTIweW9ya3xlbnwwfHwwfHx8MA%3D%3D',
@@ -3104,7 +3104,7 @@ export const businessClassCountriesPage = [
     ]
   },
   {
-    id: 'Tokyo2',
+    id: 'Tokyo',
     countryName: 'Japan',
     city: 'Tokyo',
     img: 'https://plus.unsplash.com/premium_photo-1661902398022-762e88ff3f82?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG9reW98ZW58MHx8MHx8fDA%3D',
@@ -3218,8 +3218,8 @@ export const businessClassCountriesPage = [
       id: 'Rome',
       countryName: 'Italy',
       city: 'Rome',
-      img: 'https://images.unsplash.com/photo-1531572753322-ad063cecc140?q=80&w=2352&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1531572753322-ad063cecc140?q=80&w=952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1531572753322-ad063cecc140?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '25-55',
       price: '2,350',
       data: [
@@ -3329,8 +3329,8 @@ export const businessClassCountriesPage = [
       id: 'Bali',
       countryName: 'Indonesia',
       city: 'Bali',
-      img: 'https://images.unsplash.com/photo-1604999333679-b86d54738315?q=80&w=2225&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1604999333679-b86d54738315?q=80&w=925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1604999333679-b86d54738315?q=80&w=2025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '20-40',
       price: '2,000',
       data: [
@@ -3440,7 +3440,7 @@ export const businessClassCountriesPage = [
       id: 'London',
       countryName: 'England',
       city: 'London',
-      img: 'https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      img: 'https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       headerImg: 'https://images.unsplash.com/photo-1486299267070-83823f5448dd?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '15-50',
       price: '2,200',
@@ -3551,8 +3551,8 @@ export const businessClassCountriesPage = [
       id: 'Dubai',
       countryName: 'UAE',
       city: 'Dubai',
-      img: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?fm=jpg&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?fm=jpg&q=60&w=1950&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '10-30',
       price: '3,000',
       data: [
@@ -3662,8 +3662,8 @@ export const businessClassCountriesPage = [
       id: 'Sydney',
       countryName: 'Australia',
       city: 'Sydney',
-      img: 'https://images.unsplash.com/photo-1720757042357-fb69e47a52f8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1720757042357-fb69e47a52f8?fm=jpg&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1720757042357-fb69e47a52f8?fm=jpg&q=60&w=1900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '15-40',
       price: '2,550',
       data: [
@@ -3773,8 +3773,8 @@ export const businessClassCountriesPage = [
       id: 'Singapore',
       countryName: 'Singapore',
       city: 'Singapore',
-      img: 'https://images.unsplash.com/photo-1574227492706-f65b24c3688a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1574227492706-f65b24c3688a?fm=jpg&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1574227492706-f65b24c3688a?fm=jpg&q=60&w=1950&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '20-50',
       price: '2,400',
       data: [
@@ -3884,8 +3884,8 @@ export const businessClassCountriesPage = [
       id: 'Bangkok',
       countryName: 'Thailand',
       city: 'Bangkok',
-      img: 'https://images.unsplash.com/photo-1578167635648-df79e1565908?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1578167635648-df79e1565908?fm=jpg&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1578167635648-df79e1565908?fm=jpg&q=60&w=1950&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '15-40',
       price: '1,900',
       data: [
@@ -3995,8 +3995,8 @@ export const businessClassCountriesPage = [
       id: 'Istanbul',
       countryName: 'Turkey',
       city: 'Istanbul',
-      img: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?fm=jpg&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?fm=jpg&q=60&w=1900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '20-50',
       price: '1,850',
       data: [
@@ -4106,8 +4106,8 @@ export const businessClassCountriesPage = [
       id: 'Barcelona',
       countryName: 'Spain',
       city: 'Barcelona',
-      img: 'https://images.unsplash.com/photo-1589708532758-ddd0753b0f2f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      headerImg: '',
+      img: 'https://images.unsplash.com/photo-1589708532758-ddd0753b0f2f?q=80&w=940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      headerImg: 'https://images.unsplash.com/photo-1589708532758-ddd0753b0f2f?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       discount: '20-50',
       price: '1,850',
       data: [
@@ -4215,868 +4215,868 @@ export const businessClassCountriesPage = [
     }
 ]
 
-export const destinationCountriesPage = [
-  {
-    id: 'popCountry1',
-    countryName: 'Portugal',
-    city: 'Lisbon',
-    img: 'https://images.unsplash.com/photo-1588535684923-900727736ac0?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlzYm9ufGVufDB8fDB8fHww',
-    data: [
-      {
-        title1: 'Discover Lisbon - The Heart of Portugal',
-        description1:
-          `Lisbon, the sun-kissed and stunning capital of Portugal, is a vibrant coastal city where ancient history and modern energy dance in perfect harmony. Set across seven picturesque hills and overlooking the shimmering Atlantic Ocean, Lisbon enchants visitors with its colorful streets, charming tile-covered buildings, and breathtaking viewpoints at every turn. This timeless city offers a captivating mix of traditional architecture, such as majestic cathedrals and Moorish castles, alongside a thriving contemporary culture filled with art, music, and innovation. From wandering through the historic neighborhoods of <strong>Alfama</strong> and <strong>Bairro Alto</strong> to experiencing the soulful sounds of <strong>fado</strong>, Lisbon invites travelers to slow down, soak in its atmosphere, and discover hidden gems around every corner.`,
-        image1: 'https://images.unsplash.com/photo-1501927023255-9063be98970c?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      },
-      {
-        title2: 'A City of History & Culture',
-        description2:
-          'Lisbon is one of the oldest cities in Western Europe, even older than Rome! Explore its cobblestone streets and historic neighborhoods like <strong>Alfama</strong> and <strong>Bairro Alto</strong>, where the sounds of <strong>fado music</strong> echo through lantern-lit alleys. Visit the <strong>Jerónimos Monastery</strong> and <strong>Belém Tower</strong>, both UNESCO World Heritage Sites that celebrate the Age of Discoveries.',
-        image2: 'https://i.ibb.co/kVNCzFY7/part-pena-castle-sintra-lisbon-268835-1341.jpg',
-      },
-      {
-        iconicSights: [
-          {
-            iconicSight1: 'Belém Tower',
-            description1: 'A symbol of Portugal’s maritime heritage.',
-            image1: 'https://images.unsplash.com/photo-1702560030824-02cf6c4761ef?q=80&w=2328&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-          },
-          {
-            iconicSight2: 'São Jorge Castle',
-            description2: 'Offering panoramic views over red rooftops and the Tagus River.',
-            image2: 'https://cdn-imgix.headout.com/media/images/c78811b923d7d22809ec69778dc4fa98-Sao%20Jorge%20castle%20aerial.jpg?auto=format&w=1069.6000000000001&h=687.6&q=90&fit=crop&ar=14%3A9&crop=faces',
-          },
-          {
-            iconicSight3: 'Ponte 25 de Abril',
-            description3: 'Lisbon’s answer to the Golden Gate Bridge.',
-            image3: 'https://i.ibb.co/tMzhQgMz/aerial-view-shot-suspension-bridge-portugal-beautiful-sunset-181624-25787.jpg',
-          },
-          {
-            iconicSight4: 'Alfama View',
-            description4: 'A charming hillside district offering sweeping views, winding alleys, and the true soul of old Lisbon.',
-            image4: 'https://i.ibb.co/23GKXTjN/wide-shot-boats-body-water-near-houses-buildings-porto-portugal-181624-2971.jpg',
-          },
-        ],
-      },
-      {
-        uniqueExperiences: [
-          {
-            activity1: `🚋 Ride <strong>Tram 28</strong> through the most iconic hills and neighborhoods.`,
-            description1: '',
-          },
-          {
-            activity2: '🍷 Sip <strong>Ginjinha</strong> a sweet cherry liqueur, at a local bar.',
-            description2: '',
-          },
-          {
-            activity3: '🎨 Explore <strong>LX Factory</strong> a creative hub full of shops and cafes with vibrant street art.',
-            description3: '',
-          },
-          {
-            activity4: ' 🏖️ Take a day trip to <strong>Cascais</strong> or the magical town of <strong>Sintra</strong> with its fairytale palaces.',
-            description4: '',
-          },
-        ],
-      },
-      {
-        foodItems: [
-          {
-            name1: 'Pastéis de Nata',
-            description: 'Flaky custard tarts from Pastéis de Belém.',
-            image1: 'https://images.unsplash.com/photo-1591107576521-87091dc07797?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-          },
-          {
-            name2: 'Bacalhau à Brás',
-            description: 'A comforting codfish dish.',
-            image2: 'https://justcookwithmichael.com/wp-content/uploads/2021/01/bacalhau-bras-fries-potato-cod-6-scaled.jpg',
-          },
-          {
-            name3: 'Grilled sardines',
-            description: 'Best enjoyed during the June festivals.',
-            image3: 'https://img.freepik.com/free-photo/grilled-fish-with-vegetable-salad-orange_114579-3656.jpg?t=st=1745047320~exp=1745050920~hmac=4ac8c62182d3c6555bd2cec4dca6b68da17e000a27acfffb62a4a8a9c39a1ab9&w=1380',
-          },
-          {
-            name4: 'Ameijoas à Bulhão Pato',
-            description: 'A flavorful dish of clams cooked in garlic, olive oil, white wine, and cilantro, perfect for seafood lovers.',
-            image4: 'https://i.ibb.co/nq2zm6tD/baked-snails-with-garlic-butter-fresh-herbs-93675-128441.jpg',
-          },
-        ],
-      },
-      {
-        travelTips: [
-          {
-            tip1: '<strong>Best time to visit:</strong> March–May or September–October for mild weather and fewer crowds.',
-            description1: '',
-          },
-          {
-            tip2: '<strong>Language:</strong> Portuguese (but English is widely spoken in tourist areas).',
-            description2: '',
-          },
-          {
-            tip3: '<strong>Getting around:</strong> Walk, take the metro, or hop on the iconic trams.',
-            description3: '',
-          },
-          {
-            tip4: '<strong>Where to stay:</strong> Baixa, Chiado, or Principe Real for the best mix of accessibility and charm.',
-            description4: '',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'popCountry2',
-    countryName: 'Russia',
-    city: 'Moscow',
-    img: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9zY293fGVufDB8fDB8fHww',
-    data: [
-      {
-        title1: 'Discover Moscow - The Heart of Russia',
-        description1: 'Moscow, the grand capital of Russia, is a vibrant metropolis where imperial architecture meets modern innovation. With its majestic landmarks, bustling boulevards, and rich cultural scene, the city offers an unforgettable experience.',
-        image1: '',
-      },
-      {
-        title2: 'A City of History & Culture',
-        description2: 'Explore centuries of history at the Kremlin, wander through Red Square, and marvel at Saint Basil’s Cathedral. Moscow is a cultural powerhouse with world-class theaters, galleries, and historical sites.',
-        image2: 'https://images.unsplash.com/photo-1523509433741-9a97def00827?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vc2Nvd3xlbnwwfHwwfHx8MA%3D%3D',
-      },
-      {
-        iconicSights: [
-          {
-            iconicSight1: 'The Kremlin',
-            description1: 'Russia’s political and historical heart, home to palaces, cathedrals, and museums.',
-            image1: 'https://upload.wikimedia.org/wikipedia/commons/e/e8/Kremlin_and_Moskva_River_in_Moscow.jpg',
-          },
-          {
-            iconicSight2: 'Saint Basil’s Cathedral',
-            description2: 'Famous for its colorful onion domes and striking architecture.',
-            image2: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/St_Basils_Cathedral-500px.jpg',
-          },
-          {
-            iconicSight3: 'Bolshoi Theatre',
-            description3: 'A legendary venue for opera and ballet performances.',
-            image3: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Bolshoi_Theatre_Moscow_2019.jpg',
-          },
-          {
-            iconicSight4: 'GUM Department Store',
-            description4: 'Historic shopping arcade on Red Square with elegant architecture.',
-            image4: 'https://upload.wikimedia.org/wikipedia/commons/d/d4/GUM_Interior.jpg',
-          },
-        ],
-      },
-      {
-        uniqueExperiences: [
-          {
-            activity1: '🚇 Ride the stunning Moscow Metro – a palace beneath the streets.',
-            description1: '',
-          },
-          {
-            activity2: '🛍️ Hunt for souvenirs at Izmailovo Market – known for traditional crafts and antiques.',
-            description2: '',
-          },
-          {
-            activity3: '🌳 Stroll through Gorky Park – a green oasis with art, cafes, and activities.',
-            description3: '',
-          },
-          {
-            activity4: '⛪ Take a day trip to Sergiev Posad – a spiritual center with golden-domed monasteries.',
-            description4: '',
-          },
-        ],
-      },
-      {
-        foodItems: [
-          {
-            name1: 'Borscht',
-            description: 'Beet soup served hot or cold, often with sour cream.',
-            image1: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Borscht_served.jpg',
-          },
-          {
-            name2: 'Pelmeni',
-            description: 'Dumplings filled with minced meat, typically served with butter or sour cream.',
-            image2: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Pelmeni_russian_dumplings.jpg',
-          },
-          {
-            name3: 'Blini',
-            description: 'Thin pancakes often served with caviar, jam, or sour cream.',
-            image3: 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Blini_with_caviar.jpg',
-          },
-          {
-            name4: 'Shashlik',
-            description: 'Grilled skewers of marinated meat, popular in Russian street food.',
-            image4: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Shashlik_001.jpg',
-          },
-        ],
-      },
-      {
-        travelTips: [
-          {
-            tip1: '<strong>Best time to visit:</strong> May–September for pleasant weather and festivals.',
-            description1: '',
-          },
-          {
-            tip2: '<strong>Language:</strong> Russian (English is spoken in tourist areas, but learning Cyrillic helps).',
-            description2: '',
-          },
-          {
-            tip3: '<strong>Getting around:</strong> The metro is efficient, clean, and decorated like an art museum.',
-            description3: '',
-          },
-          {
-            tip4: '<strong>Where to stay:</strong> Arbat, Tverskoy, or Kitay-Gorod for central and well-connected areas.',
-            description4: '',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'popCountry3',
-    countryName: 'Cuba',
-    city: 'Havana',
-    img: 'https://images.unsplash.com/photo-1583691837385-84f8b6ca9ebf?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGN1YmF8ZW58MHx8MHx8fDA%3D',
-    data: [
-      {
-        title1: 'Discover Havana - The Soul of Cuba',
-        description1:
-          `Havana, the vibrant capital of Cuba, is a city that pulses with color, culture, and charisma. From its iconic vintage cars and pastel-hued colonial buildings to the rhythmic sounds of salsa and son echoing through the streets, Havana is an immersive journey through time. The city’s charm lies in its contrasts — decaying grandeur meets infectious energy, and history comes alive in every corner of <strong>Old Havana</strong> (Habana Vieja), a UNESCO World Heritage Site. Whether you’re strolling along the <strong>Malecón</strong>, sipping a mojito at a Hemingway-frequented bar, or dancing into the night, Havana invites you to experience life with rhythm and soul.`,
-        image1: 'https://images.unsplash.com/photo-1571474740845-7c6b69f9a6a5?q=80&w=2280&auto=format&fit=crop&ixlib=rb-4.0.3',
-      },
-      {
-        title2: 'A City of Stories & Spirit',
-        description2:
-          'Havana is a living museum where centuries of colonial architecture, revolutionary spirit, and Afro-Cuban heritage intertwine. Explore the cobbled streets of <strong>Habana Vieja</strong>, visit the iconic <strong>Plaza de la Revolución</strong>, and marvel at the opulence of the <strong>Gran Teatro</strong>. Each building, plaza, and mural tells a story of resilience, revolution, and cultural pride.',
-        image2: 'https://i.ibb.co/8cmM7qd/havana-vintage-cars.jpg',
-      },
-      {
-        iconicSights: [
-          {
-            iconicSight1: 'El Capitolio',
-            description1: 'Havana’s grand neoclassical landmark, reminiscent of the U.S. Capitol.',
-            image1: 'https://images.unsplash.com/photo-1612115074984-1dd565ba1860?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            iconicSight2: 'Malecón',
-            description2: 'A sweeping seaside promenade perfect for sunset walks and local vibes.',
-            image2: 'https://i.ibb.co/ZcgfwT6/malecon-havana.jpg',
-          },
-          {
-            iconicSight3: 'Castillo del Morro',
-            description3: 'A fortress guarding Havana Bay, offering panoramic views.',
-            image3: 'https://i.ibb.co/L6GpgXc/castillo-del-morro-havana.jpg',
-          },
-          {
-            iconicSight4: 'Plaza Vieja',
-            description4: 'A lively square surrounded by colorful baroque and art nouveau architecture.',
-            image4: 'https://i.ibb.co/nkgy92T/plaza-vieja-havana.jpg',
-          },
-        ],
-      },
-      {
-        uniqueExperiences: [
-          {
-            activity1: '🚗 Cruise in a vintage 1950s convertible through Havana’s historic streets.',
-            description1: '',
-          },
-          {
-            activity2: '🍹 Enjoy a classic mojito at <strong>La Bodeguita del Medio</strong> — Hemingway’s favorite.',
-            description2: '',
-          },
-          {
-            activity3: '💃 Take a salsa dancing class and feel the Cuban rhythm.',
-            description3: '',
-          },
-          {
-            activity4: '🎨 Visit <strong>Fusterlandia</strong>, a mosaic-covered art neighborhood created by José Fuster.',
-            description4: '',
-          },
-        ],
-      },
-      {
-        foodItems: [
-          {
-            name1: 'Ropa Vieja',
-            description: 'Shredded beef stew simmered in a tomato-based sauce — Cuba’s national dish.',
-            image1: 'https://i.ibb.co/FbgZ2PQ/ropa-vieja-cuban-food.jpg',
-          },
-          {
-            name2: 'Moros y Cristianos',
-            description: 'Black beans and rice cooked together with spices and garlic.',
-            image2: 'https://i.ibb.co/HK1n9n2/moros-cristianos.jpg',
-          },
-          {
-            name3: 'Tostones',
-            description: 'Crispy fried plantains served as a snack or side dish.',
-            image3: 'https://i.ibb.co/M6ptq0V/tostones.jpg',
-          },
-          {
-            name4: 'Flan Cubano',
-            description: 'A caramel custard dessert — rich, sweet, and creamy.',
-            image4: 'https://i.ibb.co/02yxXKr/flan-cubano.jpg',
-          },
-        ],
-      },
-      {
-        travelTips: [
-          {
-            tip1: '<strong>Best time to visit:</strong> November–April for dry, sunny weather.',
-            description1: '',
-          },
-          {
-            tip2: '<strong>Language:</strong> Spanish (basic English in tourist areas).',
-            description2: '',
-          },
-          {
-            tip3: '<strong>Getting around:</strong> Walk, hire a bici-taxi, or take a vintage cab.',
-            description3: '',
-          },
-          {
-            tip4: '<strong>Currency:</strong> Bring euros or USD — international cards often don’t work.',
-            description4: '',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'popcountry4',
-    countryName: 'Mexico',
-    city: 'Mexico City',
-    img: 'https://images.unsplash.com/photo-1628301764660-af899e6151bb?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    headerImg: 'https://images.unsplash.com/photo-1628301764660-af899e6151bb?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    data: [
-      {
-        title1: 'Experience the Energy of Mexico City',
-        description1: `Mexico City, the dynamic heart of Mexico, is a sprawling capital bursting with color, flavor, and deep-rooted history. Ancient ruins meet cutting-edge architecture, and every neighborhood offers something unique. Walk through the lively <strong>Zócalo</strong>, admire Diego Rivera’s murals, or take a boat ride through the canals of <strong>Xochimilco</strong>. With its endless museums, mouthwatering street food, and vibrant culture, Mexico City is a feast for all senses.`,
-        image1: 'https://images.unsplash.com/photo-1622770810481-80b94fd4b6d6?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
-      },
-      {
-        title2: 'A City Steeped in History and Culture',
-        description2: 'From the pre-Columbian splendor of <strong>Teotihuacan</strong> to the colonial-era charm of <strong>Coyoacán</strong>, Mexico City is a historical and cultural treasure. Visit the <strong>National Palace</strong> to witness political history and iconic art, and don’t miss the <strong>Frida Kahlo Museum</strong> for a glimpse into the life of the beloved artist.',
-        image2: 'https://images.unsplash.com/photo-1558125990-b7d3c6bda45b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
-      },
-      {
-        iconicSights: [
-          {
-            iconicSight1: 'Palacio de Bellas Artes',
-            description1: 'An iconic cultural venue with art deco architecture and Rivera murals.',
-            image1: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Palacio_de_Bellas_Artes_Mexico_City.jpg',
-          },
-          {
-            iconicSight2: 'Templo Mayor',
-            description2: 'Ruins of the main Aztec temple in the historic center.',
-            image2: 'https://upload.wikimedia.org/wikipedia/commons/b/bf/Templo_Mayor_Mexico_City.jpg',
-          },
-          {
-            iconicSight3: 'Chapultepec Castle',
-            description3: 'A stunning hilltop castle with views, history, and lush forest surroundings.',
-            image3: 'https://images.unsplash.com/photo-1605218042377-6ef6f21dd36d?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            iconicSight4: 'Zócalo',
-            description4: 'One of the world’s largest city squares, surrounded by historic buildings.',
-            image4: 'https://upload.wikimedia.org/wikipedia/commons/0/03/Zocalo_CDMX.jpg',
-          },
-        ],
-      },
-      {
-        uniqueExperiences: [
-          {
-            activity1: '🛶 Float down the colorful canals of Xochimilco on a trajinera.',
-            description1: '',
-          },
-          {
-            activity2: '🌮 Indulge in tacos al pastor at a local taquería.',
-            description2: '',
-          },
-          {
-            activity3: '🎨 Explore the vibrant murals at the National Palace and UNAM.',
-            description3: '',
-          },
-          {
-            activity4: '💃 Attend a folkloric ballet at the Palacio de Bellas Artes.',
-            description4: '',
-          },
-        ],
-      },
-      {
-        foodItems: [
-          {
-            name1: 'Tacos al Pastor',
-            description: 'Marinated pork cooked on a spit, served with pineapple and salsa.',
-            image1: 'https://i.ibb.co/VW7hZPY/tacos-al-pastor.jpg',
-          },
-          {
-            name2: 'Chiles en Nogada',
-            description: 'Poblano chiles stuffed with meat and topped with walnut sauce and pomegranate seeds.',
-            image2: 'https://i.ibb.co/M7QbHbT/chiles-en-nogada.jpg',
-          },
-          {
-            name3: 'Tamales',
-            description: 'Corn dough filled with meats or sweets, steamed in corn husks.',
-            image3: 'https://i.ibb.co/yPNwnZD/mexican-tamales.jpg',
-          },
-          {
-            name4: 'Pan de Muerto',
-            description: 'Sweet bread enjoyed during the Day of the Dead.',
-            image4: 'https://i.ibb.co/6rT6SmP/pan-de-muerto.jpg',
-          },
-        ],
-      },
-      {
-        travelTips: [
-          {
-            tip1: '<strong>Best time to visit:</strong> March–May for pleasant weather and festivals.',
-            description1: '',
-          },
-          {
-            tip2: '<strong>Language:</strong> Spanish (basic English in tourist areas).',
-            description2: '',
-          },
-          {
-            tip3: '<strong>Getting around:</strong> Use the Metro, Uber, or walk through neighborhoods.',
-            description3: '',
-          },
-          {
-            tip4: '<strong>Currency:</strong> Mexican Peso (MXN); cards are widely accepted but carry some cash.',
-            description4: '',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'Hanoi2',
-    countryName: 'Vietnam',
-    city: 'Hanoi',
-    img: 'https://images.unsplash.com/photo-1603535816274-e9c297b45d4e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3',
-    headerImg: 'https://images.unsplash.com/photo-1603535816274-e9c297b45d4e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3',
-    data: [
-      {
-        title1: 'Discover the Timeless Charm of Hanoi',
-        description1: `Hanoi, the capital of Vietnam, is a city where centuries-old architecture meets modern energy. Wander through the narrow alleys of the <strong>Old Quarter</strong>, where French colonial buildings, ancient temples, and bustling street markets create a unique tapestry of culture. From peaceful lakes to motorbike-filled streets, Hanoi is a blend of tranquility and chaos that never ceases to fascinate.`,
-        image1: 'https://images.unsplash.com/photo-1582469816927-1c8ab972f196?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
-      },
-      {
-        title2: 'A City Rich in Culture and Legacy',
-        description2: `Hanoi is deeply tied to Vietnam’s history and soul. Visit the solemn <strong>Ho Chi Minh Mausoleum</strong> to pay respects to the nation's revered leader, explore the <strong>Temple of Literature</strong>—Vietnam's first university—and take in a traditional water puppet show that dates back centuries. Every corner of the city tells a story of resilience and pride.`,
-        image2: 'https://images.unsplash.com/photo-1605128513187-1916f4e93c92?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
-      },
-      {
-        iconicSights: [
-          {
-            iconicSight1: 'Hoan Kiem Lake',
-            description1: 'A peaceful lake in the city center, home to the iconic red bridge and Ngoc Son Temple.',
-            image1: 'https://images.unsplash.com/photo-1610801606301-3b1f5a645b9b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            iconicSight2: 'Ho Chi Minh Mausoleum',
-            description2: 'The final resting place of revolutionary leader Ho Chi Minh, located in Ba Dinh Square.',
-            image2: 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Ho_Chi_Minh_Mausoleum_Hanoi.jpg',
-          },
-          {
-            iconicSight3: 'Temple of Literature',
-            description3: 'Vietnam’s first national university and a beautiful example of traditional Vietnamese architecture.',
-            image3: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Temple_of_Literature_Hanoi_Vietnam.jpg',
-          },
-          {
-            iconicSight4: 'Train Street',
-            description4: 'A narrow residential street where a train passes just inches from homes and cafes.',
-            image4: 'https://images.unsplash.com/photo-1570790711967-7c8e7b49fa6e?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-        ],
-      },
-      {
-        uniqueExperiences: [
-          {
-            activity1: '🍜 Sip egg coffee at a hidden Old Quarter café.',
-            description1: '',
-          },
-          {
-            activity2: '🛵 Ride a motorbike through the lively streets like a local.',
-            description2: '',
-          },
-          {
-            activity3: '🎭 Watch a traditional water puppet show.',
-            description3: '',
-          },
-          {
-            activity4: '🛶 Take a day trip to explore the scenic beauty of nearby Ha Long Bay.',
-            description4: '',
-          },
-        ],
-      },
-      {
-        foodItems: [
-          {
-            name1: 'Phở',
-            description: 'Vietnam’s national noodle soup, typically made with beef or chicken in a savory broth.',
-            image1: 'https://images.unsplash.com/photo-1617196032399-82e69466b4a5?q=80&w=1380&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            name2: 'Bún Chả',
-            description: 'Grilled pork served with rice noodles, fresh herbs, and a sweet-savory dipping sauce.',
-            image2: 'https://images.unsplash.com/photo-1630856055923-34cb93bd7b04?q=80&w=1380&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            name3: 'Bánh Mì',
-            description: 'A crusty baguette sandwich filled with meats, pickled veggies, and herbs.',
-            image3: 'https://images.unsplash.com/photo-1625701057430-9f3fc0e5b26d?q=80&w=1380&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            name4: 'Chè',
-            description: 'A Vietnamese dessert soup or pudding made with beans, fruit, and coconut milk.',
-            image4: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Ch%C3%A8_%C4%91%E1%BA%ADu_xanh_ph%E1%BB%97_Vi%E1%BB%87t.jpg',
-          },
-        ],
-      },
-      {
-        travelTips: [
-          {
-            tip1: '<strong>Best time to visit:</strong> October–April for cooler, dry weather.',
-            description1: '',
-          },
-          {
-            tip2: '<strong>Language:</strong> Vietnamese (English is spoken in tourist areas).',
-            description2: '',
-          },
-          {
-            tip3: '<strong>Getting around:</strong> Use Grab app, taxis, or rent a motorbike.',
-            description3: '',
-          },
-          {
-            tip4: '<strong>Currency:</strong> Vietnamese Dong (VND); cash is preferred in small shops.',
-            description4: '',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'popCountry6',
-    countryName: 'Thailand',
-    city: 'Phuket',
-    img: 'https://images.unsplash.com/photo-1601225612316-b4733315a717?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGh1a2V0fGVufDB8fDB8fHww',
-    data: [
-      {
-        title1: 'Phuket – Thailand’s Island Paradise',
-        description1:
-          `Phuket, the largest island in Thailand, is a tropical dreamscape known for its white-sand beaches, turquoise waters, and vibrant nightlife. Nestled in the Andaman Sea, this island offers a stunning blend of natural beauty, cultural charm, and luxurious relaxation. Whether you're soaking up the sun at <strong>Patong Beach</strong>, exploring hidden coves, or enjoying a beachfront Thai massage, Phuket delivers unforgettable moments at every turn.`,
-        image1: 'https://images.unsplash.com/photo-1621939514644-848f2e9f9e1b?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
-      },
-      {
-        title2: 'Where Culture Meets Coastal Bliss',
-        description2:
-          'Beyond the beaches, Phuket is rich with culture and tradition. Explore the historic streets of <strong>Old Phuket Town</strong>, admire ornate Buddhist temples like <strong>Wat Chalong</strong>, and gaze upon the island from the towering <strong>Big Buddha</strong> statue. Phuket’s diversity makes it a perfect destination for adventurers, families, and romantic getaways alike.',
-        image2: 'https://i.ibb.co/9q2kPp1/phuket-old-town.jpg',
-      },
-      {
-        iconicSights: [
-          {
-            iconicSight1: 'Big Buddha',
-            description1: 'A 45-meter-tall marble statue offering panoramic island views.',
-            image1: 'https://images.unsplash.com/photo-1617035890194-7d3b77f8ea53?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            iconicSight2: 'Wat Chalong',
-            description2: 'Phuket’s most important Buddhist temple with intricate architecture.',
-            image2: 'https://i.ibb.co/YcZFxpk/wat-chalong.jpg',
-          },
-          {
-            iconicSight3: 'Phi Phi Islands (via boat tour)',
-            description3: 'Famous for crystal-clear waters, snorkeling, and dramatic cliffs.',
-            image3: 'https://images.unsplash.com/photo-1585238342028-1d7ca49f1f14?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            iconicSight4: 'Phang Nga Bay',
-            description4: 'Explore sea caves and limestone karsts by kayak or longtail boat.',
-            image4: 'https://i.ibb.co/KFKQrsx/phang-nga-bay.jpg',
-          },
-        ],
-      },
-      {
-        uniqueExperiences: [
-          {
-            activity1: '🛶 Go island-hopping to Phi Phi, James Bond Island, and Coral Island.',
-            description1: '',
-          },
-          {
-            activity2: '🍜 Take a Thai cooking class and learn to make Pad Thai and Tom Yum.',
-            description2: '',
-          },
-          {
-            activity3: '🧘 Join a beachside yoga session or wellness retreat.',
-            description3: '',
-          },
-          {
-            activity4: '🎉 Enjoy the nightlife at Bangla Road or a traditional Thai dance show.',
-            description4: '',
-          },
-        ],
-      },
-      {
-        foodItems: [
-          {
-            name1: 'Pad Thai',
-            description: 'Stir-fried noodles with shrimp, peanuts, egg, and lime.',
-            image1: 'https://images.unsplash.com/photo-1604908177339-c26f0efae932?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            name2: 'Tom Yum Goong',
-            description: 'Spicy and sour shrimp soup with lemongrass and chili.',
-            image2: 'https://i.ibb.co/fX8fKTq/tom-yum-goong.jpg',
-          },
-          {
-            name3: 'Mango Sticky Rice',
-            description: 'Sweet glutinous rice with fresh mango and coconut milk.',
-            image3: 'https://images.unsplash.com/photo-1630409341445-e6b8dc1e3ef2?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            name4: 'Som Tum',
-            description: 'A spicy green papaya salad — a Thai street food favorite.',
-            image4: 'https://i.ibb.co/7CdmVpt/som-tum.jpg',
-          },
-        ],
-      },
-      {
-        travelTips: [
-          {
-            tip1: '<strong>Best time to visit:</strong> November to April for dry, sunny weather.',
-            description1: '',
-          },
-          {
-            tip2: '<strong>Transport:</strong> Tuk-tuks and taxis are common, but renting a scooter is popular for exploring.',
-            description2: '',
-          },
-          {
-            tip3: '<strong>Respect local customs:</strong> Dress modestly when visiting temples and remove shoes before entering.',
-            description3: '',
-          },
-          {
-            tip4: '<strong>Stay areas:</strong> Patong for nightlife, Kata/Karon for family vibes, or Rawai for a local experience.',
-            description4: '',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'popCountry7',
-    countryName: 'Canada',
-    city: 'Vancouver',
-    img: 'https://images.unsplash.com/photo-1617911804986-1e18eb78d770?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fFZhbmNvdXZlcnxlbnwwfHwwfHx8MA%3D%3D',
-    data: [
-      {
-        title1: 'Vancouver – A Nature Lover’s Dream',
-        description1:
-          `Vancouver, a vibrant city nestled between the Pacific Ocean and the towering Coast Mountains, offers a dynamic fusion of urban sophistication and nature’s beauty. Known for its stunning landscapes, Vancouver is the perfect place to explore towering skyscrapers, scenic parks, lush forests, and sandy beaches all in one place. Whether you're walking around Stanley Park or enjoying world-class dining in Yaletown, Vancouver has something to offer everyone.`,
-        image1: 'https://images.unsplash.com/photo-1506374631742-48269f8ec02f?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
-      },
-      {
-        title2: 'Explore a World-Class City',
-        description2:
-          'Vancouver is a modern city with an outdoor lifestyle. Whether you’re skiing in the winter, cycling along the Seawall in the summer, or exploring the vibrant neighborhoods like <strong>Gastown</strong> and <strong>Granville Island</strong>, Vancouver is one of the most livable cities in the world. Don’t miss the lively food scene, multicultural atmosphere, and outdoor adventures that Vancouver is famous for.',
-        image2: 'https://i.ibb.co/Ny7QHJd/vancouver-skyline.jpg',
-      },
-      {
-        iconicSights: [
-          {
-            iconicSight1: 'Stanley Park',
-            description1: 'A lush green space offering scenic views, beaches, and wildlife.',
-            image1: 'https://images.unsplash.com/photo-1591828015317-5a6592e1d367?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            iconicSight2: 'Capilano Suspension Bridge',
-            description2: 'A thrilling bridge high above the Capilano River surrounded by forest.',
-            image2: 'https://i.ibb.co/K6QGnT5/capilano-bridge.jpg',
-          },
-          {
-            iconicSight3: 'Granville Island',
-            description3: 'A bustling cultural district with galleries, shops, and artisan markets.',
-            image3: 'https://i.ibb.co/cLhrXbK/granville-island.jpg',
-          },
-          {
-            iconicSight4: 'Grouse Mountain',
-            description4: 'A year-round mountain experience, from skiing in winter to hiking in summer.',
-            image4: 'https://i.ibb.co/VVGrVY4/grouse-mountain.jpg',
-          },
-        ],
-      },
-      {
-        uniqueExperiences: [
-          {
-            activity1: '🚲 Ride or walk the <strong>Seawall</strong>, one of the world’s most scenic urban paths.',
-            description1: '',
-          },
-          {
-            activity2: '🏞️ Hike the Grouse Grind for incredible mountain views.',
-            description2: '',
-          },
-          {
-            activity3: '🌉 Experience the <strong>Capilano Suspension Bridge</strong> for a breathtaking forest view.',
-            description3: '',
-          },
-          {
-            activity4: '🛳️ Take a ferry to <strong>Vancouver Island</strong> for outdoor adventures or whale watching.',
-            description4: '',
-          },
-        ],
-      },
-      {
-        foodItems: [
-          {
-            name1: 'Poutine',
-            description: 'A quintessential Canadian dish of fries, cheese curds, and gravy.',
-            image1: 'https://images.unsplash.com/photo-1626156544690-dc10a5407fcf?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            name2: 'Salmon',
-            description: 'Fresh Pacific salmon, often served in sushi, grilled, or smoked.',
-            image2: 'https://i.ibb.co/Thm8vRV/salmon.jpg',
-          },
-          {
-            name3: 'BC Roll (Sushi)',
-            description: 'A Vancouver specialty with salmon, avocado, and cucumber.',
-            image3: 'https://i.ibb.co/cYFcTVY/sushi.jpg',
-          },
-          {
-            name4: 'Maple Taffy',
-            description: 'A delicious maple syrup treat that is a popular wintertime snack.',
-            image4: 'https://i.ibb.co/dP2kqks/maple-taffy.jpg',
-          },
-        ],
-      },
-      {
-        travelTips: [
-          {
-            tip1: '<strong>Best time to visit:</strong> May–September for pleasant weather and outdoor activities.',
-            description1: '',
-          },
-          {
-            tip2: '<strong>Language:</strong> English is the primary language, but you may hear French and other languages.',
-            description2: '',
-          },
-          {
-            tip3: '<strong>Getting around:</strong> Vancouver has an extensive public transit system, including buses, SkyTrain, and ferries.',
-            description3: '',
-          },
-          {
-            tip4: '<strong>Where to stay:</strong> Downtown Vancouver offers proximity to major attractions, or stay near Stanley Park for a more tranquil experience.',
-            description4: '',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'popCountry8',
-    countryName: 'Japan',
-    city: 'Kyoto',
-    img: 'https://images.unsplash.com/photo-1624253346805-df69ad2b3d7f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8a3lvdG98ZW58MHx8MHx8fDA%3D',
-    data: [
-      {
-        title1: 'Kyoto – The Cultural Heart of Japan',
-        description1:
-          `Kyoto, once the capital of Japan, is a city where ancient traditions blend seamlessly with serene beauty. Famous for its rich cultural heritage, Kyoto is home to stunning temples, tranquil gardens, and traditional tea houses. Visitors can stroll through bamboo forests, admire beautiful kimonos, and experience the grace of Japanese tea ceremonies. The city’s old-world charm is matched by its breathtaking views, making it an unmissable destination for culture seekers and nature lovers alike.`,
-        image1: 'https://images.unsplash.com/photo-1526943197075-3e1fbc7f52b3?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
-      },
-      {
-        title2: 'A Journey through Time and Tradition',
-        description2:
-          'Kyoto is a city steeped in tradition, with over 1,000 temples and shrines, each with its own story to tell. Wander through the peaceful <strong>Zen gardens</strong> of <strong>Ryoan-ji</strong>, explore the iconic <strong>Kinkaku-ji</strong> (Golden Pavilion), or take a stroll through the traditional geisha district of <strong>Gion</strong>. Kyoto’s blend of nature and culture offers a deep and enriching experience.',
-        image2: 'https://i.ibb.co/vkwdb5Q/kyoto-temple.jpg',
-      },
-      {
-        iconicSights: [
-          {
-            iconicSight1: 'Kinkaku-ji (Golden Pavilion)',
-            description1: 'A breathtaking Zen Buddhist temple covered in gold leaf.',
-            image1: 'https://images.unsplash.com/photo-1526381388987-b707a4c14345?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            iconicSight2: 'Fushimi Inari Shrine',
-            description2: 'Famous for its thousands of vibrant red torii gates leading up Mount Inari.',
-            image2: 'https://i.ibb.co/M1V7D8b/fushimi-inari.jpg',
-          },
-          {
-            iconicSight3: 'Arashiyama Bamboo Grove',
-            description3: 'A magical bamboo forest that feels like stepping into another world.',
-            image3: 'https://i.ibb.co/C2gP4n7/arashiyama-bamboo.jpg',
-          },
-          {
-            iconicSight4: 'Kiyomizu-dera',
-            description4: 'A UNESCO World Heritage Site offering stunning views of Kyoto from its wooden stage.',
-            image4: 'https://i.ibb.co/s9FdjrS/kiyomizu-dera.jpg',
-          },
-        ],
-      },
-      {
-        uniqueExperiences: [
-          {
-            activity1: '🍵 Experience a traditional <strong>Japanese Tea Ceremony</strong> in a Kyoto teahouse.',
-            description1: '',
-          },
-          {
-            activity2: '👘 Try on a <strong>kimono</strong> and walk through the ancient streets of Gion.',
-            description2: '',
-          },
-          {
-            activity3: '🍣 Savor Kyoto-style <strong>Kaiseki</strong> cuisine, a multi-course Japanese dining experience.',
-            description3: '',
-          },
-          {
-            activity4: '🌸 Visit during <strong>cherry blossom season</strong> (March–April) for a magical sakura experience.',
-            description4: '',
-          },
-        ],
-      },
-      {
-        foodItems: [
-          {
-            name1: 'Kaiseki',
-            description: 'A multi-course Japanese dinner highlighting the flavors of the season.',
-            image1: 'https://images.unsplash.com/photo-1578875035870-075b537e5301?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
-          },
-          {
-            name2: 'Yudofu',
-            description: 'A simple yet delicious hot pot dish with tofu and vegetables.',
-            image2: 'https://i.ibb.co/FzKFM3w/yudofu.jpg',
-          },
-          {
-            name3: 'Matcha Sweets',
-            description: 'Kyoto is famous for its green tea, and you can enjoy matcha-flavored desserts like cakes, ice cream, and chocolates.',
-            image3: 'https://i.ibb.co/KVgjFQ5/matcha-sweets.jpg',
-          },
-          {
-            name4: 'Kyo-Wagashi',
-            description: 'Traditional Japanese sweets often served with tea, delicate and beautifully crafted.',
-            image4: 'https://i.ibb.co/1ZY1R6g/kyo-wagashi.jpg',
-          },
-        ],
-      },
-      {
-        travelTips: [
-          {
-            tip1: '<strong>Best time to visit:</strong> March–May or October–November for pleasant weather and seasonal beauty.',
-            description1: '',
-          },
-          {
-            tip2: '<strong>Language:</strong> Japanese (English is commonly understood in tourist areas).',
-            description2: '',
-          },
-          {
-            tip3: '<strong>Getting around:</strong> Kyoto’s bus and subway systems are very efficient for sightseeing.',
-            description3: '',
-          },
-          {
-            tip4: '<strong>Where to stay:</strong> Stay in the historical district of Gion for a traditional experience or near Kyoto Station for convenience.',
-            description4: '',
-          },
-        ],
-      },
-    ],
-  },
-]
+// export const destinationCountriesPage = [
+//   {
+//     id: 'popCountry1',
+//     countryName: 'Portugal',
+//     city: 'Lisbon',
+//     img: 'https://images.unsplash.com/photo-1588535684923-900727736ac0?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlzYm9ufGVufDB8fDB8fHww',
+//     data: [
+//       {
+//         title1: 'Discover Lisbon - The Heart of Portugal',
+//         description1:
+//           `Lisbon, the sun-kissed and stunning capital of Portugal, is a vibrant coastal city where ancient history and modern energy dance in perfect harmony. Set across seven picturesque hills and overlooking the shimmering Atlantic Ocean, Lisbon enchants visitors with its colorful streets, charming tile-covered buildings, and breathtaking viewpoints at every turn. This timeless city offers a captivating mix of traditional architecture, such as majestic cathedrals and Moorish castles, alongside a thriving contemporary culture filled with art, music, and innovation. From wandering through the historic neighborhoods of <strong>Alfama</strong> and <strong>Bairro Alto</strong> to experiencing the soulful sounds of <strong>fado</strong>, Lisbon invites travelers to slow down, soak in its atmosphere, and discover hidden gems around every corner.`,
+//         image1: 'https://images.unsplash.com/photo-1501927023255-9063be98970c?q=80&w=2274&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+//       },
+//       {
+//         title2: 'A City of History & Culture',
+//         description2:
+//           'Lisbon is one of the oldest cities in Western Europe, even older than Rome! Explore its cobblestone streets and historic neighborhoods like <strong>Alfama</strong> and <strong>Bairro Alto</strong>, where the sounds of <strong>fado music</strong> echo through lantern-lit alleys. Visit the <strong>Jerónimos Monastery</strong> and <strong>Belém Tower</strong>, both UNESCO World Heritage Sites that celebrate the Age of Discoveries.',
+//         image2: 'https://i.ibb.co/kVNCzFY7/part-pena-castle-sintra-lisbon-268835-1341.jpg',
+//       },
+//       {
+//         iconicSights: [
+//           {
+//             iconicSight1: 'Belém Tower',
+//             description1: 'A symbol of Portugal’s maritime heritage.',
+//             image1: 'https://images.unsplash.com/photo-1702560030824-02cf6c4761ef?q=80&w=2328&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+//           },
+//           {
+//             iconicSight2: 'São Jorge Castle',
+//             description2: 'Offering panoramic views over red rooftops and the Tagus River.',
+//             image2: 'https://cdn-imgix.headout.com/media/images/c78811b923d7d22809ec69778dc4fa98-Sao%20Jorge%20castle%20aerial.jpg?auto=format&w=1069.6000000000001&h=687.6&q=90&fit=crop&ar=14%3A9&crop=faces',
+//           },
+//           {
+//             iconicSight3: 'Ponte 25 de Abril',
+//             description3: 'Lisbon’s answer to the Golden Gate Bridge.',
+//             image3: 'https://i.ibb.co/tMzhQgMz/aerial-view-shot-suspension-bridge-portugal-beautiful-sunset-181624-25787.jpg',
+//           },
+//           {
+//             iconicSight4: 'Alfama View',
+//             description4: 'A charming hillside district offering sweeping views, winding alleys, and the true soul of old Lisbon.',
+//             image4: 'https://i.ibb.co/23GKXTjN/wide-shot-boats-body-water-near-houses-buildings-porto-portugal-181624-2971.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         uniqueExperiences: [
+//           {
+//             activity1: `🚋 Ride <strong>Tram 28</strong> through the most iconic hills and neighborhoods.`,
+//             description1: '',
+//           },
+//           {
+//             activity2: '🍷 Sip <strong>Ginjinha</strong> a sweet cherry liqueur, at a local bar.',
+//             description2: '',
+//           },
+//           {
+//             activity3: '🎨 Explore <strong>LX Factory</strong> a creative hub full of shops and cafes with vibrant street art.',
+//             description3: '',
+//           },
+//           {
+//             activity4: ' 🏖️ Take a day trip to <strong>Cascais</strong> or the magical town of <strong>Sintra</strong> with its fairytale palaces.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//       {
+//         foodItems: [
+//           {
+//             name1: 'Pastéis de Nata',
+//             description: 'Flaky custard tarts from Pastéis de Belém.',
+//             image1: 'https://images.unsplash.com/photo-1591107576521-87091dc07797?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+//           },
+//           {
+//             name2: 'Bacalhau à Brás',
+//             description: 'A comforting codfish dish.',
+//             image2: 'https://justcookwithmichael.com/wp-content/uploads/2021/01/bacalhau-bras-fries-potato-cod-6-scaled.jpg',
+//           },
+//           {
+//             name3: 'Grilled sardines',
+//             description: 'Best enjoyed during the June festivals.',
+//             image3: 'https://img.freepik.com/free-photo/grilled-fish-with-vegetable-salad-orange_114579-3656.jpg?t=st=1745047320~exp=1745050920~hmac=4ac8c62182d3c6555bd2cec4dca6b68da17e000a27acfffb62a4a8a9c39a1ab9&w=1380',
+//           },
+//           {
+//             name4: 'Ameijoas à Bulhão Pato',
+//             description: 'A flavorful dish of clams cooked in garlic, olive oil, white wine, and cilantro, perfect for seafood lovers.',
+//             image4: 'https://i.ibb.co/nq2zm6tD/baked-snails-with-garlic-butter-fresh-herbs-93675-128441.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         travelTips: [
+//           {
+//             tip1: '<strong>Best time to visit:</strong> March–May or September–October for mild weather and fewer crowds.',
+//             description1: '',
+//           },
+//           {
+//             tip2: '<strong>Language:</strong> Portuguese (but English is widely spoken in tourist areas).',
+//             description2: '',
+//           },
+//           {
+//             tip3: '<strong>Getting around:</strong> Walk, take the metro, or hop on the iconic trams.',
+//             description3: '',
+//           },
+//           {
+//             tip4: '<strong>Where to stay:</strong> Baixa, Chiado, or Principe Real for the best mix of accessibility and charm.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     id: 'popCountry2',
+//     countryName: 'Russia',
+//     city: 'Moscow',
+//     img: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9zY293fGVufDB8fDB8fHww',
+//     data: [
+//       {
+//         title1: 'Discover Moscow - The Heart of Russia',
+//         description1: 'Moscow, the grand capital of Russia, is a vibrant metropolis where imperial architecture meets modern innovation. With its majestic landmarks, bustling boulevards, and rich cultural scene, the city offers an unforgettable experience.',
+//         image1: '',
+//       },
+//       {
+//         title2: 'A City of History & Culture',
+//         description2: 'Explore centuries of history at the Kremlin, wander through Red Square, and marvel at Saint Basil’s Cathedral. Moscow is a cultural powerhouse with world-class theaters, galleries, and historical sites.',
+//         image2: 'https://images.unsplash.com/photo-1523509433741-9a97def00827?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vc2Nvd3xlbnwwfHwwfHx8MA%3D%3D',
+//       },
+//       {
+//         iconicSights: [
+//           {
+//             iconicSight1: 'The Kremlin',
+//             description1: 'Russia’s political and historical heart, home to palaces, cathedrals, and museums.',
+//             image1: 'https://upload.wikimedia.org/wikipedia/commons/e/e8/Kremlin_and_Moskva_River_in_Moscow.jpg',
+//           },
+//           {
+//             iconicSight2: 'Saint Basil’s Cathedral',
+//             description2: 'Famous for its colorful onion domes and striking architecture.',
+//             image2: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/St_Basils_Cathedral-500px.jpg',
+//           },
+//           {
+//             iconicSight3: 'Bolshoi Theatre',
+//             description3: 'A legendary venue for opera and ballet performances.',
+//             image3: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Bolshoi_Theatre_Moscow_2019.jpg',
+//           },
+//           {
+//             iconicSight4: 'GUM Department Store',
+//             description4: 'Historic shopping arcade on Red Square with elegant architecture.',
+//             image4: 'https://upload.wikimedia.org/wikipedia/commons/d/d4/GUM_Interior.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         uniqueExperiences: [
+//           {
+//             activity1: '🚇 Ride the stunning Moscow Metro – a palace beneath the streets.',
+//             description1: '',
+//           },
+//           {
+//             activity2: '🛍️ Hunt for souvenirs at Izmailovo Market – known for traditional crafts and antiques.',
+//             description2: '',
+//           },
+//           {
+//             activity3: '🌳 Stroll through Gorky Park – a green oasis with art, cafes, and activities.',
+//             description3: '',
+//           },
+//           {
+//             activity4: '⛪ Take a day trip to Sergiev Posad – a spiritual center with golden-domed monasteries.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//       {
+//         foodItems: [
+//           {
+//             name1: 'Borscht',
+//             description: 'Beet soup served hot or cold, often with sour cream.',
+//             image1: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Borscht_served.jpg',
+//           },
+//           {
+//             name2: 'Pelmeni',
+//             description: 'Dumplings filled with minced meat, typically served with butter or sour cream.',
+//             image2: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Pelmeni_russian_dumplings.jpg',
+//           },
+//           {
+//             name3: 'Blini',
+//             description: 'Thin pancakes often served with caviar, jam, or sour cream.',
+//             image3: 'https://upload.wikimedia.org/wikipedia/commons/3/3f/Blini_with_caviar.jpg',
+//           },
+//           {
+//             name4: 'Shashlik',
+//             description: 'Grilled skewers of marinated meat, popular in Russian street food.',
+//             image4: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Shashlik_001.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         travelTips: [
+//           {
+//             tip1: '<strong>Best time to visit:</strong> May–September for pleasant weather and festivals.',
+//             description1: '',
+//           },
+//           {
+//             tip2: '<strong>Language:</strong> Russian (English is spoken in tourist areas, but learning Cyrillic helps).',
+//             description2: '',
+//           },
+//           {
+//             tip3: '<strong>Getting around:</strong> The metro is efficient, clean, and decorated like an art museum.',
+//             description3: '',
+//           },
+//           {
+//             tip4: '<strong>Where to stay:</strong> Arbat, Tverskoy, or Kitay-Gorod for central and well-connected areas.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     id: 'popCountry3',
+//     countryName: 'Cuba',
+//     city: 'Havana',
+//     img: 'https://images.unsplash.com/photo-1583691837385-84f8b6ca9ebf?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGN1YmF8ZW58MHx8MHx8fDA%3D',
+//     data: [
+//       {
+//         title1: 'Discover Havana - The Soul of Cuba',
+//         description1:
+//           `Havana, the vibrant capital of Cuba, is a city that pulses with color, culture, and charisma. From its iconic vintage cars and pastel-hued colonial buildings to the rhythmic sounds of salsa and son echoing through the streets, Havana is an immersive journey through time. The city’s charm lies in its contrasts — decaying grandeur meets infectious energy, and history comes alive in every corner of <strong>Old Havana</strong> (Habana Vieja), a UNESCO World Heritage Site. Whether you’re strolling along the <strong>Malecón</strong>, sipping a mojito at a Hemingway-frequented bar, or dancing into the night, Havana invites you to experience life with rhythm and soul.`,
+//         image1: 'https://images.unsplash.com/photo-1571474740845-7c6b69f9a6a5?q=80&w=2280&auto=format&fit=crop&ixlib=rb-4.0.3',
+//       },
+//       {
+//         title2: 'A City of Stories & Spirit',
+//         description2:
+//           'Havana is a living museum where centuries of colonial architecture, revolutionary spirit, and Afro-Cuban heritage intertwine. Explore the cobbled streets of <strong>Habana Vieja</strong>, visit the iconic <strong>Plaza de la Revolución</strong>, and marvel at the opulence of the <strong>Gran Teatro</strong>. Each building, plaza, and mural tells a story of resilience, revolution, and cultural pride.',
+//         image2: 'https://i.ibb.co/8cmM7qd/havana-vintage-cars.jpg',
+//       },
+//       {
+//         iconicSights: [
+//           {
+//             iconicSight1: 'El Capitolio',
+//             description1: 'Havana’s grand neoclassical landmark, reminiscent of the U.S. Capitol.',
+//             image1: 'https://images.unsplash.com/photo-1612115074984-1dd565ba1860?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             iconicSight2: 'Malecón',
+//             description2: 'A sweeping seaside promenade perfect for sunset walks and local vibes.',
+//             image2: 'https://i.ibb.co/ZcgfwT6/malecon-havana.jpg',
+//           },
+//           {
+//             iconicSight3: 'Castillo del Morro',
+//             description3: 'A fortress guarding Havana Bay, offering panoramic views.',
+//             image3: 'https://i.ibb.co/L6GpgXc/castillo-del-morro-havana.jpg',
+//           },
+//           {
+//             iconicSight4: 'Plaza Vieja',
+//             description4: 'A lively square surrounded by colorful baroque and art nouveau architecture.',
+//             image4: 'https://i.ibb.co/nkgy92T/plaza-vieja-havana.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         uniqueExperiences: [
+//           {
+//             activity1: '🚗 Cruise in a vintage 1950s convertible through Havana’s historic streets.',
+//             description1: '',
+//           },
+//           {
+//             activity2: '🍹 Enjoy a classic mojito at <strong>La Bodeguita del Medio</strong> — Hemingway’s favorite.',
+//             description2: '',
+//           },
+//           {
+//             activity3: '💃 Take a salsa dancing class and feel the Cuban rhythm.',
+//             description3: '',
+//           },
+//           {
+//             activity4: '🎨 Visit <strong>Fusterlandia</strong>, a mosaic-covered art neighborhood created by José Fuster.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//       {
+//         foodItems: [
+//           {
+//             name1: 'Ropa Vieja',
+//             description: 'Shredded beef stew simmered in a tomato-based sauce — Cuba’s national dish.',
+//             image1: 'https://i.ibb.co/FbgZ2PQ/ropa-vieja-cuban-food.jpg',
+//           },
+//           {
+//             name2: 'Moros y Cristianos',
+//             description: 'Black beans and rice cooked together with spices and garlic.',
+//             image2: 'https://i.ibb.co/HK1n9n2/moros-cristianos.jpg',
+//           },
+//           {
+//             name3: 'Tostones',
+//             description: 'Crispy fried plantains served as a snack or side dish.',
+//             image3: 'https://i.ibb.co/M6ptq0V/tostones.jpg',
+//           },
+//           {
+//             name4: 'Flan Cubano',
+//             description: 'A caramel custard dessert — rich, sweet, and creamy.',
+//             image4: 'https://i.ibb.co/02yxXKr/flan-cubano.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         travelTips: [
+//           {
+//             tip1: '<strong>Best time to visit:</strong> November–April for dry, sunny weather.',
+//             description1: '',
+//           },
+//           {
+//             tip2: '<strong>Language:</strong> Spanish (basic English in tourist areas).',
+//             description2: '',
+//           },
+//           {
+//             tip3: '<strong>Getting around:</strong> Walk, hire a bici-taxi, or take a vintage cab.',
+//             description3: '',
+//           },
+//           {
+//             tip4: '<strong>Currency:</strong> Bring euros or USD — international cards often don’t work.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     id: 'popcountry4',
+//     countryName: 'Mexico',
+//     city: 'Mexico City',
+//     img: 'https://images.unsplash.com/photo-1628301764660-af899e6151bb?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+//     headerImg: 'https://images.unsplash.com/photo-1628301764660-af899e6151bb?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+//     data: [
+//       {
+//         title1: 'Experience the Energy of Mexico City',
+//         description1: `Mexico City, the dynamic heart of Mexico, is a sprawling capital bursting with color, flavor, and deep-rooted history. Ancient ruins meet cutting-edge architecture, and every neighborhood offers something unique. Walk through the lively <strong>Zócalo</strong>, admire Diego Rivera’s murals, or take a boat ride through the canals of <strong>Xochimilco</strong>. With its endless museums, mouthwatering street food, and vibrant culture, Mexico City is a feast for all senses.`,
+//         image1: 'https://images.unsplash.com/photo-1622770810481-80b94fd4b6d6?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
+//       },
+//       {
+//         title2: 'A City Steeped in History and Culture',
+//         description2: 'From the pre-Columbian splendor of <strong>Teotihuacan</strong> to the colonial-era charm of <strong>Coyoacán</strong>, Mexico City is a historical and cultural treasure. Visit the <strong>National Palace</strong> to witness political history and iconic art, and don’t miss the <strong>Frida Kahlo Museum</strong> for a glimpse into the life of the beloved artist.',
+//         image2: 'https://images.unsplash.com/photo-1558125990-b7d3c6bda45b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
+//       },
+//       {
+//         iconicSights: [
+//           {
+//             iconicSight1: 'Palacio de Bellas Artes',
+//             description1: 'An iconic cultural venue with art deco architecture and Rivera murals.',
+//             image1: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Palacio_de_Bellas_Artes_Mexico_City.jpg',
+//           },
+//           {
+//             iconicSight2: 'Templo Mayor',
+//             description2: 'Ruins of the main Aztec temple in the historic center.',
+//             image2: 'https://upload.wikimedia.org/wikipedia/commons/b/bf/Templo_Mayor_Mexico_City.jpg',
+//           },
+//           {
+//             iconicSight3: 'Chapultepec Castle',
+//             description3: 'A stunning hilltop castle with views, history, and lush forest surroundings.',
+//             image3: 'https://images.unsplash.com/photo-1605218042377-6ef6f21dd36d?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             iconicSight4: 'Zócalo',
+//             description4: 'One of the world’s largest city squares, surrounded by historic buildings.',
+//             image4: 'https://upload.wikimedia.org/wikipedia/commons/0/03/Zocalo_CDMX.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         uniqueExperiences: [
+//           {
+//             activity1: '🛶 Float down the colorful canals of Xochimilco on a trajinera.',
+//             description1: '',
+//           },
+//           {
+//             activity2: '🌮 Indulge in tacos al pastor at a local taquería.',
+//             description2: '',
+//           },
+//           {
+//             activity3: '🎨 Explore the vibrant murals at the National Palace and UNAM.',
+//             description3: '',
+//           },
+//           {
+//             activity4: '💃 Attend a folkloric ballet at the Palacio de Bellas Artes.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//       {
+//         foodItems: [
+//           {
+//             name1: 'Tacos al Pastor',
+//             description: 'Marinated pork cooked on a spit, served with pineapple and salsa.',
+//             image1: 'https://i.ibb.co/VW7hZPY/tacos-al-pastor.jpg',
+//           },
+//           {
+//             name2: 'Chiles en Nogada',
+//             description: 'Poblano chiles stuffed with meat and topped with walnut sauce and pomegranate seeds.',
+//             image2: 'https://i.ibb.co/M7QbHbT/chiles-en-nogada.jpg',
+//           },
+//           {
+//             name3: 'Tamales',
+//             description: 'Corn dough filled with meats or sweets, steamed in corn husks.',
+//             image3: 'https://i.ibb.co/yPNwnZD/mexican-tamales.jpg',
+//           },
+//           {
+//             name4: 'Pan de Muerto',
+//             description: 'Sweet bread enjoyed during the Day of the Dead.',
+//             image4: 'https://i.ibb.co/6rT6SmP/pan-de-muerto.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         travelTips: [
+//           {
+//             tip1: '<strong>Best time to visit:</strong> March–May for pleasant weather and festivals.',
+//             description1: '',
+//           },
+//           {
+//             tip2: '<strong>Language:</strong> Spanish (basic English in tourist areas).',
+//             description2: '',
+//           },
+//           {
+//             tip3: '<strong>Getting around:</strong> Use the Metro, Uber, or walk through neighborhoods.',
+//             description3: '',
+//           },
+//           {
+//             tip4: '<strong>Currency:</strong> Mexican Peso (MXN); cards are widely accepted but carry some cash.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     id: 'Hanoi2',
+//     countryName: 'Vietnam',
+//     city: 'Hanoi',
+//     img: 'https://images.unsplash.com/photo-1603535816274-e9c297b45d4e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3',
+//     headerImg: 'https://images.unsplash.com/photo-1603535816274-e9c297b45d4e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3',
+//     data: [
+//       {
+//         title1: 'Discover the Timeless Charm of Hanoi',
+//         description1: `Hanoi, the capital of Vietnam, is a city where centuries-old architecture meets modern energy. Wander through the narrow alleys of the <strong>Old Quarter</strong>, where French colonial buildings, ancient temples, and bustling street markets create a unique tapestry of culture. From peaceful lakes to motorbike-filled streets, Hanoi is a blend of tranquility and chaos that never ceases to fascinate.`,
+//         image1: 'https://images.unsplash.com/photo-1582469816927-1c8ab972f196?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
+//       },
+//       {
+//         title2: 'A City Rich in Culture and Legacy',
+//         description2: `Hanoi is deeply tied to Vietnam’s history and soul. Visit the solemn <strong>Ho Chi Minh Mausoleum</strong> to pay respects to the nation's revered leader, explore the <strong>Temple of Literature</strong>—Vietnam's first university—and take in a traditional water puppet show that dates back centuries. Every corner of the city tells a story of resilience and pride.`,
+//         image2: 'https://images.unsplash.com/photo-1605128513187-1916f4e93c92?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
+//       },
+//       {
+//         iconicSights: [
+//           {
+//             iconicSight1: 'Hoan Kiem Lake',
+//             description1: 'A peaceful lake in the city center, home to the iconic red bridge and Ngoc Son Temple.',
+//             image1: 'https://images.unsplash.com/photo-1610801606301-3b1f5a645b9b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             iconicSight2: 'Ho Chi Minh Mausoleum',
+//             description2: 'The final resting place of revolutionary leader Ho Chi Minh, located in Ba Dinh Square.',
+//             image2: 'https://upload.wikimedia.org/wikipedia/commons/6/6e/Ho_Chi_Minh_Mausoleum_Hanoi.jpg',
+//           },
+//           {
+//             iconicSight3: 'Temple of Literature',
+//             description3: 'Vietnam’s first national university and a beautiful example of traditional Vietnamese architecture.',
+//             image3: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Temple_of_Literature_Hanoi_Vietnam.jpg',
+//           },
+//           {
+//             iconicSight4: 'Train Street',
+//             description4: 'A narrow residential street where a train passes just inches from homes and cafes.',
+//             image4: 'https://images.unsplash.com/photo-1570790711967-7c8e7b49fa6e?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//         ],
+//       },
+//       {
+//         uniqueExperiences: [
+//           {
+//             activity1: '🍜 Sip egg coffee at a hidden Old Quarter café.',
+//             description1: '',
+//           },
+//           {
+//             activity2: '🛵 Ride a motorbike through the lively streets like a local.',
+//             description2: '',
+//           },
+//           {
+//             activity3: '🎭 Watch a traditional water puppet show.',
+//             description3: '',
+//           },
+//           {
+//             activity4: '🛶 Take a day trip to explore the scenic beauty of nearby Ha Long Bay.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//       {
+//         foodItems: [
+//           {
+//             name1: 'Phở',
+//             description: 'Vietnam’s national noodle soup, typically made with beef or chicken in a savory broth.',
+//             image1: 'https://images.unsplash.com/photo-1617196032399-82e69466b4a5?q=80&w=1380&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             name2: 'Bún Chả',
+//             description: 'Grilled pork served with rice noodles, fresh herbs, and a sweet-savory dipping sauce.',
+//             image2: 'https://images.unsplash.com/photo-1630856055923-34cb93bd7b04?q=80&w=1380&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             name3: 'Bánh Mì',
+//             description: 'A crusty baguette sandwich filled with meats, pickled veggies, and herbs.',
+//             image3: 'https://images.unsplash.com/photo-1625701057430-9f3fc0e5b26d?q=80&w=1380&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             name4: 'Chè',
+//             description: 'A Vietnamese dessert soup or pudding made with beans, fruit, and coconut milk.',
+//             image4: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Ch%C3%A8_%C4%91%E1%BA%ADu_xanh_ph%E1%BB%97_Vi%E1%BB%87t.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         travelTips: [
+//           {
+//             tip1: '<strong>Best time to visit:</strong> October–April for cooler, dry weather.',
+//             description1: '',
+//           },
+//           {
+//             tip2: '<strong>Language:</strong> Vietnamese (English is spoken in tourist areas).',
+//             description2: '',
+//           },
+//           {
+//             tip3: '<strong>Getting around:</strong> Use Grab app, taxis, or rent a motorbike.',
+//             description3: '',
+//           },
+//           {
+//             tip4: '<strong>Currency:</strong> Vietnamese Dong (VND); cash is preferred in small shops.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     id: 'popCountry6',
+//     countryName: 'Thailand',
+//     city: 'Phuket',
+//     img: 'https://images.unsplash.com/photo-1601225612316-b4733315a717?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGh1a2V0fGVufDB8fDB8fHww',
+//     data: [
+//       {
+//         title1: 'Phuket – Thailand’s Island Paradise',
+//         description1:
+//           `Phuket, the largest island in Thailand, is a tropical dreamscape known for its white-sand beaches, turquoise waters, and vibrant nightlife. Nestled in the Andaman Sea, this island offers a stunning blend of natural beauty, cultural charm, and luxurious relaxation. Whether you're soaking up the sun at <strong>Patong Beach</strong>, exploring hidden coves, or enjoying a beachfront Thai massage, Phuket delivers unforgettable moments at every turn.`,
+//         image1: 'https://images.unsplash.com/photo-1621939514644-848f2e9f9e1b?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
+//       },
+//       {
+//         title2: 'Where Culture Meets Coastal Bliss',
+//         description2:
+//           'Beyond the beaches, Phuket is rich with culture and tradition. Explore the historic streets of <strong>Old Phuket Town</strong>, admire ornate Buddhist temples like <strong>Wat Chalong</strong>, and gaze upon the island from the towering <strong>Big Buddha</strong> statue. Phuket’s diversity makes it a perfect destination for adventurers, families, and romantic getaways alike.',
+//         image2: 'https://i.ibb.co/9q2kPp1/phuket-old-town.jpg',
+//       },
+//       {
+//         iconicSights: [
+//           {
+//             iconicSight1: 'Big Buddha',
+//             description1: 'A 45-meter-tall marble statue offering panoramic island views.',
+//             image1: 'https://images.unsplash.com/photo-1617035890194-7d3b77f8ea53?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             iconicSight2: 'Wat Chalong',
+//             description2: 'Phuket’s most important Buddhist temple with intricate architecture.',
+//             image2: 'https://i.ibb.co/YcZFxpk/wat-chalong.jpg',
+//           },
+//           {
+//             iconicSight3: 'Phi Phi Islands (via boat tour)',
+//             description3: 'Famous for crystal-clear waters, snorkeling, and dramatic cliffs.',
+//             image3: 'https://images.unsplash.com/photo-1585238342028-1d7ca49f1f14?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             iconicSight4: 'Phang Nga Bay',
+//             description4: 'Explore sea caves and limestone karsts by kayak or longtail boat.',
+//             image4: 'https://i.ibb.co/KFKQrsx/phang-nga-bay.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         uniqueExperiences: [
+//           {
+//             activity1: '🛶 Go island-hopping to Phi Phi, James Bond Island, and Coral Island.',
+//             description1: '',
+//           },
+//           {
+//             activity2: '🍜 Take a Thai cooking class and learn to make Pad Thai and Tom Yum.',
+//             description2: '',
+//           },
+//           {
+//             activity3: '🧘 Join a beachside yoga session or wellness retreat.',
+//             description3: '',
+//           },
+//           {
+//             activity4: '🎉 Enjoy the nightlife at Bangla Road or a traditional Thai dance show.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//       {
+//         foodItems: [
+//           {
+//             name1: 'Pad Thai',
+//             description: 'Stir-fried noodles with shrimp, peanuts, egg, and lime.',
+//             image1: 'https://images.unsplash.com/photo-1604908177339-c26f0efae932?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             name2: 'Tom Yum Goong',
+//             description: 'Spicy and sour shrimp soup with lemongrass and chili.',
+//             image2: 'https://i.ibb.co/fX8fKTq/tom-yum-goong.jpg',
+//           },
+//           {
+//             name3: 'Mango Sticky Rice',
+//             description: 'Sweet glutinous rice with fresh mango and coconut milk.',
+//             image3: 'https://images.unsplash.com/photo-1630409341445-e6b8dc1e3ef2?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             name4: 'Som Tum',
+//             description: 'A spicy green papaya salad — a Thai street food favorite.',
+//             image4: 'https://i.ibb.co/7CdmVpt/som-tum.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         travelTips: [
+//           {
+//             tip1: '<strong>Best time to visit:</strong> November to April for dry, sunny weather.',
+//             description1: '',
+//           },
+//           {
+//             tip2: '<strong>Transport:</strong> Tuk-tuks and taxis are common, but renting a scooter is popular for exploring.',
+//             description2: '',
+//           },
+//           {
+//             tip3: '<strong>Respect local customs:</strong> Dress modestly when visiting temples and remove shoes before entering.',
+//             description3: '',
+//           },
+//           {
+//             tip4: '<strong>Stay areas:</strong> Patong for nightlife, Kata/Karon for family vibes, or Rawai for a local experience.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     id: 'popCountry7',
+//     countryName: 'Canada',
+//     city: 'Vancouver',
+//     img: 'https://images.unsplash.com/photo-1617911804986-1e18eb78d770?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fFZhbmNvdXZlcnxlbnwwfHwwfHx8MA%3D%3D',
+//     data: [
+//       {
+//         title1: 'Vancouver – A Nature Lover’s Dream',
+//         description1:
+//           `Vancouver, a vibrant city nestled between the Pacific Ocean and the towering Coast Mountains, offers a dynamic fusion of urban sophistication and nature’s beauty. Known for its stunning landscapes, Vancouver is the perfect place to explore towering skyscrapers, scenic parks, lush forests, and sandy beaches all in one place. Whether you're walking around Stanley Park or enjoying world-class dining in Yaletown, Vancouver has something to offer everyone.`,
+//         image1: 'https://images.unsplash.com/photo-1506374631742-48269f8ec02f?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
+//       },
+//       {
+//         title2: 'Explore a World-Class City',
+//         description2:
+//           'Vancouver is a modern city with an outdoor lifestyle. Whether you’re skiing in the winter, cycling along the Seawall in the summer, or exploring the vibrant neighborhoods like <strong>Gastown</strong> and <strong>Granville Island</strong>, Vancouver is one of the most livable cities in the world. Don’t miss the lively food scene, multicultural atmosphere, and outdoor adventures that Vancouver is famous for.',
+//         image2: 'https://i.ibb.co/Ny7QHJd/vancouver-skyline.jpg',
+//       },
+//       {
+//         iconicSights: [
+//           {
+//             iconicSight1: 'Stanley Park',
+//             description1: 'A lush green space offering scenic views, beaches, and wildlife.',
+//             image1: 'https://images.unsplash.com/photo-1591828015317-5a6592e1d367?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             iconicSight2: 'Capilano Suspension Bridge',
+//             description2: 'A thrilling bridge high above the Capilano River surrounded by forest.',
+//             image2: 'https://i.ibb.co/K6QGnT5/capilano-bridge.jpg',
+//           },
+//           {
+//             iconicSight3: 'Granville Island',
+//             description3: 'A bustling cultural district with galleries, shops, and artisan markets.',
+//             image3: 'https://i.ibb.co/cLhrXbK/granville-island.jpg',
+//           },
+//           {
+//             iconicSight4: 'Grouse Mountain',
+//             description4: 'A year-round mountain experience, from skiing in winter to hiking in summer.',
+//             image4: 'https://i.ibb.co/VVGrVY4/grouse-mountain.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         uniqueExperiences: [
+//           {
+//             activity1: '🚲 Ride or walk the <strong>Seawall</strong>, one of the world’s most scenic urban paths.',
+//             description1: '',
+//           },
+//           {
+//             activity2: '🏞️ Hike the Grouse Grind for incredible mountain views.',
+//             description2: '',
+//           },
+//           {
+//             activity3: '🌉 Experience the <strong>Capilano Suspension Bridge</strong> for a breathtaking forest view.',
+//             description3: '',
+//           },
+//           {
+//             activity4: '🛳️ Take a ferry to <strong>Vancouver Island</strong> for outdoor adventures or whale watching.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//       {
+//         foodItems: [
+//           {
+//             name1: 'Poutine',
+//             description: 'A quintessential Canadian dish of fries, cheese curds, and gravy.',
+//             image1: 'https://images.unsplash.com/photo-1626156544690-dc10a5407fcf?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             name2: 'Salmon',
+//             description: 'Fresh Pacific salmon, often served in sushi, grilled, or smoked.',
+//             image2: 'https://i.ibb.co/Thm8vRV/salmon.jpg',
+//           },
+//           {
+//             name3: 'BC Roll (Sushi)',
+//             description: 'A Vancouver specialty with salmon, avocado, and cucumber.',
+//             image3: 'https://i.ibb.co/cYFcTVY/sushi.jpg',
+//           },
+//           {
+//             name4: 'Maple Taffy',
+//             description: 'A delicious maple syrup treat that is a popular wintertime snack.',
+//             image4: 'https://i.ibb.co/dP2kqks/maple-taffy.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         travelTips: [
+//           {
+//             tip1: '<strong>Best time to visit:</strong> May–September for pleasant weather and outdoor activities.',
+//             description1: '',
+//           },
+//           {
+//             tip2: '<strong>Language:</strong> English is the primary language, but you may hear French and other languages.',
+//             description2: '',
+//           },
+//           {
+//             tip3: '<strong>Getting around:</strong> Vancouver has an extensive public transit system, including buses, SkyTrain, and ferries.',
+//             description3: '',
+//           },
+//           {
+//             tip4: '<strong>Where to stay:</strong> Downtown Vancouver offers proximity to major attractions, or stay near Stanley Park for a more tranquil experience.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     id: 'popCountry8',
+//     countryName: 'Japan',
+//     city: 'Kyoto',
+//     img: 'https://images.unsplash.com/photo-1624253346805-df69ad2b3d7f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8a3lvdG98ZW58MHx8MHx8fDA%3D',
+//     data: [
+//       {
+//         title1: 'Kyoto – The Cultural Heart of Japan',
+//         description1:
+//           `Kyoto, once the capital of Japan, is a city where ancient traditions blend seamlessly with serene beauty. Famous for its rich cultural heritage, Kyoto is home to stunning temples, tranquil gardens, and traditional tea houses. Visitors can stroll through bamboo forests, admire beautiful kimonos, and experience the grace of Japanese tea ceremonies. The city’s old-world charm is matched by its breathtaking views, making it an unmissable destination for culture seekers and nature lovers alike.`,
+//         image1: 'https://images.unsplash.com/photo-1526943197075-3e1fbc7f52b3?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
+//       },
+//       {
+//         title2: 'A Journey through Time and Tradition',
+//         description2:
+//           'Kyoto is a city steeped in tradition, with over 1,000 temples and shrines, each with its own story to tell. Wander through the peaceful <strong>Zen gardens</strong> of <strong>Ryoan-ji</strong>, explore the iconic <strong>Kinkaku-ji</strong> (Golden Pavilion), or take a stroll through the traditional geisha district of <strong>Gion</strong>. Kyoto’s blend of nature and culture offers a deep and enriching experience.',
+//         image2: 'https://i.ibb.co/vkwdb5Q/kyoto-temple.jpg',
+//       },
+//       {
+//         iconicSights: [
+//           {
+//             iconicSight1: 'Kinkaku-ji (Golden Pavilion)',
+//             description1: 'A breathtaking Zen Buddhist temple covered in gold leaf.',
+//             image1: 'https://images.unsplash.com/photo-1526381388987-b707a4c14345?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             iconicSight2: 'Fushimi Inari Shrine',
+//             description2: 'Famous for its thousands of vibrant red torii gates leading up Mount Inari.',
+//             image2: 'https://i.ibb.co/M1V7D8b/fushimi-inari.jpg',
+//           },
+//           {
+//             iconicSight3: 'Arashiyama Bamboo Grove',
+//             description3: 'A magical bamboo forest that feels like stepping into another world.',
+//             image3: 'https://i.ibb.co/C2gP4n7/arashiyama-bamboo.jpg',
+//           },
+//           {
+//             iconicSight4: 'Kiyomizu-dera',
+//             description4: 'A UNESCO World Heritage Site offering stunning views of Kyoto from its wooden stage.',
+//             image4: 'https://i.ibb.co/s9FdjrS/kiyomizu-dera.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         uniqueExperiences: [
+//           {
+//             activity1: '🍵 Experience a traditional <strong>Japanese Tea Ceremony</strong> in a Kyoto teahouse.',
+//             description1: '',
+//           },
+//           {
+//             activity2: '👘 Try on a <strong>kimono</strong> and walk through the ancient streets of Gion.',
+//             description2: '',
+//           },
+//           {
+//             activity3: '🍣 Savor Kyoto-style <strong>Kaiseki</strong> cuisine, a multi-course Japanese dining experience.',
+//             description3: '',
+//           },
+//           {
+//             activity4: '🌸 Visit during <strong>cherry blossom season</strong> (March–April) for a magical sakura experience.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//       {
+//         foodItems: [
+//           {
+//             name1: 'Kaiseki',
+//             description: 'A multi-course Japanese dinner highlighting the flavors of the season.',
+//             image1: 'https://images.unsplash.com/photo-1578875035870-075b537e5301?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3',
+//           },
+//           {
+//             name2: 'Yudofu',
+//             description: 'A simple yet delicious hot pot dish with tofu and vegetables.',
+//             image2: 'https://i.ibb.co/FzKFM3w/yudofu.jpg',
+//           },
+//           {
+//             name3: 'Matcha Sweets',
+//             description: 'Kyoto is famous for its green tea, and you can enjoy matcha-flavored desserts like cakes, ice cream, and chocolates.',
+//             image3: 'https://i.ibb.co/KVgjFQ5/matcha-sweets.jpg',
+//           },
+//           {
+//             name4: 'Kyo-Wagashi',
+//             description: 'Traditional Japanese sweets often served with tea, delicate and beautifully crafted.',
+//             image4: 'https://i.ibb.co/1ZY1R6g/kyo-wagashi.jpg',
+//           },
+//         ],
+//       },
+//       {
+//         travelTips: [
+//           {
+//             tip1: '<strong>Best time to visit:</strong> March–May or October–November for pleasant weather and seasonal beauty.',
+//             description1: '',
+//           },
+//           {
+//             tip2: '<strong>Language:</strong> Japanese (English is commonly understood in tourist areas).',
+//             description2: '',
+//           },
+//           {
+//             tip3: '<strong>Getting around:</strong> Kyoto’s bus and subway systems are very efficient for sightseeing.',
+//             description3: '',
+//           },
+//           {
+//             tip4: '<strong>Where to stay:</strong> Stay in the historical district of Gion for a traditional experience or near Kyoto Station for convenience.',
+//             description4: '',
+//           },
+//         ],
+//       },
+//     ],
+//   },
+// ]
 
 
 export const faqs = [

@@ -2,7 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import NavBar from "./home/NavBar";
 import WingsurgeFooter from "./WingsurgeFooter";
 import { useEffect } from "react";
-import Search from "./home/Search";
+// import Search from "./home/Search";
 import Call from "./Call";
 
   const Body = () => {
@@ -20,8 +20,8 @@ import Call from "./Call";
        <Outlet/>
     </main>
     <footer>
-      <WingsurgeFooter/>
       <Call/>
+      <WingsurgeFooter/>
     </footer>
   </>
   }

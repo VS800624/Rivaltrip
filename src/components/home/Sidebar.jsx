@@ -55,7 +55,7 @@ const Sidebar = () => {
 
       {/* Sidebar Content */}
       <div
-        className={`fixed left-0 top-50 md:h-[40%] md:w-80 w-76 bg-gradient-to-br from-gray-700 via-gray-800 to-slate-900 text-white p-6 transition-transform duration-300 z-40 ${
+        className={`fixed left-0 top-50   md:w-80 w-76 bg-gradient-to-br from-gray-700 via-gray-800 to-slate-900 text-white p-6 transition-transform duration-300 z-40 ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } sidebar rounded-r-2xl shadow-2xl`}
       >
@@ -102,7 +102,7 @@ const Sidebar = () => {
             >
               Call Now
             </button>
-            <Link to="/FlightBooking">
+            <Link to="/flight-booking">
             <button
               className="md:text-[1rem] text-[0.9rem] cursor-pointer bg-gradient-to-r from-purple-600 to-blue-500 text-white text-base px-6 py-2 rounded-full hover:from-purple-700 hover:to-blue-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
             >

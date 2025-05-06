@@ -6,7 +6,6 @@ import  {
   bestDealsCountriesPage,
   businessClassCountries,
   businessClassCountriesPage,
-  destinationCountriesPage,
   popularCountries,
 } from "../utils/data";
 const Timer = lazy(() => import('./Timer'));
@@ -14,21 +13,21 @@ import Call from "./Call";
 
 const DestinationInfo = () => {
   const destinations = [
-    { label: 'Paris', path: '/destinationInfo/Paris' },
-    { label: 'Rome', path: '/destinationInfo/Rome' },
-    { label: 'Seoul', path: '/destinationInfo/Seoul' },
-    { label: 'Madrid', path: '/destinationInfo/Madrid' },
-    { label: 'Kyoto', path: '/destinationInfo/Kyoto' },
-    { label: 'Barcelona', path: '/destinationInfo/Barcelona' },
-    { label: 'Bali', path: '/destinationInfo/Bali' },
-    { label: 'Mexico City', path: '/destinationInfo/MexicoCity' },
-    { label: 'Lisban', path: '/destinationInfo/Lisbon' },
-    { label: 'Cuba', path: '/destinationInfo/Cuba' },
-    { label: 'Athens', path: '/destinationInfo/Athens' },
-    { label: 'Delhi', path: '/destinationInfo/Delhi' },
-    { label: 'Tokyo', path: '/destinationInfo/Tokyo' },
-    { label: 'London', path: '/destinationInfo/London' },
-    { label: 'Bangkok', path: '/destinationInfo/Bangkok' },
+    { label: 'Paris', path: '/destination-info/paris' },
+    { label: 'Rome', path: '/destination-info/rome' },
+    { label: 'Seoul', path: '/destination-info/seoul' },
+    { label: 'Madrid', path: '/destination-info/madrid' },
+    { label: 'Kyoto', path: '/destination-info/kyoto' },
+    { label: 'Barcelona', path: '/destination-info/barcelona' },
+    { label: 'Bali', path: '/destination-info/bali' },
+    { label: 'Mexico City', path: '/destination-info/mexico-city' },
+    { label: 'Lisban', path: '/destination-info/lisbon' },
+    { label: 'Cuba', path: '/destination-info/cuba' },
+    { label: 'Athens', path: '/destination-info/athens' },
+    { label: 'Delhi', path: '/destination-info/delhi' },
+    { label: 'Tokyo', path: '/destination-info/tokyo' },
+    { label: 'London', path: '/destination-info/london' },
+    { label: 'Bangkok', path: '/destination-info/bangkok' },
   ];
   
   const { id } = useParams();
@@ -42,9 +41,8 @@ const DestinationInfo = () => {
       ...businessClassCountries,
       ...bestDealsCountriesPage,
       ...businessClassCountriesPage,
-      ...destinationCountriesPage,
     ];
-    const selectedDestination = cities.find((dest) => dest.id === id);
+    const selectedDestination = cities.find((dest) => dest.id.toLowerCase() === id.toLowerCase());
     // console.log('Selected Destination:', selectedDestination);
     setDestination(selectedDestination)
   }, [id]);
@@ -80,7 +78,7 @@ const DestinationInfo = () => {
             style={{ textShadow: "0 0 15px #000" }}
           >
             <h3 className="md:text-[2rem] text-[1.8rem] text-slate-100 font-semibold shadow-2xl">It's Time to Plan Your</h3>
-            <h2 className="md:text-[3.4rem] text-[3rem] font-bold mb-[28px]"> {cityName} Trip</h2>
+            <h2 className="md:text-[3.2rem] text-[2.6rem] font-bold mb-[28px]"> {cityName} Trip</h2>
             <Search />
             <Suspense fallback={<div className="text-gray-600 mb-4">Loading Timer...</div>}>
                 <Timer  dealEndDate={dealEndDate.toISOString()}/>
@@ -97,7 +95,7 @@ const DestinationInfo = () => {
           <div className="md:w-1/2">
             <h2 className="md:text-3xl text-[1.6rem] font-bold text-gray-800">{title1}</h2>
             <p className="mt-4 text-gray-600 " dangerouslySetInnerHTML={{ __html: description1 }} ></p>
-            <Link to="/FlightBooking">
+            <Link to="/flight-booking">
             <button
               className="md:text-[1rem] text-[0.9rem] mt-[40px] cursor-pointer bg-gradient-to-r from-purple-600 to-blue-500 text-white text-base px-6 py-2 rounded-full hover:from-yellow-500 hover:to-orange-400 active:from-yellow-500 active:to-orange-400 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
             >Book Now
@@ -105,7 +103,8 @@ const DestinationInfo = () => {
             </Link>
           </div>
           <div className="md:w-1/2  rounded-lg group overflow-hidden">
-            <img
+            <img 
+              loading="lazy"
               src={image1}
               alt={title1}
               className=" shadow-md overflow-hidden transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
@@ -117,7 +116,7 @@ const DestinationInfo = () => {
             <h2 className="md:text-3xl text-[1.6rem] font-bold text-gray-800">{title2}</h2>
             <p className="mt-4 text-gray-600" dangerouslySetInnerHTML={{ __html: description2 }}></p>
             <div className="flex justify-end  mt-[26px]">
-              <Link to="/FlightBooking">
+              <Link to="/flight-booking">
                 <button className="md:text-[1rem] text-[0.9rem] mt-[20px] cursor-pointer bg-gradient-to-r from-purple-600 to-blue-500 text-white text-base px-6 py-2 rounded-full hover:from-yellow-500 hover:to-orange-400 active:from-yellow-500 active:to-orange-400 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105">
                   Book Now
                 </button>
@@ -126,6 +125,7 @@ const DestinationInfo = () => {
           </div>
           <div className="md:w-1/2  rounded-lg group overflow-hidden">
             <img
+              loading="lazy"
               src={image2}
               alt={title2}
               className=" shadow-md  transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
@@ -138,6 +138,7 @@ const DestinationInfo = () => {
             <div className="grid md:grid-cols-2 gap-4   ">
               <div className="group overflow-hidden rounded-lg">
                 <img
+                 loading="lazy"
                   src={iconicSights[0].image1}
                   alt={iconicSights[0].iconicSight1}
                   className="w-full h-80 object-cover   transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
@@ -145,6 +146,7 @@ const DestinationInfo = () => {
               </div>
               <div className="group overflow-hidden rounded-lg">
                 <img
+                 loading="lazy"
                   src={iconicSights[1].image2}
                   alt={iconicSights[1].iconicSight2}
                   className="w-full h-80 object-cover   transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
@@ -152,6 +154,7 @@ const DestinationInfo = () => {
               </div>
               <div className="group overflow-hidden rounded-lg">
                 <img
+                  loading="lazy"
                   src={iconicSights[2].image3}
                   alt={iconicSights[2].iconicSight3}
                   className="w-full h-80 object-cover   transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
@@ -159,6 +162,7 @@ const DestinationInfo = () => {
               </div>
               <div className="group overflow-hidden rounded-lg">
                 <img
+                  loading="lazy"
                   src={iconicSights[3].image4}
                   alt={iconicSights[3].iconicSight4}
                   className="w-full h-80 object-cover  transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
@@ -191,6 +195,7 @@ const DestinationInfo = () => {
             <div className="grid md:grid-cols-2 gap-4">
               <div className="rounded-lg group overflow-hidden">
                 <img
+                  loading="lazy"
                   src={foodItems[0].image1}
                   alt={foodItems[0].name1}
                   className="w-full h-80 object-cover  transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
@@ -205,6 +210,7 @@ const DestinationInfo = () => {
               </div>
               <div className="rounded-lg group overflow-hidden">
                 <img
+                  loading="lazy"
                   src={foodItems[2].image3}
                   alt={foodItems[2].name3}
                   className="w-full h-80 object-cover transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
@@ -212,6 +218,7 @@ const DestinationInfo = () => {
               </div>
               <div className="rounded-lg group overflow-hidden">
                 <img
+                  loading="lazy"
                   src={foodItems[3].image4}
                   alt={foodItems[3].name4}
                   className="w-full h-80 object-cover transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
