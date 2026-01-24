@@ -3,6 +3,7 @@ import {lazy, Suspense} from "react";
 import { createRoot } from "react-dom/client";
 import Body from "./components/Body";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import NotFound from "./components/NotFound";
 // import Home from "./components/home/Home";
 // import AboutUs from "./components/about_us/AboutUs";
 const AboutUs = lazy( () => import('./components/about_us/AboutUs'))
@@ -279,6 +280,11 @@ const rout = createBrowserRouter([
         </Suspense>
       ),
     },
+    // Unknown Urls
+    {
+      path: "*",
+      element: <NotFound/>
+    }
 ])
 
 
