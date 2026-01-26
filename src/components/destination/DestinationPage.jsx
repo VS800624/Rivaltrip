@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Loading from "../Loading";
 import { useDispatch, useSelector } from "react-redux";
 import { addDestination } from "../../utils/destinationSlice";
+import { BASE_URL } from "../../utils/constants";
 
 const DestinationPage = () => {
 //   const [destinations, setDestinations] = useState([]);
@@ -15,7 +16,7 @@ const DestinationPage = () => {
   const getDestination = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:3000/api/popular-destinations",
+        BASE_URL+"/popular-destinations",
       );
       console.log(res.data);
     //   setDestinations(res.data.popularCountries);
