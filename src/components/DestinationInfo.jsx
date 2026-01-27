@@ -2,17 +2,19 @@ import React, { lazy, Suspense, useEffect, useState } from "react";
 import Search from "./home/Search";
 import { Link, NavLink, useParams } from "react-router-dom";
 import  {
-  bestDealsCountries,
   bestDealsCountriesPage,
-  businessClassCountries,
   businessClassCountriesPage,
   popularCountries,
 } from "../utils/data";
 const Timer = lazy(() => import('./Timer'));
 import Call from "./Call";
+import Loading from "./Loading";
+import { useSelector } from "react-redux";
+import axios from "axios";
+import { BASE_URL } from "../utils/constants";
 
 const DestinationInfo = () => {
-  const destinations = [
+  const countries = [
     { label: 'Paris', path: '/destination-info/paris' },
     { label: 'Rome', path: '/destination-info/rome' },
     { label: 'Seoul', path: '/destination-info/seoul' },
@@ -30,39 +32,69 @@ const DestinationInfo = () => {
     { label: 'Bangkok', path: '/destination-info/bangkok' },
   ];
   
-  const { id } = useParams();
+  const { slug } = useParams();
   const [destination, setDestination] = useState(null);
 
-  useEffect(() => {
-    // console.log('ID from URL:', id); 
-    const cities = [
-      ...popularCountries,
-      ...bestDealsCountries,
-      ...businessClassCountries,
-      ...bestDealsCountriesPage,
-      ...businessClassCountriesPage,
-    ];
-    const selectedDestination = cities.find((dest) => dest.id.toLowerCase() === id.toLowerCase());
-    // console.log('Selected Destination:', selectedDestination);
-    setDestination(selectedDestination)
-  }, [id]);
+  console.log(slug)
 
+  const getDestination = async() => {
+    try{
+      const res = await axios.get(`${BASE_URL}/destination/${slug}`)
+         console.log("FULL API RESPONSE:", res);
+         console.log("RESPONSE DATA:", res.data);
+        setDestination(res.data.destination)
+    }catch(err){
+      console.error(err)
+      setDestination(null)
+    }
+  }
+
+  useEffect(() => {
+   if(slug){
+    getDestination()
+   }
+  }, [slug])
+
+  // useEffect(() => {
+  //   // console.log('ID from URL:', id); 
+  //   // const cities = [
+  //   //   ...popularCountries,
+  //   //   ...bestDealsCountriesPage,
+  //   //   ...businessClassCountriesPage,
+  //   // ];
+  //    if (!destinations.length && !bestDeals.length && !businessClass.length) {
+  //   return;
+  //    }
+  //   const cities = [
+  //     ...destinations,
+  //     ...bestDeals,
+  //     ...businessClass
+  //   ]
+  //   console.log(cities)
+  //   const selectedDestination = cities
+  // .filter(country => typeof country.slug === "string")
+  // .find(
+  //   country => country.slug?.toLowerCase() === slug?.toLowerCase()
+  // );
+  //   // console.log('Selected Destination:', selectedDestination);
+  //   setDestination(selectedDestination || null)
+  // }, [slug, destinations, bestDeals, businessClass]);
+
+  
   // Check if destination is null or has an error
-  if (!destination) return <div className="text-center mt-[120px]">Loading...</div>;
+  if (!destination) return <Loading/>
  
 
-  const {
-    city: cityName,
-    headerImg,
-    data: [
-      { title1, description1, image1 },
-      { title2, description2, image2 },
-      { iconicSights },
-      { uniqueExperiences },
-      { foodItems },
-      { travelTips },
-    ],
-  } = destination;
+ const { city: cityName, headerImg, sections } = destination;
+
+  const intro = sections.find(s => s.type === "introduction");
+  const history = sections.find(s => s.type === "history_and_culture");
+  const iconicSights = sections.find(s => s.type === "iconic_sights")?.items || [];
+  const uniqueExperiences = sections.find(s => s.type === "unique_experiences")?.items || [];
+  const foodItems = sections.find(s => s.type === "food")?.items || [];
+  const travelTips = sections.find(s => s.type === "travel_tips")?.items || [];
+
+
 
   const dealEndDate = new Date();
   dealEndDate.setDate(dealEndDate.getDate() + 3);
@@ -93,8 +125,8 @@ const DestinationInfo = () => {
         {/* Introduction Section */}
         <section className="flex flex-col md:flex-row items-center   gap-6 mb-12 mt-[10px]">
           <div className="md:w-1/2">
-            <h2 className="md:text-3xl text-[1.6rem] font-bold text-gray-800">{title1}</h2>
-            <p className="mt-4 text-gray-600 " dangerouslySetInnerHTML={{ __html: description1 }} ></p>
+            <h2 className="md:text-3xl text-[1.6rem] font-bold text-gray-800">{intro?.title}</h2>
+            <p className="mt-4 text-gray-600 " dangerouslySetInnerHTML={{ __html: intro?.description }} ></p>
             <Link to="/flight-booking">
             <button
               className="md:text-[1rem] text-[0.9rem] mt-[40px] cursor-pointer bg-gradient-to-r from-purple-600 to-blue-500 text-white text-base px-6 py-2 rounded-full hover:from-yellow-500 hover:to-orange-400 active:from-yellow-500 active:to-orange-400 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -105,16 +137,16 @@ const DestinationInfo = () => {
           <div className="md:w-1/2  rounded-lg group overflow-hidden">
             <img 
               loading="lazy"
-              src={image1}
-              alt={title1}
+              src={intro?.image}
+              alt={intro?.title}
               className=" shadow-md overflow-hidden transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
             />
           </div>
         </section>
         <section className="flex flex-col md:flex-row-reverse items-center gap-6 mb-12">
           <div className="md:w-1/2">
-            <h2 className="md:text-3xl text-[1.6rem] font-bold text-gray-800">{title2}</h2>
-            <p className="mt-4 text-gray-600" dangerouslySetInnerHTML={{ __html: description2 }}></p>
+            <h2 className="md:text-3xl text-[1.6rem] font-bold text-gray-800">{history?.title}</h2>
+            <p className="mt-4 text-gray-600" dangerouslySetInnerHTML={{ __html: history?.description }}></p>
             <div className="flex justify-end  mt-[26px]">
               <Link to="/flight-booking">
                 <button className="md:text-[1rem] text-[0.9rem] mt-[20px] cursor-pointer bg-gradient-to-r from-purple-600 to-blue-500 text-white text-base px-6 py-2 rounded-full hover:from-yellow-500 hover:to-orange-400 active:from-yellow-500 active:to-orange-400 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105">
@@ -126,8 +158,8 @@ const DestinationInfo = () => {
           <div className="md:w-1/2  rounded-lg group overflow-hidden">
             <img
               loading="lazy"
-              src={image2}
-              alt={title2}
+              src={history?.image}
+              alt={history?.title}
               className=" shadow-md  transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
             />
           </div>
@@ -135,55 +167,31 @@ const DestinationInfo = () => {
         <div className="px-6 md:px-16 rounded-xl lg:px-24 py-12 space-y-16 bg-gray-50 text-gray-800">
           <section className=" ">
             <h2 className="md:text-3xl text-[1.6rem] font-bold mb-6 text-center">📸 Iconic Sights & Landmarks</h2>
-            <div className="grid md:grid-cols-2 gap-4   ">
-              <div className="group overflow-hidden rounded-lg">
+            <div className="grid md:grid-cols-2 gap-4 ">
+              {iconicSights.map((sight,index) => {
+                 <div key={index} className="group overflow-hidden rounded-lg">
                 <img
                  loading="lazy"
-                  src={iconicSights[0].image1}
-                  alt={iconicSights[0].iconicSight1}
+                  src={sight.image}
+                  alt={sight.name}
                   className="w-full h-80 object-cover   transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
                 /> 
               </div>
-              <div className="group overflow-hidden rounded-lg">
-                <img
-                 loading="lazy"
-                  src={iconicSights[1].image2}
-                  alt={iconicSights[1].iconicSight2}
-                  className="w-full h-80 object-cover   transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
-                /> 
-              </div>
-              <div className="group overflow-hidden rounded-lg">
-                <img
-                  loading="lazy"
-                  src={iconicSights[2].image3}
-                  alt={iconicSights[2].iconicSight3}
-                  className="w-full h-80 object-cover   transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
-                /> 
-              </div>
-              <div className="group overflow-hidden rounded-lg">
-                <img
-                  loading="lazy"
-                  src={iconicSights[3].image4}
-                  alt={iconicSights[3].iconicSight4}
-                  className="w-full h-80 object-cover  transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
-                /> 
-              </div>
+              })}
             </div>
             <ul className="space-y-3 list-disc list-inside mt-[28px]">
-              <li><strong>{iconicSights[0].iconicSight1}</strong> – {iconicSights[0].description1}</li>
-              <li><strong>{iconicSights[1].iconicSight2}</strong> – {iconicSights[1].description2}</li>
-              <li><strong>{iconicSights[2].iconicSight3}</strong> – {iconicSights[2].description3}</li>
-              <li><strong>{iconicSights[3].iconicSight4}</strong> – {iconicSights[3].description4}</li>
+              {iconicSights.map((sight,index) => (
+                <li key={index}><strong>{sight.name}</strong> – {sight.description}</li>
+              ))}
             </ul>
           </section>
           {/* Unique Experiences */}
           <section>
             <h2 className="md:text-3xl text-[1.6rem] font-bold mb-6">🧭 Unique Experiences</h2>
             <ul className="space-y-3 list-disc list-inside">
-              <li dangerouslySetInnerHTML={{ __html: uniqueExperiences[0].activity1 }} ></li>
-              <li dangerouslySetInnerHTML={{ __html: uniqueExperiences[1].activity2 }} ></li>
-              <li dangerouslySetInnerHTML={{ __html: uniqueExperiences[2].activity3 }} ></li>
-              <li dangerouslySetInnerHTML={{ __html: uniqueExperiences[3].activity4 }} ></li>
+              {uniqueExperiences.map((exp,index) => (
+                <li key={index} dangerouslySetInnerHTML={{ __html: exp }} ></li>
+              ))}
             </ul>
           </section>
 
@@ -193,43 +201,21 @@ const DestinationInfo = () => {
               🍽️ Food You’ll Fall in Love With
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="rounded-lg group overflow-hidden">
+              {foodItems.map((food,index) => (
+                 <div key={index} className="rounded-lg group overflow-hidden">
                 <img
                   loading="lazy"
-                  src={foodItems[0].image1}
-                  alt={foodItems[0].name1}
+                  src={food.image}
+                  alt={food.name}
                   className="w-full h-80 object-cover  transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
                 />
               </div>
-              <div className="rounded-lg group overflow-hidden">
-                <img
-                  src={foodItems[1].image2}
-                  alt={foodItems[1].name2}
-                  className="w-full h-80 object-cover  transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
-                />
-              </div>
-              <div className="rounded-lg group overflow-hidden">
-                <img
-                  loading="lazy"
-                  src={foodItems[2].image3}
-                  alt={foodItems[2].name3}
-                  className="w-full h-80 object-cover transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
-                />
-              </div>
-              <div className="rounded-lg group overflow-hidden">
-                <img
-                  loading="lazy"
-                  src={foodItems[3].image4}
-                  alt={foodItems[3].name4}
-                  className="w-full h-80 object-cover transition-transform duration-300 ease-in-out active:scale-[1.2] md:group-hover:scale-[1.1]"
-                />
-              </div>
+              ))}
             </div>
             <ul className="space-y-3 list-disc list-inside mt-[28px]">
-              <li><strong>{foodItems[0].name1}</strong> – {foodItems[0].description}</li>
-              <li><strong>{foodItems[1].name2}</strong> – {foodItems[1].description}</li>
-              <li><strong>{foodItems[2].name3}</strong> – {foodItems[2].description}</li>
-              <li><strong>{foodItems[3].name4}</strong> – {foodItems[3].description}</li>
+              {foodItems.map((food,index) => (
+                <li key={index}><strong>{food.name}</strong> – {food.description}</li>
+              ))}
             </ul>
           </section>
 
@@ -237,13 +223,13 @@ const DestinationInfo = () => {
           <section>
             <h2 className="md:text-3xl text-[1.6rem] font-bold mb-6">🧳 Travel Tips</h2>
             <ul className="space-y-3 list-disc list-inside">
-            <li dangerouslySetInnerHTML={{ __html: travelTips[0].tip1 }} ></li>
-            <li dangerouslySetInnerHTML={{ __html: travelTips[1].tip2 }} ></li>
-            <li dangerouslySetInnerHTML={{ __html: travelTips[2].tip3 }} ></li>
-            <li dangerouslySetInnerHTML={{ __html: travelTips[3].tip4 }} ></li>
+              {travelTips.map((tip,index) => (
+                <li key={index} dangerouslySetInnerHTML={{ __html: tip }} ></li>
+              ))}
             </ul>
           </section>
         </div>
+
         <section className="py-16 px-6 bg-gradient-to-br mt-[24px] rounded-lg from-indigo-100 via-purple-100 to-pink-200">
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Title */}
@@ -253,7 +239,7 @@ const DestinationInfo = () => {
 
         {/* Grid of Buttons */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-          {destinations.map((item, index) => (
+          {countries.map((item, index) => (
            <NavLink
            key={index}
            to={item.path}

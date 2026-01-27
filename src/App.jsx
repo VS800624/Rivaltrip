@@ -287,7 +287,7 @@ const rout = createBrowserRouter([
         ),
       },
       {
-        path: "/destination-info/:id",
+        path: "/destination-info/:slug",
         element: (
           <Suspense fallback={<div>loading...</div>}>
             <DestinationInfo />

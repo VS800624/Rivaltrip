@@ -18,7 +18,7 @@ const DestinationPage = () => {
       const res = await axios.get(
         BASE_URL+"/popular-destinations",
       );
-      console.log(res.data);
+      console.log(res.data.popularCountries);
     //   setDestinations(res.data.popularCountries);
       dispatch(addDestination(res.data.popularCountries));
     } catch (err) {

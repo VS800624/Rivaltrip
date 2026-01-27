@@ -23,7 +23,7 @@ const NavBar = () => {
                     })}
                 </ul>
                  </div>
-           <span className="md:hidden pl-[14px] text-[1.6rem]" onClick={ () => setIsMobileNavBarShow(true)} >
+           <span className="lg:hidden pl-[14px] text-[1.6rem]" onClick={ () => setIsMobileNavBarShow(true)} >
            <i className="fa-solid fa-bars text-slate-800"></i>
            </span>
         <NavBarMobile isMobileNavShow = {isMobileNavShow} setIsMobileNavBarShow = {setIsMobileNavBarShow}/>
