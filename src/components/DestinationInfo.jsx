@@ -49,6 +49,8 @@ const DestinationInfo = () => {
     }
   }
 
+  console.log(destination)
+
   useEffect(() => {
    if(slug){
     getDestination()
@@ -190,7 +192,7 @@ const DestinationInfo = () => {
             <h2 className="md:text-3xl text-[1.6rem] font-bold mb-6">🧭 Unique Experiences</h2>
             <ul className="space-y-3 list-disc list-inside">
               {uniqueExperiences.map((exp,index) => (
-                <li key={index} dangerouslySetInnerHTML={{ __html: exp }} ></li>
+                <li key={index} dangerouslySetInnerHTML={{ __html: exp.name }} ></li>
               ))}
             </ul>
           </section>
@@ -224,7 +226,7 @@ const DestinationInfo = () => {
             <h2 className="md:text-3xl text-[1.6rem] font-bold mb-6">🧳 Travel Tips</h2>
             <ul className="space-y-3 list-disc list-inside">
               {travelTips.map((tip,index) => (
-                <li key={index} dangerouslySetInnerHTML={{ __html: tip }} ></li>
+                 <li key={index}><strong>{tip.name}</strong> – {tip.description}</li>
               ))}
             </ul>
           </section>
