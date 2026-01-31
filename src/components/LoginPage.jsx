@@ -4,6 +4,7 @@ import { useState } from "react";
 import { BASE_URL } from "../utils/constants";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { addUser } from "../utils/userSlice";
 
 const LoginPage = () => {
   const [firstName, setFirstName] = useState("");
@@ -13,7 +14,7 @@ const LoginPage = () => {
   const [error, setError] = useState("");
   const [isLoginForm, setIsLoginForm] = useState(true);
   const [showPassword, setShowPassword] = useState(true);
-  const dispatch = useDispatch
+  const dispatch = useDispatch()
   const navigate = useNavigate()
 
   const handleSignup = async() => {
@@ -40,14 +41,16 @@ const LoginPage = () => {
   }
 
   const handleLogin = async() => {
+    setError("")
     if ( !emailId || !password) {
     return setError("All fields are required");
     }
     try {
-      const res = axios.post(BASE_URL + "/login", {
+      const res = await axios.post(BASE_URL + "/login", {
         emailId,
         password
       }, {withCredentials: true})
+      // console.log(res)
       dispatch(addUser(res.data.user))
       navigate("/")
     }catch(err){
