@@ -2,12 +2,14 @@ import { configureStore } from "@reduxjs/toolkit";
 import destinationReducer from "./destinationSlice"
 import bestDealsReducer from "./bestDealsSlice"
 import businessClassReducer from "./businessClassSlice"
+import userReducer from "./userSlice"
 
 const appStore = configureStore({
   reducer: {
     destinations: destinationReducer,
     bestDeals: bestDealsReducer,
     businessClass: businessClassReducer,
+    user: userReducer,
   }
 })
 
