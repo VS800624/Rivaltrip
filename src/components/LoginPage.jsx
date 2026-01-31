@@ -3,6 +3,7 @@ import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import { BASE_URL } from "../utils/constants";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 const LoginPage = () => {
   const [firstName, setFirstName] = useState("");
@@ -12,7 +13,7 @@ const LoginPage = () => {
   const [error, setError] = useState("");
   const [isLoginForm, setIsLoginForm] = useState(true);
   const [showPassword, setShowPassword] = useState(true);
-
+  const dispatch = useDispatch
   const navigate = useNavigate()
 
   const handleSignup = async() => {
@@ -29,6 +30,7 @@ const LoginPage = () => {
     }, {
       withCredentials: true
     })
+    dispatch(addUser(res.data.userResponse))
     navigate("/")
     }catch(err){
       setError(err?.response?.data?.message || "Something went wrong")
@@ -46,6 +48,7 @@ const LoginPage = () => {
         emailId,
         password
       }, {withCredentials: true})
+      dispatch(addUser(res.data.user))
       navigate("/")
     }catch(err){
       setError(err?.response?.data?.message || "Something went wrong")
