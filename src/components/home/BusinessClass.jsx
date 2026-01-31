@@ -11,7 +11,7 @@ const BusinessClass = () => {
     const getBusinessClassCountries = async(limit) => {
         try{
             const res = await axios.get(`${BASE_URL}/business-class?limit=${limit}`)
-             console.log("API Response: "+ res.data.businessClassCountries)
+             console.log("API Response: ", res.data.businessClassCountries)
             setBusinessClass(res.data.businessClassCountries)
         }catch(err){
             console.error(err)

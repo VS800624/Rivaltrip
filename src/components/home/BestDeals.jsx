@@ -11,7 +11,7 @@ const BestDeals = () => {
     const getBestDealsCountries = async(limit) => {
         try{
             const res = await axios.get(`${BASE_URL}/best-deals?limit=${limit}`)
-            // console.log("API Response: "+ res.data.bestDealsCountries)
+            // console.log("API Response: ", res.data.bestDealsCountries)
              setBestDealsCountries(res.data.bestDealsCountries)
         }catch(err){
             console.error(err)
