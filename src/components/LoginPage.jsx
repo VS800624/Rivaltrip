@@ -16,6 +16,7 @@ const LoginPage = () => {
   const navigate = useNavigate()
 
   const handleSignup = async() => {
+    setError("")
      if (!firstName || !lastName || !emailId || !password) {
     return setError("All fields are required");
      }
@@ -33,11 +34,23 @@ const LoginPage = () => {
       setError(err?.response?.data?.message || "Something went wrong")
       console.log(err)
     }
-
+    
   }
 
   const handleLogin = async() => {
-
+    if ( !emailId || !password) {
+    return setError("All fields are required");
+    }
+    try {
+      const res = axios.post(BASE_URL + "/login", {
+        emailId,
+        password
+      }, {withCredentials: true})
+      navigate("/")
+    }catch(err){
+      setError(err?.response?.data?.message || "Something went wrong")
+      console.log(err)
+    }
   }
 
   return (
@@ -146,6 +159,8 @@ const LoginPage = () => {
           <div className="flex-1 h-px bg-gray-300"></div>
         </div>
 
+        {/* Error */}
+        <p className="text-red-500 my-[10px]">{error}</p>
         {/* Sign Up */}
         <p
           className="block text-center py-3 rounded-lg border border-indigo-600 text-indigo-600
