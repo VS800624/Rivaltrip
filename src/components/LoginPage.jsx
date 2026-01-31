@@ -1,5 +1,8 @@
+import axios from "axios";
+import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { BASE_URL } from "../utils/constants";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
   const [firstName, setFirstName] = useState("");
@@ -8,15 +11,49 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [isLoginForm, setIsLoginForm] = useState(true);
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState(true);
+
+  const navigate = useNavigate()
+
+  const handleSignup = async() => {
+     if (!firstName || !lastName || !emailId || !password) {
+    return setError("All fields are required");
+     }
+    try{
+      const res = await axios.post(BASE_URL + "/signup", {
+      firstName,
+      lastName,
+      emailId,
+      password
+    }, {
+      withCredentials: true
+    })
+    navigate("/")
+    }catch(err){
+      setError(err?.response?.data?.message || "Something went wrong")
+      console.log(err)
+    }
+
+  }
+
+  const handleLogin = async() => {
+
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-blue-500 to-purple-600 px-4">
-      <form className="w-full max-w-md bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl p-8">
+      <form className="w-full max-w-md bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl p-8"
+      onSubmit={(e) => {
+        e.preventDefault()
+        isLoginForm ? handleLogin(e) : handleSignup(e)
+      } }
+      >
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">
-         {isLoginForm ? "Welcome Back" : "Create an Account"}
+          {isLoginForm ? "Welcome Back" : "Create an Account"}
         </h2>
-        <p className="text-center text-gray-500 mb-6">{isLoginForm ? "Login " : "Signup"} to continue</p>
+        <p className="text-center text-gray-500 mb-6">
+          {isLoginForm ? "Login " : "Signup"} to continue
+        </p>
         {!isLoginForm && (
           <>
             {/* FirstName */}
@@ -26,6 +63,8 @@ const LoginPage = () => {
               </label>
               <input
                 type="text"
+                value={firstName}
+                 onChange={(e) => setFirstName(e.target.value)}
                 placeholder="Enter your First Name"
                 required
                 className="w-full px-4 py-3 border rounded-lg outline-none transition
@@ -39,7 +78,9 @@ const LoginPage = () => {
                 Last Name
               </label>
               <input
-                type="email"
+                type="text"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
                 placeholder="Enter your Last Name"
                 required
                 className="w-full px-4 py-3 border rounded-lg outline-none transition
@@ -54,6 +95,8 @@ const LoginPage = () => {
           <label className="block text-sm text-gray-600 mb-1">Email</label>
           <input
             type="email"
+            value={emailId}
+            onChange={(e) => setEmailId(e.target.value)}
             placeholder="Enter your email"
             required
             className="w-full px-4 py-3 border rounded-lg outline-none transition
@@ -64,13 +107,26 @@ const LoginPage = () => {
         {/* Password */}
         <div className="mb-6">
           <label className="block text-sm text-gray-600 mb-1">Password</label>
-          <input
-            type={!showPassword ? "password" : "text"}
-            placeholder="Enter your password"
-            required
-            className="w-full px-4 py-3 border rounded-lg outline-none transition
-                       focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200"
-          />
+
+          <div className="relative">
+            <input
+              type={showPassword ? "text" : "password"}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter your password"
+              required
+              className="w-full px-4 py-3 pr-12 border rounded-lg outline-none transition
+                 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200"
+            />
+
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-600"
+            >
+              {showPassword ? <EyeOff size={20}/> : <Eye size={20}/>}
+            </button>
+          </div>
         </div>
 
         {/* Login Button */}
@@ -96,7 +152,10 @@ const LoginPage = () => {
                      hover:bg-indigo-50 transition"
           onClick={() => setIsLoginForm(!isLoginForm)}
         >
-         {isLoginForm ? "Don’t have an account?" : "Already have a account? "} <span className="font-semibold">{isLoginForm ? "Sign Up" : "Login"}</span>
+          {isLoginForm ? "Don’t have an account?" : "Already have a account? "}{" "}
+          <span className="font-semibold">
+            {isLoginForm ? "Sign Up" : "Login"}
+          </span>
         </p>
       </form>
     </div>
