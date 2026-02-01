@@ -1,11 +1,31 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { navHeading } from "../../utils/data";
 import NavBarMobile from "./NavBarMobile";
 import { useState } from "react";
 import logo from "../../images/wingsurge_Final_Logo.png";
+import { useDispatch, useSelector } from "react-redux";
+import axios from "axios";
+import { BASE_URL } from "../../utils/constants";
+import { removeUser } from "../../utils/userSlice";
 
 const NavBar = () => { 
+    const user  = useSelector((store) => store.user)
     const [isMobileNavShow, setIsMobileNavBarShow] = useState(false);
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+    const handleLogout = async() => {
+        try{
+            await axios.post(BASE_URL + "/logout" , {}, 
+            {withCredentials: true}
+        )
+        dispatch(removeUser())
+        navigate("/login")
+        } catch(err){
+            console.error(err)
+        }
+    }
+    
     return <nav className=" md:fixed md:top-0  w-full z-1   text-white md:z-50 ">
             <div className="flex  items-center  bg-blue-500/90 max-w-[1450px] mx-auto justify-between md:h-[120px] h-[110px] w-full">
             <Link to="/">
@@ -21,7 +41,25 @@ const NavBar = () => {
                         <span className="absolute left-0 bottom-0 h-[2px] bg-red-600 w-0 group-hover:w-full transition-all duration-300 ease-in-out"></span>
                         </li> </NavLink> 
                     })}
+                    
+  {/* AUTH ACTION */}
+  {user ? (
+    <li
+      onClick={handleLogout}
+      className="cursor-pointer hover:text-red-600"
+    >
+      Logout
+    </li>
+  ) : (
+    <NavLink to="/login" className="relative group">
+      <li className="hover:text-red-600">
+        Login
+        <span className="absolute left-0 bottom-0 h-[2px] bg-red-600 w-0 group-hover:w-full transition-all duration-300"></span>
+      </li>
+    </NavLink>
+  )}
                 </ul>
+                
                  </div>
            <span className="lg:hidden pl-[14px] text-[1.6rem]" onClick={ () => setIsMobileNavBarShow(true)} >
            <i className="fa-solid fa-bars text-slate-800"></i>

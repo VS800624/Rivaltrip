@@ -1,4 +1,4 @@
-export const navHeading = ['Home', 'About Us', 'Services', 'Best Deals', 'Business Class', 'Destination',  'Login']
+export const navHeading = ['Home', 'About Us', 'Services', 'Best Deals', 'Business Class', 'Destination']
 
 export const quickLinks = ['Home', 'About Us', 'Services', 'Best Deals', 'Business Class', 'Destination', 'FAQS', 'Contact Us', 'Login']
 
