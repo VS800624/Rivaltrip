@@ -42,22 +42,22 @@ const NavBar = () => {
                         </li> </NavLink> 
                     })}
                     
-  {/* AUTH ACTION */}
-  {user ? (
-    <li
-      onClick={handleLogout}
-      className="cursor-pointer hover:text-red-600"
-    >
-      Logout
-    </li>
-  ) : (
-    <NavLink to="/login" className="relative group">
-      <li className="hover:text-red-600">
-        Login
-        <span className="absolute left-0 bottom-0 h-[2px] bg-red-600 w-0 group-hover:w-full transition-all duration-300"></span>
-      </li>
-    </NavLink>
-  )}
+                    {/* AUTH ACTION */}
+                    {user ? (
+                        <li
+                        onClick={handleLogout}
+                        className="cursor-pointer hover:text-red-600"
+                        >
+                        Logout
+                        </li>
+                    ) : (
+                        <NavLink to="/login" className="relative group">
+                        <li className="hover:text-red-600">
+                            Login
+                            <span className="absolute left-0 bottom-0 h-[2px] bg-red-600 w-0 group-hover:w-full transition-all duration-300"></span>
+                        </li>
+                        </NavLink>
+                    )}
                 </ul>
                 
                  </div>
