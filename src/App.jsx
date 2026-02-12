@@ -7,6 +7,7 @@ import NotFound from "./components/NotFound";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Loading from "./components/Loading";
+import AdminLayout from "./admin/AdminLayout";
 // import Home from "./components/home/Home";
 // import AboutUs from "./components/about_us/AboutUs";
 const AboutUs = lazy(() => import("./components/about_us/AboutUs"));
@@ -325,12 +326,12 @@ const rout = createBrowserRouter([
     element: <AdminLayout />,
     children: [
       {
-        path: "dashboard",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <AdminDashboard />
-          </Suspense>
-        ),
+        // path: "dashboard",
+        // element: (
+        //   <Suspense fallback={<Loading />}>
+        //     <AdminDashboard />
+        //   </Suspense>
+        // ),
       },
     ]
   }
