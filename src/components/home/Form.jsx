@@ -1,3 +1,4 @@
+import Search from "./Search";
 
 
 const Form = () => {
@@ -33,6 +34,7 @@ const Form = () => {
         <button className="h-[46px] cursor-pointer w-[310px] block mx-auto rounded-[5px] bg-[#4c64fd] text-white">Search</button>
         </form>
         <hr className="text-gray-400 mt-[30px] md:hidden " /> */}
+        <Search/>
     </section>
 }
 

@@ -1,6 +1,9 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { navHeading } from "../../utils/data";
 import { useDispatch, useSelector } from "react-redux";
+import axios from "axios";
+import { BASE_URL } from "../../utils/constants";
+import { removeUser } from "../../utils/userSlice";
 
 const NavBarMobile = ({ isMobileNavShow, setIsMobileNavBarShow }) => {
   const user = useSelector((store) => store.user);
@@ -10,7 +13,7 @@ const NavBarMobile = ({ isMobileNavShow, setIsMobileNavBarShow }) => {
   const handleLogout = async () => {
     try {
       await axios.post(BASE_URL + "/logout", {}, 
-        // { withCredentials: true }
+        { withCredentials: true }
     );
       dispatch(removeUser());
       navigate("/login");
@@ -57,7 +60,10 @@ const NavBarMobile = ({ isMobileNavShow, setIsMobileNavBarShow }) => {
           {user ? (
             <li
               onClick={handleLogout}
-              className="font-semibold ml-[20px] mr-auto active:text-red-600"
+              className="ml-5 mr-auto inline-flex items-center gap-2 cursor-pointer
+             rounded-xl bg-red-500 px-5 py-2 text-sm font-semibold text-white
+             shadow-sm transition-all duration-200
+             hover:bg-red-600 active:scale-95"
             >
               Logout
             </li>
@@ -69,7 +75,7 @@ const NavBarMobile = ({ isMobileNavShow, setIsMobileNavBarShow }) => {
             </NavLink>
           )}
         </ul>
-      </div>
+      </div> 
     </nav>
   );
 };

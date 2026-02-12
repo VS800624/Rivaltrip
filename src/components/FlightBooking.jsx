@@ -24,7 +24,7 @@ const FlightBooking = () => {
                      <h3 className="text-[1.67rem] text-gray-700 font-semibold ">Flight Booking</h3>
                 </div>
                 <Form/>
-             <div id="search-panel2"></div>;
+             <div id="search-panel2"></div>
 
 
     </section>

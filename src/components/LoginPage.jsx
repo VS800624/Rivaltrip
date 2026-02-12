@@ -49,7 +49,9 @@ const LoginPage = () => {
       const res = await axios.post(BASE_URL + "/login", {
         emailId,
         password
-      }, )
+      }, 
+      {withCredentials: true}
+    )
       // console.log(res)
       dispatch(addUser(res.data.user))
       navigate("/")

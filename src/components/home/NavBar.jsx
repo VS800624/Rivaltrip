@@ -46,7 +46,11 @@ const NavBar = () => {
                     {user ? (
                         <li
                         onClick={handleLogout}
-                        className="cursor-pointer hover:text-red-600"
+                        className="mr-auto cursor-pointer rounded-xl
+                        bg-gradient-to-r from-red-500 via-rose-500 to-pink-500 px-5 py-2 text-sm font-semibold text-white
+                        shadow-sm transition-all duration-200
+                        hover:bg-red-600 hover:shadow-md
+                        active:scale-95"
                         >
                         Logout
                         </li>

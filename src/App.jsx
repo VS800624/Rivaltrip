@@ -318,6 +318,22 @@ const rout = createBrowserRouter([
     path: "*",
     element: <NotFound />,
   },
+
+  // Admin Routes
+  {
+    path: "/admin",
+    element: <AdminLayout />,
+    children: [
+      {
+        path: "dashboard",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <AdminDashboard />
+          </Suspense>
+        ),
+      },
+    ]
+  }
 ]);
 
 const root = createRoot(document.getElementById("root"));
