@@ -65,7 +65,7 @@ const PopularDestinationIndex = () => {
 
           <Button
             size="lg"
-            onClick={() => (window.location.href = "/admin/create")}
+            onClick={() => (window.location.href = "/admin/popular-destination/create")}
           >
             + Create Destination
           </Button>

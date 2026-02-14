@@ -9,6 +9,7 @@ import appStore from "./utils/appStore";
 import Loading from "./components/Loading";
 import AdminLayout from "./admin/AdminLayout";
 import PopularDestinationIndex from "./admin/popularDestination/popularDestinationIndex";
+import CreatePopularDestination from "./admin/popularDestination/CreatePopularDestination";
 // import Home from "./components/home/Home";
 // import AboutUs from "./components/about_us/AboutUs";
 const AboutUs = lazy(() => import("./components/about_us/AboutUs"));
@@ -509,13 +510,21 @@ const rout = createBrowserRouter([
       // ),
       // },
       {
-        path: "popularDestination",
+        path: "popular-destination",
         element: (
           <Suspense fallback={<Loading />}>
             <PopularDestinationIndex />
           </Suspense>
         ),
       },
+      {
+        path: "popular-destination/create",
+        element: (
+          <Suspense fallback={<Loading/>}>
+            <CreatePopularDestination/>
+          </Suspense>
+        )
+      }
     ],
   },
 ]);
