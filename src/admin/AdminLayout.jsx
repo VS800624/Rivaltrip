@@ -1,28 +1,33 @@
+import Loading from "@/components/Loading";
+import { useAuth } from "@/hook/useAuth"
 import { Navigate, Outlet } from "react-router-dom"
 
 
 const AdminLayout = () => {
-  const {user} = useAuth()
+  const { user, loading } = useAuth();
 
-  // Not logged in
-  if(!user){
-    return <Navigate to="/login" />
+  // Wait for auth
+  if (loading) {
+    return <Loading/>
   }
 
-  // Not Admin
-  if(user.role !== "admin"){
-    return <Navigate to="/" />
+  // Not logged in
+  if (!user) {
+    return <Navigate to="/login" />;
+  }
+
+  // Not admin
+  if (user.role !== "admin") {
+    return <Navigate to="/" />;
   }
 
   return (
     <div>
       {/* Sidebar */}
-
-      {/* Main content */}
-      <Outlet/>
-
+      <Outlet />
     </div>
-  )
-}
+  );
+};
+
 
 export default AdminLayout
