@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { BASE_URL } from "@/utils/constants";
 import { Card, CardContent } from "@/components/ui/card";
+import { toast } from "sonner";
+
 
 
 const PopularDestinationIndex = () => {
@@ -27,9 +29,16 @@ const PopularDestinationIndex = () => {
   /* ---------------- Delete ---------------- */
   const handleDelete = async (id) => {
     try {
-     
+     await axios.delete(BASE_URL + "/admin/popular-destination/" + id)
+
+    // Remove the deleted item from UI
+    setDestinations(prev => prev.filter(dest => dest._id !== id))
+    
+    toast.success("Destination deleted successfully");
+
     } catch (error) {
       console.error(error);
+      toast.success("Failed to delete destination");
     }
   };
 
