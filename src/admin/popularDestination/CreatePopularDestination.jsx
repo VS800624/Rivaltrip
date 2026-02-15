@@ -5,7 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "sonner";
+import { toast, Toaster } from "sonner";
+import { BASE_URL } from "@/utils/constants";
 
 export default function CreatePopularDestination() {
   const [form, setForm] = useState({
@@ -112,10 +113,12 @@ export default function CreatePopularDestination() {
 
   const handleSubmit = async () => {
     try {
-    
+    const res = await axios.put(BASE_URL+"/admin/popular-destination", form)
+    console.log(res.data)
+    toast.success("Destination Created Successfully")
     } catch (err) {
       console.error(err);
-      toast.error("Error creating destination");
+      toast.error(err.response?.data?.message || "Something went wrong");
     }
   };
 
@@ -330,6 +333,7 @@ export default function CreatePopularDestination() {
           </CardContent>
         </Card>
       </motion.div>
+      <Toaster richColors position="top-right" />
     </div>
   );
 }
