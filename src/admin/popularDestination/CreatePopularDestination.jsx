@@ -20,45 +20,92 @@ export default function CreatePopularDestination() {
   /* ---------------- Section Logic ---------------- */
 
   const addSection = () => {
-    setForm({
-      ...form,
+    // setForm({
+    //   ...form,
+    //   sections: [
+    //     ...form.sections,
+    //     {type: "", title: "", description: "", image: "", items: []}
+    //   ]
+    // }) 
+    // better way
+    setForm(prev => ({
+      ...prev,
       sections: [
-        ...form.sections,
-        { type: "", title: "", description: "", image: "", items: [] },
-      ],
-    });
-  };
+        ...prev.sections,
+        {type: "", title: "", description: "", image: "", items: []}
+      ]
+    }))
+  }
 
   const removeSection = (index) => {
-    const updated = [...form.sections];
-    updated.splice(index, 1);
-    setForm({ ...form, sections: updated });
+    // const updated = [...form.sections];
+    // updated.splice(index,1);
+    // // In JavaScript, splice() is used to add, remove, or replace elements in an array. It changes the original array.
+    // // array.splice(startIndex, deleteCount, item1, item2, ...)
+    // setForm({ ...form, sections: updated})
+    // better way
+    setForm(prev => ({
+      ...prev,
+      sections: prev.sections.filter((_,i) => i !== index)
+    }))
   };
 
   const updateSection = (index, key, value) => {
-    const updated = [...form.sections];
-    updated[index][key] = value;
-    setForm({ ...form, sections: updated });
+    // const updated = [...form.sections];
+    // updated[index][key] = value;
+    // setForm({ ...form, sections: updated });
+    // better way
+    setForm(prev => ({
+      ...prev,
+      sections: prev.sections.map((sec,i) => (
+        i === index ? { ... sec, [key]: value} : sec
+       // We use [key]: value to set object properties dynamically using variables.
+      ))
+    }))
   };
 
   /* ---------------- Item Logic ---------------- */
 
   const addItem = (index) => {
-    const updated = [...form.sections];
-    updated[index].items.push({ name: "", description: "", image: "" });
-    setForm({ ...form, sections: updated });
+    // const updated = [...form.sections];
+    // updated[index].items.push({ name: "", description: "", image: "" });
+    // setForm({ ...form, sections: updated });
+    // better way
+    setForm(prev => ({
+      ...prev,
+      sections: prev.sections.map((sec,i) => (
+        i === index ? { ...sec, items: [...sec.items, {name: "", description: "", image: ""}]} : sec
+      ))
+    }))
   };
 
   const updateItem = (sIndex, iIndex, key, value) => {
-    const updated = [...form.sections];
-    updated[sIndex].items[iIndex][key] = value;
-    setForm({ ...form, sections: updated });
+    // const updated = [...form.sections];
+    // updated[sIndex].items[iIndex][key] = value;
+    // setForm({ ...form, sections: updated });
+    // better way
+    setForm(prev => ({
+      ...prev,
+      sections: prev.sections.map((sec,i) => (
+        i === sIndex ? { ...sec, items: sec.items.map((item,j) => (
+          j === iIndex ? { ...item, [key] : value} : item
+        ))} : sec
+      ))
+    }))
   };
 
   const removeItem = (sIndex, iIndex) => {
-    const updated = [...form.sections];
-    updated[sIndex].items.splice(iIndex, 1);
-    setForm({ ...form, sections: updated });
+    // const updated = [...form.sections];
+    // updated[sIndex].items.splice(iIndex, 1);
+    // setForm({ ...form, sections: updated });
+    setForm(prev => ({
+      ...form,
+      sections: prev.sections.map((sec, i) => (
+        i === sIndex ? {...sec, items: sec.items.filter((_, j) => (
+          j !== iIndex
+        ))} : sec 
+      ))
+    }))
   };
 
   /* ---------------- Submit ---------------- */
