@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Loading from "@/components/Loading";
+import { BASE_URL } from "@/utils/constants";
+import { toast, Toaster } from "sonner";
 
 export default function EditPopularDestination() {
   const { id } = useParams();
@@ -28,8 +30,15 @@ export default function EditPopularDestination() {
 
   const fetchDestination = async () => {
     try {
+      const res = await axios.get(
+        BASE_URL + "/admin/popular-destination/" + id,
+      );
+      console.log(res.data.popularDestination);
+      setForm(res.data.popularDestination);
+      setLoading(false);
     } catch (error) {
       console.error(error);
+      toast.error("Failed to load popular destination");
     }
   };
 
@@ -42,7 +51,7 @@ export default function EditPopularDestination() {
   const addSection = () => {
     setForm((prev) => ({
       ...prev,
-      section: [
+      sections: [
         ...prev.sections,
         { type: "", title: "", description: "", image: "", items: [] },
       ],
@@ -52,7 +61,7 @@ export default function EditPopularDestination() {
   const removeSection = (index) => {
     setForm((prev) => ({
       ...prev,
-      section: prev.sections.filter((_, i) => i !== index),
+      sections: prev.sections.filter((_, i) => i !== index),
     }));
   };
 
@@ -74,7 +83,7 @@ export default function EditPopularDestination() {
         i === index
           ? {
               ...sec,
-              items: [sec.items, { name: "", description: "", image: "" }],
+              items: [...sec.items, { name: "", description: "", image: "" }],
             }
           : sec,
       ),
@@ -111,10 +120,7 @@ export default function EditPopularDestination() {
   /* ---------------- Update ---------------- */
 
   const handleUpdate = async () => {
-    try {
-    } catch (error) {
-      console.error(error);
-    }
+    
   };
 
   if (loading) {
@@ -322,6 +328,7 @@ export default function EditPopularDestination() {
           </CardContent>
         </Card>
       </motion.div>
+      <Toaster richColors position="top-right" />
     </div>
   );
 }

@@ -511,7 +511,7 @@ const rout = createBrowserRouter([
       // ),
       // },
       {
-        path: "popular-destination",
+        path: "popular-destinations",
         element: (
           <Suspense fallback={<Loading />}>
             <PopularDestinationIndex />
