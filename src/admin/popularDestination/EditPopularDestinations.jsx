@@ -120,7 +120,20 @@ export default function EditPopularDestination() {
   /* ---------------- Update ---------------- */
 
   const handleUpdate = async () => {
-    
+    try {
+      const res = await axios.put(
+        BASE_URL + "/admin/popular-destination/" + id,
+        form,
+      );
+      console.log(res.data);
+      toast.success("Popular destination Updated Successfully");
+      setTimeout(() => {
+        navigate("/admin/popular-destinations");
+      }, 1000);
+    } catch (err) {
+      console.error(err);
+      toast.error(err.response?.data?.message || "Something went wrong");
+    }
   };
 
   if (loading) {
