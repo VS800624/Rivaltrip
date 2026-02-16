@@ -187,7 +187,8 @@ const DestinationInfo = () => {
             </div>
           </section>
           <div className="px-6 md:px-16 rounded-xl lg:px-24 py-12 space-y-16 bg-gray-50 text-gray-800">
-            <section className=" ">
+
+            {iconicSights.length !== 0 && <section className=" ">
               <h2 className="md:text-3xl text-[1.6rem] font-bold mb-6 text-center">
                 📸 Iconic Sights & Landmarks
               </h2>
@@ -218,9 +219,9 @@ const DestinationInfo = () => {
                   </div>
                 ))}
               </div>
-            </section>
+            </section>}
             {/* Unique Experiences */}
-            <section>
+            {uniqueExperiences.length !==0 &&  <section>
               <h2 className="md:text-3xl text-[1.6rem] font-bold mb-6">
                 🧭 Unique Experiences
               </h2>
@@ -232,10 +233,10 @@ const DestinationInfo = () => {
                   ></li>
                 ))}
               </ul>
-            </section>
+            </section>}
 
             {/* Food Section */}
-            <section className="">
+            {foodItems.length !==0 && <section className="">
               <h2 className="md:text-3xl text-[1.6rem] font-bold mb-6 text-center">
                 🍽️ Food You’ll Fall in Love With
               </h2>
@@ -262,10 +263,10 @@ const DestinationInfo = () => {
                   </div>
                 ))}
               </div>
-            </section>
+            </section>}
 
             {/* Travel Tips */}
-            <section>
+           {travelTips.length !==0 && <section>
               <h2 className="md:text-3xl text-[1.6rem] font-bold mb-6">
                 🧳 Travel Tips
               </h2>
@@ -276,7 +277,7 @@ const DestinationInfo = () => {
                   </li>
                 ))}
               </ul>
-            </section>
+            </section>}
           </div>
 
           <section className="py-16 px-6 bg-gradient-to-br mt-[24px] rounded-lg from-indigo-100 via-purple-100 to-pink-200">
