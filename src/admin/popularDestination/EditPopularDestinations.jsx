@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { motion } from "framer-motion";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { toast, Toaster } from "sonner";
-import { BASE_URL } from "@/utils/constants";
-import { useNavigate } from "react-router-dom";
+import Loading from "@/components/Loading";
 
-export default function CreatePopularDestination() {
-  const navigate = useNavigate()
+export default function EditPopularDestination() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+
+  const [loading, setLoading] = useState(true);
+
   const [form, setForm] = useState({
     slug: "",
     countryName: "",
@@ -20,112 +24,106 @@ export default function CreatePopularDestination() {
     sections: [],
   });
 
+  /* ---------------- Fetch Data ---------------- */
+
+  const fetchDestination = async () => {
+    try {
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchDestination();
+  }, [id]);
+
   /* ---------------- Section Logic ---------------- */
 
   const addSection = () => {
-    // setForm({
-    //   ...form,
-    //   sections: [
-    //     ...form.sections,
-    //     {type: "", title: "", description: "", image: "", items: []}
-    //   ]
-    // }) 
-    // better way
-    setForm(prev => ({
+    setForm((prev) => ({
       ...prev,
-      sections: [
+      section: [
         ...prev.sections,
-        {type: "", title: "", description: "", image: "", items: []}
-      ]
-    }))
-  }
+        { type: "", title: "", description: "", image: "", items: [] },
+      ],
+    }));
+  };
 
   const removeSection = (index) => {
-    // const updated = [...form.sections];
-    // updated.splice(index,1);
-    // // In JavaScript, splice() is used to add, remove, or replace elements in an array. It changes the original array.
-    // // array.splice(startIndex, deleteCount, item1, item2, ...)
-    // setForm({ ...form, sections: updated})
-    // better way
-    setForm(prev => ({
+    setForm((prev) => ({
       ...prev,
-      sections: prev.sections.filter((_,i) => i !== index)
-    }))
+      section: prev.sections.filter((_, i) => i !== index),
+    }));
   };
 
   const updateSection = (index, key, value) => {
-    // const updated = [...form.sections];
-    // updated[index][key] = value;
-    // setForm({ ...form, sections: updated });
-    // better way
-    setForm(prev => ({
+    setForm((prev) => ({
       ...prev,
-      sections: prev.sections.map((sec,i) => (
-        i === index ? { ... sec, [key]: value} : sec
-       // We use [key]: value to set object properties dynamically using variables.
-      ))
-    }))
+      sections: prev.sections.map((sec, i) =>
+        i === index ? { ...sec, [key]: value } : sec,
+      ),
+    }));
   };
 
   /* ---------------- Item Logic ---------------- */
 
   const addItem = (index) => {
-    // const updated = [...form.sections];
-    // updated[index].items.push({ name: "", description: "", image: "" });
-    // setForm({ ...form, sections: updated });
-    // better way
-    setForm(prev => ({
+    setForm((prev) => ({
       ...prev,
-      sections: prev.sections.map((sec,i) => (
-        i === index ? { ...sec, items: [...sec.items, {name: "", description: "", image: ""}]} : sec
-      ))
-    }))
+      sections: prev.sections.map((sec, i) =>
+        i === index
+          ? {
+              ...sec,
+              items: [sec.items, { name: "", description: "", image: "" }],
+            }
+          : sec,
+      ),
+    }));
   };
 
   const updateItem = (sIndex, iIndex, key, value) => {
-    // const updated = [...form.sections];
-    // updated[sIndex].items[iIndex][key] = value;
-    // setForm({ ...form, sections: updated });
-    // better way
-    setForm(prev => ({
+    setForm((prev) => ({
       ...prev,
-      sections: prev.sections.map((sec,i) => (
-        i === sIndex ? { ...sec, items: sec.items.map((item,j) => (
-          j === iIndex ? { ...item, [key] : value} : item
-        ))} : sec
-      ))
-    }))
+      sections: prev.sections.map((sec, i) =>
+        i === sIndex
+          ? {
+              ...sec,
+              items: sec.items.map((item, j) =>
+                j === iIndex ? { ...item, [key]: value } : item,
+              ),
+            }
+          : sec,
+      ),
+    }));
   };
 
   const removeItem = (sIndex, iIndex) => {
-    // const updated = [...form.sections];
-    // updated[sIndex].items.splice(iIndex, 1);
-    // setForm({ ...form, sections: updated });
-    setForm(prev => ({
-      ...form,
-      sections: prev.sections.map((sec, i) => (
-        i === sIndex ? {...sec, items: sec.items.filter((_, j) => (
-          j !== iIndex
-        ))} : sec 
-      ))
-    }))
+    setForm((prev) => ({
+      ...prev,
+      sections: prev.sections.map((sec, i) =>
+        i === sIndex
+          ? { ...sec, items: sec.items.filter((_, j) => j !== iIndex) }
+          : sec,
+      ),
+    }));
   };
 
-  /* ---------------- Submit ---------------- */
+  /* ---------------- Update ---------------- */
 
-  const handleSubmit = async () => {
+  const handleUpdate = async () => {
     try {
-    const res = await axios.put(BASE_URL+"/admin/popular-destination", form)
-    console.log(res.data)
-    toast.success("Destination Created Successfully")
-    setTimeout(() => {
-    navigate("/admin/popular-destinations");
-  }, 1000);
-    } catch (err) {
-      console.error(err);
-      toast.error(err.response?.data?.message || "Something went wrong");
+    } catch (error) {
+      console.error(error);
     }
   };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <Loading />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-slate-100 p-6">
@@ -135,19 +133,17 @@ export default function CreatePopularDestination() {
         transition={{ duration: 0.5 }}
         className="max-w-7xl mx-auto"
       >
+        {/* Header */}
         <div className="mb-6 text-center">
           <h1 className="text-3xl font-bold text-blue-600">
-            Create Popular Destination
+            Edit Popular Destination
           </h1>
-          <p className="text-gray-500">
-            Add destination details, sections, and items
-          </p>
+          <p className="text-gray-500">Update destination details</p>
         </div>
 
         <Card className="shadow-xl rounded-2xl">
           <CardContent className="p-6 space-y-8">
-
-            {/* Basic Info */}
+            {/* ---------------- Basic Info ---------------- */}
             <div>
               <h2 className="text-xl font-semibold mb-4">Basic Information</h2>
 
@@ -188,7 +184,7 @@ export default function CreatePopularDestination() {
               </div>
             </div>
 
-            {/* Sections */}
+            {/* ---------------- Sections ---------------- */}
             <div className="space-y-4">
               <div className="flex justify-between items-center">
                 <h2 className="text-xl font-semibold">Sections</h2>
@@ -203,9 +199,8 @@ export default function CreatePopularDestination() {
                   className="border rounded-xl p-4 bg-slate-50 space-y-3"
                 >
                   <div className="flex justify-between items-center">
-                    <h3 className="font-semibold">
-                      Section {sIndex + 1}
-                    </h3>
+                    <h3 className="font-semibold">Section {sIndex + 1}</h3>
+
                     <Button
                       variant="destructive"
                       size="sm"
@@ -235,11 +230,7 @@ export default function CreatePopularDestination() {
                     placeholder="Description"
                     value={section.description}
                     onChange={(e) =>
-                      updateSection(
-                        sIndex,
-                        "description",
-                        e.target.value
-                      )
+                      updateSection(sIndex, "description", e.target.value)
                     }
                   />
 
@@ -251,7 +242,7 @@ export default function CreatePopularDestination() {
                     }
                   />
 
-                  {/* Items */}
+                  {/* ---------------- Items ---------------- */}
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
                       <h4 className="font-medium">Items</h4>
@@ -275,12 +266,7 @@ export default function CreatePopularDestination() {
                           placeholder="Name"
                           value={item.name}
                           onChange={(e) =>
-                            updateItem(
-                              sIndex,
-                              iIndex,
-                              "name",
-                              e.target.value
-                            )
+                            updateItem(sIndex, iIndex, "name", e.target.value)
                           }
                         />
 
@@ -288,12 +274,7 @@ export default function CreatePopularDestination() {
                           placeholder="Image URL"
                           value={item.image}
                           onChange={(e) =>
-                            updateItem(
-                              sIndex,
-                              iIndex,
-                              "image",
-                              e.target.value
-                            )
+                            updateItem(sIndex, iIndex, "image", e.target.value)
                           }
                         />
 
@@ -305,7 +286,7 @@ export default function CreatePopularDestination() {
                               sIndex,
                               iIndex,
                               "description",
-                              e.target.value
+                              e.target.value,
                             )
                           }
                         />
@@ -313,7 +294,6 @@ export default function CreatePopularDestination() {
                         <Button
                           variant="destructive"
                           size="sm"
-                          className="my-auto"
                           onClick={() => removeItem(sIndex, iIndex)}
                         >
                           Remove
@@ -325,20 +305,23 @@ export default function CreatePopularDestination() {
               ))}
             </div>
 
-            {/* Submit */}
-            <div className="text-center pt-4">
+            {/* ---------------- Actions ---------------- */}
+            <div className="flex justify-center gap-4 pt-4">
+              <Button variant="outline" onClick={() => navigate("/admin")}>
+                Cancel
+              </Button>
+
               <Button
                 size="lg"
                 className="px-10 text-lg"
-                onClick={handleSubmit}
+                onClick={handleUpdate}
               >
-                Save Destination
+                Update Destination
               </Button>
             </div>
           </CardContent>
         </Card>
       </motion.div>
-      <Toaster richColors position="top-right" />
     </div>
   );
 }

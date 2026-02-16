@@ -102,7 +102,7 @@ const PopularDestinationIndex = () => {
                       variant="outline"
                       size="sm"
                       onClick={() =>
-                        (window.location.href = `/admin/edit/${dest._id}`)
+                        (window.location.href = `/admin/popular-destination/edit/${dest._id}`)
                       }
                     >
                       Update

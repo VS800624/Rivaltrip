@@ -10,6 +10,7 @@ import Loading from "./components/Loading";
 import AdminLayout from "./admin/AdminLayout";
 import PopularDestinationIndex from "./admin/popularDestination/popularDestinationIndex";
 import CreatePopularDestination from "./admin/popularDestination/CreatePopularDestination";
+import EditPopularDestination from "./admin/popularDestination/EditPopularDestinations";
 // import Home from "./components/home/Home";
 // import AboutUs from "./components/about_us/AboutUs";
 const AboutUs = lazy(() => import("./components/about_us/AboutUs"));
@@ -522,6 +523,14 @@ const rout = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading/>}>
             <CreatePopularDestination/>
+          </Suspense>
+        )
+      },
+      {
+        path: "popular-destination/edit/:id",
+        element: (
+          <Suspense fallback={<Loading/>}>
+            <EditPopularDestination/>
           </Suspense>
         )
       }
