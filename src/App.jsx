@@ -11,6 +11,7 @@ import AdminLayout from "./admin/AdminLayout";
 import PopularDestinationIndex from "./admin/popularDestination/popularDestinationIndex";
 import CreatePopularDestination from "./admin/popularDestination/CreatePopularDestination";
 import EditPopularDestination from "./admin/popularDestination/EditPopularDestinations";
+import AdminDashboard from "./admin/AdminDashboard";
 // import Home from "./components/home/Home";
 // import AboutUs from "./components/about_us/AboutUs";
 const AboutUs = lazy(() => import("./components/about_us/AboutUs"));
@@ -502,14 +503,14 @@ const rout = createBrowserRouter([
     path: "/admin",
     element: <AdminLayout />,
     children: [
-      // {
-      // path: "dashboard",
-      // element: (
-      //   <Suspense fallback={<Loading />}>
-      //     <AdminDashboard />
-      //   </Suspense>
-      // ),
-      // },
+      {
+      path: "dashboard",
+      element: (
+        <Suspense fallback={<Loading />}>
+          <AdminDashboard />
+        </Suspense>
+      ),
+      },
       {
         path: "popular-destinations",
         element: (
