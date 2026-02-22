@@ -29,7 +29,21 @@ const BestDealsCountriesIndex = () => {
   console.log(destinations)
 
   /* ---------------- Delete ---------------- */
-  
+  const handleDelete = async (id) => {
+    try {
+     await axios.delete(BASE_URL+"/admin/best-deals/"+id)
+    
+    // Remove the deleted item from UI
+    setDestinations(prev => prev.filter(dest => dest._id !== id))
+     
+    toast.success("Destination deleted successfully");
+
+    } catch (error) {
+      console.error(error);
+      toast.success("Failed to delete destination");
+    }
+  };
+
   /* ---------------- UI ---------------- */
 
   return (
