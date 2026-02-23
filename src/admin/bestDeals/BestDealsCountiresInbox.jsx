@@ -15,7 +15,7 @@ const BestDealsCountriesIndex = () => {
   const fetchDestinations = async () => {
     try {
      const  res = await axios.get(BASE_URL + "/admin/best-deals")
-     console.log(res.data.bestDealsCountries)
+    //  console.log(res.data.bestDealsCountries)
      setDestinations(res.data.bestDealsCountries)
     } catch (error) {
       console.error(error);

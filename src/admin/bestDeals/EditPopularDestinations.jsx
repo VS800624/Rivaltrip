@@ -1,105 +1,121 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { motion } from "framer-motion";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { toast, Toaster } from "sonner";
+import Loading from "@/components/Loading";
 import { BASE_URL } from "@/utils/constants";
-import { useNavigate } from "react-router-dom";
+import { toast, Toaster } from "sonner";
 
-const CreateBestDealsCountries = () => {
+export default function EditBestDealsCountries() {
+  const { id } = useParams();
+  const navigate = useNavigate();
 
-  const navigate = useNavigate()
-    const [form, setForm] = useState({
-      slug: "",
-      countryName: "",
-      city: "",
-      img: "",
-      headerImg: "",
-      sections: [],
-    });
+  const [loading, setLoading] = useState(true);
+
+  const [form, setForm] = useState({
+    slug: "",
+    countryName: "",
+    city: "",
+    img: "",
+    headerImg: "",
+    sections: [],
+  });
+
+  /* ---------------- Fetch Data ---------------- */
+
   
-    /* ---------------- Section Logic ---------------- */
-  // Give me the previous value of form, and I will return a new updated value.
-// Takes the old form → keeps everything → adds one new empty section → updates the state.
-    const addSection = () => {
-      setForm(prev => ({
-        ...prev,
-        sections: [
-          ...prev.sections,
-          {type: "", title: "", description: "", image: "", items: []}
-        ]
-      }))
-    }
 
-    // Go through every section, and keep only those whose index is NOT equal to the given index
-    // Takes old form → removes the section at given index → saves new form
-    const removeSection = (index) => {
-      setForm(prev => ({
-        ...prev,
-        sections: prev.sections.filter((_,i) =>  i!== index)
-      }))
-    }
+  
 
-    const updateSection = (index,key,value) => {
-      setForm(prev => ({
-        ...prev,
-        sections: prev.sections.map((sec,i) => (
-          i === index ? {...sec, [key]: value} : sec
-          // We use [key]: value to set object properties dynamically using variables.
-        ))
-      }))
-    }
-    
-    /* ---------------- Item Logic ---------------- */
-    const addItem = (index) => {
-      setForm(prev => ({
-        ...prev,
-        sections: prev.sections.map((sec,i) => (
-          i === index ? {...sec, items: [...sec.items,  {name: "", description: "", image: ""}]} : sec
-        ))
-      }))
-    }
+  /* ---------------- Section Logic ---------------- */
 
+  const addSection = () => {
+    setForm((prev) => ({
+      ...prev,
+      sections: [
+        ...prev.sections,
+        { type: "", title: "", description: "", image: "", items: [] },
+      ],
+    }));
+  };
 
-    const updateItem = (sIndex, iIndex, key, value) => {
-      setForm(prev => ({
-        ...prev,
-        sections: prev.sections.map((sec,i) => (
-          i === sIndex ? {...sec, items: sec.items.map((item,j) => (
-            j === iIndex ? {...item,[key]: value} : item 
-          ))} : sec
-        ))
-      }))
-    }
+  const removeSection = (index) => {
+    setForm((prev) => ({
+      ...prev,
+      sections: prev.sections.filter((_, i) => i !== index),
+    }));
+  };
 
-    const removeItem = (sIndex, iIndex, key, value) => {
-      setForm(prev => ({
-        ...prev,
-        sections: prev.sections.map((sec,i) => (
-          i === sIndex ? {...sec, items: sec.items.filter((_,j) => j !== iIndex )} : sec
-        ))
-      }))
-    }
+  const updateSection = (index, key, value) => {
+    setForm((prev) => ({
+      ...prev,
+      sections: prev.sections.map((sec, i) =>
+        i === index ? { ...sec, [key]: value } : sec,
+      ),
+    }));
+  };
 
-    /* ---------------- Submit ---------------- */
-    const handleSubmit = async() => {
-      try{
-        const res = await axios.put(BASE_URL + "/admin/best-deals", form)
-        // console.log(res.data)
-        toast.success("Best deals country created successfully")
-        setTimeout(() => {
-          navigate("/admin/best-deals")
-        }, 1000);
-      }catch(err){
-        console.error(err)
-        toast.error(err.response?.data?.message || "Something went wrong");
-      }
-    } 
-    
+  /* ---------------- Item Logic ---------------- */
+
+  const addItem = (index) => {
+    setForm((prev) => ({
+      ...prev,
+      sections: prev.sections.map((sec, i) =>
+        i === index
+          ? {
+              ...sec,
+              items: [...sec.items, { name: "", description: "", image: "" }],
+            }
+          : sec,
+      ),
+    }));
+  };
+
+  const updateItem = (sIndex, iIndex, key, value) => {
+    setForm((prev) => ({
+      ...prev,
+      sections: prev.sections.map((sec, i) =>
+        i === sIndex
+          ? {
+              ...sec,
+              items: sec.items.map((item, j) =>
+                j === iIndex ? { ...item, [key]: value } : item,
+              ),
+            }
+          : sec,
+      ),
+    }));
+  };
+
+  const removeItem = (sIndex, iIndex) => {
+    setForm((prev) => ({
+      ...prev,
+      sections: prev.sections.map((sec, i) =>
+        i === sIndex
+          ? { ...sec, items: sec.items.filter((_, j) => j !== iIndex) }
+          : sec,
+      ),
+    }));
+  };
+
+  /* ---------------- Update ---------------- */
+
+  
+
+  if (loading) {
     return (
+      <div className="min-h-screen flex items-center justify-center">
+        <Loading />
+      </div>
+    );
+  }
+
+  return (
     <div className="min-h-screen bg-slate-100 p-6">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -107,19 +123,17 @@ const CreateBestDealsCountries = () => {
         transition={{ duration: 0.5 }}
         className="max-w-7xl mx-auto"
       >
+        {/* Header */}
         <div className="mb-6 text-center">
           <h1 className="text-3xl font-bold text-blue-600">
-            Create Best Deals Countries
+            Edit Best Deals Countries
           </h1>
-          <p className="text-gray-500">
-            Add destination details, sections, and items
-          </p>
+          <p className="text-gray-500">Update destination details</p>
         </div>
 
         <Card className="shadow-xl rounded-2xl">
           <CardContent className="p-6 space-y-8">
-
-            {/* Basic Info */}
+            {/* ---------------- Basic Info ---------------- */}
             <div>
               <h2 className="text-xl font-semibold mb-4">Basic Information</h2>
 
@@ -160,7 +174,7 @@ const CreateBestDealsCountries = () => {
               </div>
             </div>
 
-            {/* Sections */}
+            {/* ---------------- Sections ---------------- */}
             <div className="space-y-4">
               <div className="flex justify-between items-center">
                 <h2 className="text-xl font-semibold">Sections</h2>
@@ -175,9 +189,8 @@ const CreateBestDealsCountries = () => {
                   className="border rounded-xl p-4 bg-slate-50 space-y-3"
                 >
                   <div className="flex justify-between items-center">
-                    <h3 className="font-semibold">
-                      Section {sIndex + 1}
-                    </h3>
+                    <h3 className="font-semibold">Section {sIndex + 1}</h3>
+
                     <Button
                       variant="destructive"
                       size="sm"
@@ -207,11 +220,7 @@ const CreateBestDealsCountries = () => {
                     placeholder="Description"
                     value={section.description}
                     onChange={(e) =>
-                      updateSection(
-                        sIndex,
-                        "description",
-                        e.target.value
-                      )
+                      updateSection(sIndex, "description", e.target.value)
                     }
                   />
 
@@ -223,7 +232,7 @@ const CreateBestDealsCountries = () => {
                     }
                   />
 
-                  {/* Items */}
+                  {/* ---------------- Items ---------------- */}
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
                       <h4 className="font-medium">Items</h4>
@@ -247,12 +256,7 @@ const CreateBestDealsCountries = () => {
                           placeholder="Name"
                           value={item.name}
                           onChange={(e) =>
-                            updateItem(
-                              sIndex,
-                              iIndex,
-                              "name",
-                              e.target.value
-                            )
+                            updateItem(sIndex, iIndex, "name", e.target.value)
                           }
                         />
 
@@ -260,12 +264,7 @@ const CreateBestDealsCountries = () => {
                           placeholder="Image URL"
                           value={item.image}
                           onChange={(e) =>
-                            updateItem(
-                              sIndex,
-                              iIndex,
-                              "image",
-                              e.target.value
-                            )
+                            updateItem(sIndex, iIndex, "image", e.target.value)
                           }
                         />
 
@@ -277,7 +276,7 @@ const CreateBestDealsCountries = () => {
                               sIndex,
                               iIndex,
                               "description",
-                              e.target.value
+                              e.target.value,
                             )
                           }
                         />
@@ -285,7 +284,6 @@ const CreateBestDealsCountries = () => {
                         <Button
                           variant="destructive"
                           size="sm"
-                          className="my-auto"
                           onClick={() => removeItem(sIndex, iIndex)}
                         >
                           Remove
@@ -297,14 +295,18 @@ const CreateBestDealsCountries = () => {
               ))}
             </div>
 
-            {/* Submit */}
-            <div className="text-center pt-4">
+            {/* ---------------- Actions ---------------- */}
+            <div className="flex justify-center gap-4 pt-4">
+              <Button variant="outline" onClick={() => navigate("/admin")}>
+                Cancel
+              </Button>
+
               <Button
                 size="lg"
                 className="px-10 text-lg"
-                onClick={handleSubmit}
+                onClick={handleUpdate}
               >
-                Save Destination
+                Update Destination
               </Button>
             </div>
           </CardContent>
@@ -314,13 +316,3 @@ const CreateBestDealsCountries = () => {
     </div>
   );
 }
-
-export default CreateBestDealsCountries
-
-
-// Note :
-// We need index in addItem because:
-// We must know which section should get the new item.
-// But in addSection:
-// We are adding a section at the end, not inside any existing section.
-// So no index is needed.
