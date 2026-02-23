@@ -53,7 +53,7 @@ export default function CreatePopularDestination() {
     }))
   };
 
-  
+
 
   const updateSection = (index, key, value) => {
     // const updated = [...form.sections];
@@ -118,7 +118,7 @@ export default function CreatePopularDestination() {
   const handleSubmit = async () => {
     try {
     const res = await axios.put(BASE_URL+"/admin/popular-destination", form)
-    console.log(res.data)
+    // console.log(res.data)
     toast.success("Destination Created Successfully")
     setTimeout(() => {
     navigate("/admin/popular-destinations");

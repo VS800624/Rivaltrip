@@ -83,6 +83,21 @@ const CreateBestDealsCountries = () => {
         ))
       }))
     }
+
+    /* ---------------- Submit ---------------- */
+    const handleSubmit = async() => {
+      try{
+        const res = await axios.put(BASE_URL + "/admin/best-deals", form)
+        console.log(res.data)
+        toast.success("Best deals country created successfully")
+        setTimeout(() => {
+          navigate("/admin/best-deals")
+        }, 1000);
+      }catch(err){
+        console.error(err)
+        toast.error(err.response?.data?.message || "Something went wrong");
+      }
+    } 
     
     return (
     <div className="min-h-screen bg-slate-100 p-6">
