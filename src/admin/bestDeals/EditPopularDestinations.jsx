@@ -28,9 +28,23 @@ export default function EditBestDealsCountries() {
 
   /* ---------------- Fetch Data ---------------- */
 
-  
+  const fetchDestination = async () => {
+    try {
+      const res = await axios.get(
+        BASE_URL + "/admin/best-deals/" + id,
+      );
+      console.log(res.data.bestDeals);
+      setForm(res.data.bestDeals);
+      setLoading(false);
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to load popular destination");
+    }
+  };
 
-  
+  useEffect(() => {
+    fetchDestination();
+  }, [id]);
 
   /* ---------------- Section Logic ---------------- */
 
@@ -105,7 +119,22 @@ export default function EditBestDealsCountries() {
 
   /* ---------------- Update ---------------- */
 
-  
+  const handleUpdate = async () => {
+    try {
+      const res = await axios.put(
+        BASE_URL + "/admin/best-deals/" + id,
+        form,
+      );
+      console.log(res.data);
+      toast.success("Popular destination Updated Successfully");
+      setTimeout(() => {
+        navigate("/admin/best-deals");
+      }, 1000);
+    } catch (err) {
+      console.error(err);
+      toast.error(err.response?.data?.message || "Something went wrong");
+    }
+  };
 
   if (loading) {
     return (
