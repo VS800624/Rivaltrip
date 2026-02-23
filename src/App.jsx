@@ -13,6 +13,7 @@ import CreatePopularDestination from "./admin/popularDestination/CreatePopularDe
 import EditPopularDestination from "./admin/popularDestination/EditPopularDestinations";
 import AdminDashboard from "./admin/AdminDashboard";
 import BestDealsCountriesIndex from "./admin/bestDeals/BestDealsCountiresInbox";
+import CreateBestDealsCountries from "./admin/bestDeals/CreateBestDealsCountries";
 // import Home from "./components/home/Home";
 // import AboutUs from "./components/about_us/AboutUs";
 const AboutUs = lazy(() => import("./components/about_us/AboutUs"));
@@ -541,6 +542,14 @@ const rout = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading/>}>
             <BestDealsCountriesIndex/>
+          </Suspense>
+        )
+      },
+      {
+        path: "best-deals/create",
+        element: (
+          <Suspense fallback={<Loading/>}>
+            <CreateBestDealsCountries/>
           </Suspense>
         )
       }

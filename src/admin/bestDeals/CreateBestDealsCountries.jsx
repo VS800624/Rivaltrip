@@ -9,127 +9,82 @@ import { toast, Toaster } from "sonner";
 import { BASE_URL } from "@/utils/constants";
 import { useNavigate } from "react-router-dom";
 
-export default function CreatePopularDestination() {
+const CreateBestDealsCountries = () => {
+
   const navigate = useNavigate()
-  const [form, setForm] = useState({
-    slug: "",
-    countryName: "",
-    city: "",
-    img: "",
-    headerImg: "",
-    sections: [],
-  });
-
-  /* ---------------- Section Logic ---------------- */
-
-  const addSection = () => {
-    // setForm({
-    //   ...form,
-    //   sections: [
-    //     ...form.sections,
-    //     {type: "", title: "", description: "", image: "", items: []}
-    //   ]
-    // }) 
-    // better way
-    setForm(prev => ({
-      ...prev,
-      sections: [
-        ...prev.sections,
-        {type: "", title: "", description: "", image: "", items: []}
-      ]
-    }))
-  }
-
-  const removeSection = (index) => {
-    // const updated = [...form.sections];
-    // updated.splice(index,1);
-    // // In JavaScript, splice() is used to add, remove, or replace elements in an array. It changes the original array.
-    // // array.splice(startIndex, deleteCount, item1, item2, ...)
-    // setForm({ ...form, sections: updated})
-    // better way
-    setForm(prev => ({
-      ...prev,
-      sections: prev.sections.filter((_,i) => i !== index)
-    }))
-  };
-
+    const [form, setForm] = useState({
+      slug: "",
+      countryName: "",
+      city: "",
+      img: "",
+      headerImg: "",
+      sections: [],
+    });
   
-
-  const updateSection = (index, key, value) => {
-    // const updated = [...form.sections];
-    // updated[index][key] = value;
-    // setForm({ ...form, sections: updated });
-    // better way
-    setForm(prev => ({
-      ...prev,
-      sections: prev.sections.map((sec,i) => (
-        i === index ? { ... sec, [key]: value} : sec
-       // We use [key]: value to set object properties dynamically using variables.
-      ))
-    }))
-  };
-
-  /* ---------------- Item Logic ---------------- */
-
-  const addItem = (index) => {
-    // const updated = [...form.sections];
-    // updated[index].items.push({ name: "", description: "", image: "" });
-    // setForm({ ...form, sections: updated });
-    // better way
-    setForm(prev => ({
-      ...prev,
-      sections: prev.sections.map((sec,i) => (
-        i === index ? { ...sec, items: [...sec.items, {name: "", description: "", image: ""}]} : sec
-      ))
-    }))
-  };
-
-  const updateItem = (sIndex, iIndex, key, value) => {
-    // const updated = [...form.sections];
-    // updated[sIndex].items[iIndex][key] = value;
-    // setForm({ ...form, sections: updated });
-    // better way
-    setForm(prev => ({
-      ...prev,
-      sections: prev.sections.map((sec,i) => (
-        i === sIndex ? { ...sec, items: sec.items.map((item,j) => (
-          j === iIndex ? { ...item, [key] : value} : item
-        ))} : sec
-      ))
-    }))
-  };
-
-  const removeItem = (sIndex, iIndex) => {
-    // const updated = [...form.sections];
-    // updated[sIndex].items.splice(iIndex, 1);
-    // setForm({ ...form, sections: updated });
-    setForm(prev => ({
-      ...form,
-      sections: prev.sections.map((sec, i) => (
-        i === sIndex ? {...sec, items: sec.items.filter((_, j) => (
-          j !== iIndex
-        ))} : sec 
-      ))
-    }))
-  };
-
-  /* ---------------- Submit ---------------- */
-
-  const handleSubmit = async () => {
-    try {
-    const res = await axios.put(BASE_URL+"/admin/popular-destination", form)
-    console.log(res.data)
-    toast.success("Destination Created Successfully")
-    setTimeout(() => {
-    navigate("/admin/popular-destinations");
-  }, 1000);
-    } catch (err) {
-      console.error(err);
-      toast.error(err.response?.data?.message || "Something went wrong");
+    /* ---------------- Section Logic ---------------- */
+  // Give me the previous value of form, and I will return a new updated value.
+// Takes the old form → keeps everything → adds one new empty section → updates the state.
+    const addSection = () => {
+      setForm(prev => ({
+        ...prev,
+        sections: [
+          ...prev.sections,
+          {type: "", title: "", description: "", image: "", items: []}
+        ]
+      }))
     }
-  };
 
-  return (
+    // Go through every section, and keep only those whose index is NOT equal to the given index
+    // Takes old form → removes the section at given index → saves new form
+    const removeSection = (index) => {
+      setForm(prev => ({
+        ...prev,
+        sections: prev.sections.filter((_,i) =>  i!== index)
+      }))
+    }
+
+    const updateSection = (index,key,value) => {
+      setForm(prev => ({
+        ...prev,
+        sections: prev.sections.map((sec,i) => (
+          i === index ? {...sec, [key]: value} : sec
+          // We use [key]: value to set object properties dynamically using variables.
+        ))
+      }))
+    }
+    
+    /* ---------------- Item Logic ---------------- */
+    const addItem = (index) => {
+      setForm(prev => ({
+        ...prev,
+        sections: prev.sections.map((sec,i) => (
+          i === index ? {...sec, items: [...sec.items,  {name: "", description: "", image: ""}]} : sec
+        ))
+      }))
+    }
+
+
+    const updateItem = (sIndex, iIndex, key, value) => {
+      setForm(prev => ({
+        ...prev,
+        sections: prev.sections.map((sec,i) => (
+          i === sIndex ? {...sec, items: sec.items.map((item,j) => (
+            j === iIndex ? {...item,[key]: value} : item 
+          ))} : sec
+        ))
+      }))
+    }
+
+    const removeItem = (sIndex, iIndex, key, value) => {
+      setForm(prev => ({
+        ...prev,
+        sections: prev.sections.map((sec,i) => (
+          i === sIndex ? {...sec, items: sec.items.filter((_,j) => j !== iIndex )} : sec
+        ))
+      }))
+    }
+    
+    return (
     <div className="min-h-screen bg-slate-100 p-6">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -344,3 +299,13 @@ export default function CreatePopularDestination() {
     </div>
   );
 }
+
+export default CreateBestDealsCountries
+
+
+// Note :
+// We need index in addItem because:
+// We must know which section should get the new item.
+// But in addSection:
+// We are adding a section at the end, not inside any existing section.
+// So no index is needed.
