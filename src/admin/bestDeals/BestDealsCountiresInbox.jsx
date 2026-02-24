@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { BASE_URL } from "@/utils/constants";
 import { Card, CardContent } from "@/components/ui/card";
-import { toast } from "sonner";
+import { toast, Toaster } from "sonner";
 
 
 
@@ -124,6 +124,7 @@ const BestDealsCountriesIndex = () => {
           ))}
         </div>
       </motion.div>
+      <Toaster richColors position="top-right" />
     </div>
   );
 }
