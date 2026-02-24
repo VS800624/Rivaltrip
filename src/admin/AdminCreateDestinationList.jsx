@@ -348,3 +348,10 @@ export default function AdminCreateDestinationList({
     </div>
   );
 }
+
+// Note :
+// We need index in addItem because:
+// We must know which section should get the new item.
+// But in addSection:
+// We are adding a section at the end, not inside any existing section.
+// So no index is needed.

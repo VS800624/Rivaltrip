@@ -1,12 +1,13 @@
+import AdminCreateDestinationList from "../AdminCreateDestinationList";
 
+const CreateBusinessClassCountries = () => {
+  return (
+    <AdminCreateDestinationList
+      title="Create Business Class Countries"
+      submitEndpoint="/admin/business-class"
+      redirectPath="/admin/business-class"
+    />
+  );
+};
 
-// const BusinessClassCountries = () => {
-
-
-  
-//   return (
-   
-//   )
-// }
-
-// export default BusinessClassCountries
+export default CreateBusinessClassCountries;
