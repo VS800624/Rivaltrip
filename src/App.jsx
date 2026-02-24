@@ -14,9 +14,10 @@ import EditPopularDestination from "./admin/popularDestination/EditPopularDestin
 import AdminDashboard from "./admin/AdminDashboard";
 import BestDealsCountriesIndex from "./admin/bestDeals/BestDealsCountiresInbox";
 import CreateBestDealsCountries from "./admin/bestDeals/CreateBestDealsCountries";
-import EditBestDealsCountries from "./admin/bestDeals/editPopularDestinations";
-import BusinessClassCountriesIndex from "./admin/businessClass/businessClassCountriesIndex";
+import EditBestDealsCountries from "./admin/bestDeals/EditBestDealsCountries";
+import BusinessClassCountriesIndex from "./admin/businessClass/BusinessClassCountriesIndex";
 import CreateBusinessClassCountries from "./admin/businessClass/CreateBusinessClassCountries";
+import EditBusinessClassCountries from "./admin/businessClass/EditBusinessClassCountries";
 // import Home from "./components/home/Home";
 // import AboutUs from "./components/about_us/AboutUs";
 const AboutUs = lazy(() => import("./components/about_us/AboutUs"));
@@ -577,6 +578,14 @@ const rout = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading/>}>
             <CreateBusinessClassCountries/>
+          </Suspense>
+        )
+      },
+      {
+        path: "business-class/edit/:id",
+        element: (
+          <Suspense fallback={<Loading/>}>
+            <EditBusinessClassCountries/>
           </Suspense>
         )
       }

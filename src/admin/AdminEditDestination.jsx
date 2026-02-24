@@ -11,7 +11,15 @@ import Loading from "@/components/Loading";
 import { BASE_URL } from "@/utils/constants";
 import { toast, Toaster } from "sonner";
 
-export default function EditBestDealsCountries() {
+export default function AdminEditDestination({
+  title,
+  fetchEndPoint,
+  updateEndPoint, 
+  redirectEndPoint,
+  dataKey,
+  // toastSuccessMessage,
+  // toastErrorMessage
+}) {
   const { id } = useParams();
   const navigate = useNavigate();
 
@@ -31,20 +39,21 @@ export default function EditBestDealsCountries() {
   const fetchDestination = async () => {
     try {
       const res = await axios.get(
-        BASE_URL + "/admin/best-deals/" + id,
+        BASE_URL + fetchEndPoint + id,
       );
-      console.log(res.data.bestDealsCountry);
-      setForm(res.data.bestDealsCountry);
+      // console.log(res.data[dataKey]);
+      setForm(res.data[dataKey]);
       setLoading(false);
     } catch (error) {
       console.error(error);
-      toast.error("Failed to load popular destination");
+      toast.error(err.response?.data?.message || "Something went wrong");
+      setLoading(false);
     }
   };
 
   useEffect(() => {
     fetchDestination();
-  }, [id]);
+  }, [id, fetchEndPoint]);
 
   /* ---------------- Section Logic ---------------- */
 
@@ -122,13 +131,13 @@ export default function EditBestDealsCountries() {
   const handleUpdate = async () => {
     try {
       const res = await axios.put(
-        BASE_URL + "/admin/best-deals/" + id,
+        BASE_URL + updateEndPoint + id,
         form,
       );
       console.log(res.data);
-      toast.success("Popular destination Updated Successfully");
+      toast.success("Destination Updated Successfully");
       setTimeout(() => {
-        navigate("/admin/best-deals");
+        navigate(redirectEndPoint);
       }, 1000);
     } catch (err) {
       console.error(err);
@@ -155,7 +164,7 @@ export default function EditBestDealsCountries() {
         {/* Header */}
         <div className="mb-6 text-center">
           <h1 className="text-3xl font-bold text-blue-600">
-            Edit Best Deals Countries
+            {title}
           </h1>
           <p className="text-gray-500">Update destination details</p>
         </div>
@@ -171,6 +180,7 @@ export default function EditBestDealsCountries() {
                   placeholder="Slug"
                   value={form.slug}
                   onChange={(e) => setForm({ ...form, slug: e.target.value })}
+                  //or better setForm(prev => ({ ...prev, slug: e.target.value }))
                 />
 
                 <Input
