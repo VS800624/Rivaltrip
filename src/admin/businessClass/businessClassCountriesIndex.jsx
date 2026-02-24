@@ -10,6 +10,21 @@ const BusinessClassCountriesIndex = () => {
 
   const [destinations, setDestinations] = useState([])
 
+    /* ---------------- Fetch Destinations ---------------- */
+    const fetchDestinations = async() => {
+      try{
+        const res = await axios.get(BASE_URL+"/admin/business-class")
+        // console.log(res.data.businessClassCountries)
+        setDestinations(res.data.businessClassCountries)
+      }catch(err){
+        console.error(err)
+      }
+    }
+
+    useEffect(() => {
+      fetchDestinations()
+    }, [])
+
     /* ---------------- UI ---------------- */
   
   return (
