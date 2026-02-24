@@ -33,8 +33,8 @@ export default function EditBestDealsCountries() {
       const res = await axios.get(
         BASE_URL + "/admin/best-deals/" + id,
       );
-      console.log(res.data.bestDeals);
-      setForm(res.data.bestDeals);
+      console.log(res.data.bestDealsCountry);
+      setForm(res.data.bestDealsCountry);
       setLoading(false);
     } catch (error) {
       console.error(error);

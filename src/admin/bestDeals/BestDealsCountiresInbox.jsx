@@ -26,7 +26,7 @@ const BestDealsCountriesIndex = () => {
     fetchDestinations();
   }, []);
 
-  console.log(destinations)
+  // console.log(destinations)
 
   /* ---------------- Delete ---------------- */
   const handleDelete = async (id) => {
