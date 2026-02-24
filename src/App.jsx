@@ -15,6 +15,7 @@ import AdminDashboard from "./admin/AdminDashboard";
 import BestDealsCountriesIndex from "./admin/bestDeals/BestDealsCountiresInbox";
 import CreateBestDealsCountries from "./admin/bestDeals/CreateBestDealsCountries";
 import EditBestDealsCountries from "./admin/bestDeals/editPopularDestinations";
+import BusinessClassCountriesIndex from "./admin/businessClass/businessClassCountriesIndex";
 // import Home from "./components/home/Home";
 // import AboutUs from "./components/about_us/AboutUs";
 const AboutUs = lazy(() => import("./components/about_us/AboutUs"));
@@ -561,7 +562,15 @@ const rout = createBrowserRouter([
             <EditBestDealsCountries/>
           </Suspense>
         )
-      }
+      },
+      {
+        path: "business-class",
+        element: (
+          <Suspense fallback={<Loading/>}>
+            <BusinessClassCountriesIndex/>
+          </Suspense>
+        )
+      },
     ],
   },
 ]);
