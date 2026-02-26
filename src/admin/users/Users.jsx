@@ -15,7 +15,26 @@ export default function Users() {
   const [loading, setLoading] = useState(false);
 
   // Fetch users
-  
+  const fetchUsers = async() => {
+    try{
+      setLoading(true)
+      const res = await axios.get(BASE_URL+"/admin/users", {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      })
+      setUsers(res.data.users)
+    }catch(err){
+      console.error(err)
+      toast.error(err.response?.data?.message || "Something went wrong");
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    fetchUsers()
+  }, [])
   
 
   // Change Role
