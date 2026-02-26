@@ -38,7 +38,20 @@ export default function Users() {
   
 
   // Change Role
-
+  const handleRoleChange = async (id, role, name) => {
+    try{
+      await axios.put(`${BASE_URL}/admin/user/${id}/role`, {role}, {
+        headers : {
+          Authorization: `Bearer ${localStorage.getItem("token")}`
+        }
+      })
+      toast.success(`${name} role changed to ${role} successfully`);
+      fetchUsers()
+    } catch(err){
+      console.error(err)
+      toast.error(err.response?.data?.message || "Something went wrong");
+    }
+  }
 
   // Block / Unblock
   const handleStatusChange = async (id, status) => {
@@ -82,7 +95,7 @@ export default function Users() {
                       <Select
                         defaultValue={user.role}
                         onValueChange={(val) =>
-                          handleRoleChange(user._id, val)
+                          handleRoleChange(user._id, val, user.firstName)
                         }
                       >
                         <SelectTrigger className="w-[120px]">
