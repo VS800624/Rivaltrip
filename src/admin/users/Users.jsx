@@ -38,14 +38,14 @@ export default function Users() {
   
 
   // Change Role
-  const handleRoleChange = async (id, role, name) => {
+  const handleRoleChange = async (id, role, user) => {
     try{
       await axios.put(`${BASE_URL}/admin/user/${id}/role`, {role}, {
         headers : {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
       })
-      toast.success(`${name} role changed to ${role} successfully`);
+      toast.success(`${user} role changed to ${role} successfully`);
       fetchUsers()
     } catch(err){
       console.error(err)
@@ -54,14 +54,14 @@ export default function Users() {
   }
 
   // Block / Unblock
-  const handleStatusChange = async (id, status, name) => {
+  const handleStatusChange = async (id, status, user) => {
     try{
       await axios.put(`${BASE_URL}/admin/user/${id}/status`, {status}, {
         headers : {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
       })
-      toast.success(`${name} status changed to ${status}`);
+      toast.success(`${user} status changed to ${status}`);
       fetchUsers()
     }catch(err){
       console.error(err)
@@ -70,7 +70,20 @@ export default function Users() {
   };
 
   // Delete User
-
+  const handleDelete = async(id,user) => {
+    try{
+      await axios.delete(`${BASE_URL}/admin/user/${id}`,{
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`
+        }
+      })
+      toast.success(`Deleted ${user} successfully`);
+      fetchUsers()
+    }catch(err){
+      console.error(err)
+      toast.error(err.response?.data?.message || "Something went wrong");
+    }
+  }
 
   return (
     <div className="p-6 space-y-6">
@@ -166,7 +179,7 @@ export default function Users() {
                       <Button
                         size="icon"
                         variant="destructive"
-                        onClick={() => handleDelete(user._id)}
+                        onClick={() => handleDelete(user._id, user.firstName)}
                       >
                         <Trash2 size={16} />
                       </Button>
