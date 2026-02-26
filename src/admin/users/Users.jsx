@@ -54,8 +54,19 @@ export default function Users() {
   }
 
   // Block / Unblock
-  const handleStatusChange = async (id, status) => {
-    
+  const handleStatusChange = async (id, status, name) => {
+    try{
+      await axios.put(`${BASE_URL}/admin/user/${id}/status`, {status}, {
+        headers : {
+          Authorization: `Bearer ${localStorage.getItem("token")}`
+        }
+      })
+      toast.success(`${name} status changed to ${status}`);
+      fetchUsers()
+    }catch(err){
+      console.error(err)
+      toast.error(err.response?.data?.message || "Something went wrong");
+    }
   };
 
   // Delete User
@@ -128,7 +139,8 @@ export default function Users() {
                         onClick={() =>
                           handleStatusChange(
                             user._id,
-                            user.status === "active" ? "blocked" : "active"
+                            user.status === "active" ? "blocked" : "active",
+                            user.firstName
                           )
                         }
                       >
@@ -142,7 +154,8 @@ export default function Users() {
                         onClick={() =>
                           handleRoleChange(
                             user._id,
-                            user.role === "admin" ? "user" : "admin"
+                            user.role === "admin" ? "user" : "admin",
+                            user.firstName
                           )
                         }
                       >
