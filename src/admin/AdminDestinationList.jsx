@@ -16,7 +16,7 @@ const AdminDestinationList = ({
   editPath,
 }) => {
   const [destinations, setDestinations] = useState([]);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   /* ---------------- Fetch ---------------- */
   const fetchDestinations = async () => {
@@ -35,11 +35,17 @@ const AdminDestinationList = ({
   /* ---------------- Delete ---------------- */
   const handleDelete = async (id) => {
     try {
+      // Show confirmation alert
+      const isConfirmed = window.confirm(
+        "Are you sure you want to delete this item?",
+      );
+
+      // If user clicks Cancel, stop here
+      if (!isConfirmed) return;
+
       await axios.delete(BASE_URL + deleteEndpoint + id);
 
-      setDestinations((prev) =>
-        prev.filter((dest) => dest._id !== id)
-      );
+      setDestinations((prev) => prev.filter((dest) => dest._id !== id));
 
       toast.success("Deleted successfully");
     } catch (error) {
@@ -59,9 +65,7 @@ const AdminDestinationList = ({
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
           <div>
-            <h1 className="text-3xl font-bold text-blue-600">
-              {title}
-            </h1>
+            <h1 className="text-3xl font-bold text-blue-600">{title}</h1>
             <p className="text-gray-500">
               View, update, or delete destinations
             </p>
@@ -94,12 +98,8 @@ const AdminDestinationList = ({
                   />
 
                   <div>
-                    <h2 className="text-xl font-semibold">
-                      {dest.city}
-                    </h2>
-                    <p className="text-gray-500 text-sm">
-                      {dest.countryName}
-                    </p>
+                    <h2 className="text-xl font-semibold">{dest.city}</h2>
+                    <p className="text-gray-500 text-sm">{dest.countryName}</p>
                   </div>
 
                   <div className="flex justify-between items-center pt-2">

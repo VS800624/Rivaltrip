@@ -18,6 +18,7 @@ import EditBestDealsCountries from "./admin/bestDeals/EditBestDealsCountries";
 import BusinessClassCountriesIndex from "./admin/businessClass/BusinessClassCountriesIndex";
 import CreateBusinessClassCountries from "./admin/businessClass/CreateBusinessClassCountries";
 import EditBusinessClassCountries from "./admin/businessClass/EditBusinessClassCountries";
+import Users from "./admin/users/Users";
 // import Home from "./components/home/Home";
 // import AboutUs from "./components/about_us/AboutUs";
 const AboutUs = lazy(() => import("./components/about_us/AboutUs"));
@@ -586,6 +587,14 @@ const rout = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading/>}>
             <EditBusinessClassCountries/>
+          </Suspense>
+        )
+      },
+      {
+        path: "users",
+        element: (
+          <Suspense fallback={<Loading/>}>
+            <Users/>
           </Suspense>
         )
       }

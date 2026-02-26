@@ -5,7 +5,7 @@ const CreatePopularDestination = () => {
     <AdminCreateDestinationList
       title="Create Popular Destinations"
       submitEndpoint="/admin/popular-destination"
-      redirectPath="/admin/popular-destination"
+      redirectPath="/admin/popular-destinations"
     />
   );
 };
