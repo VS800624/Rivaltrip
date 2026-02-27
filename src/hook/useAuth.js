@@ -18,7 +18,7 @@ import { useEffect, useState } from "react";
 // };
 
 // or
-export const userAuth = () => {
+export const useAuth = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -40,6 +40,8 @@ export const userAuth = () => {
     };
     fetchUser();
   }, []);
+  
+  return {user, loading}
 };
 
 // export const useAuth = () => {

@@ -15,6 +15,8 @@ const NavBar = () => {
     const navigate = useNavigate()
 
     const handleLogout = async() => {
+        const confirmDelete = window.confirm("Are you sure you want to logout?");
+        if (!confirmDelete) return;
         try{
             await axios.post(BASE_URL + "/logout" , {}, 
             {withCredentials: true}

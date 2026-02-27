@@ -2,95 +2,112 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { Trash2, Shield, Ban } from "lucide-react";
 import { toast, Toaster } from "sonner";
 import { BASE_URL } from "@/utils/constants";
-
 
 export default function Users() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
 
   // Fetch users
-  const fetchUsers = async() => {
-    try{
-      setLoading(true)
-      const res = await axios.get(BASE_URL+"/admin/users", {
+  const fetchUsers = async () => {
+    try {
+      setLoading(true);
+      const res = await axios.get(BASE_URL + "/admin/users", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
-      })
-      setUsers(res.data.users)
-    }catch(err){
-      console.error(err)
+      });
+      setUsers(res.data.users);
+    } catch (err) {
+      console.error(err);
       toast.error(err.response?.data?.message || "Something went wrong");
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   useEffect(() => {
-    fetchUsers()
-  }, [])
-  
+    fetchUsers();
+  }, []);
 
   // Change Role
   const handleRoleChange = async (id, role, user) => {
-    try{
-      await axios.put(`${BASE_URL}/admin/user/${id}/role`, {role}, {
-        headers : {
-          Authorization: `Bearer ${localStorage.getItem("token")}`
-        }
-      })
+    try {
+      await axios.put(
+        `${BASE_URL}/admin/user/${id}/role`,
+        { role },
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        },
+      );
       toast.success(`${user} role changed to ${role} successfully`);
-      fetchUsers()
-    } catch(err){
-      console.error(err)
+      fetchUsers();
+    } catch (err) {
+      console.error(err);
       toast.error(err.response?.data?.message || "Something went wrong");
     }
-  }
+  };
 
   // Block / Unblock
   const handleStatusChange = async (id, status, user) => {
-    try{
-      await axios.put(`${BASE_URL}/admin/user/${id}/status`, {status}, {
-        headers : {
-          Authorization: `Bearer ${localStorage.getItem("token")}`
-        }
-      })
+    try {
+      await axios.put(
+        `${BASE_URL}/admin/user/${id}/status`,
+        { status },
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        },
+      );
       toast.success(`${user} status changed to ${status}`);
-      fetchUsers()
-    }catch(err){
-      console.error(err)
+      fetchUsers();
+    } catch (err) {
+      console.error(err);
       toast.error(err.response?.data?.message || "Something went wrong");
     }
   };
 
   // Delete User
   const handleDelete = async (id, user) => {
-  const confirmDelete = window.confirm(
-    `Are you sure you want to delete ${user}?`
-  );
-  if (!confirmDelete) return;
-  try {
-    await axios.delete(`${BASE_URL}/admin/user/${id}`, {
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`
-      }
-    });
+    const confirmDelete = window.confirm(
+      `Are you sure you want to delete ${user}?`,
+    );
+    if (!confirmDelete) return;
+    try {
+      await axios.delete(`${BASE_URL}/admin/user/${id}`, {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
+      });
 
-    toast.success(`Deleted ${user} successfully`);
-    fetchUsers();
-
-  } catch (err) {
-    console.error(err);
-    toast.error(err.response?.data?.message || "Something went wrong");
-  }
-};
-  
+      toast.success(`Deleted ${user} successfully`);
+      fetchUsers();
+    } catch (err) {
+      console.error(err);
+      toast.error(err.response?.data?.message || "Something went wrong");
+    }
+  };
 
   return (
     <div className="p-6 space-y-6">
@@ -160,7 +177,7 @@ export default function Users() {
                           handleStatusChange(
                             user._id,
                             user.status === "active" ? "blocked" : "active",
-                            user.firstName
+                            user.firstName,
                           )
                         }
                       >
@@ -175,7 +192,7 @@ export default function Users() {
                           handleRoleChange(
                             user._id,
                             user.role === "admin" ? "user" : "admin",
-                            user.firstName
+                            user.firstName,
                           )
                         }
                       >
