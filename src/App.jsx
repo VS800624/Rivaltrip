@@ -30,7 +30,7 @@ const EditBestDealsCountries = lazy(() =>
   import("./admin/bestDeals/EditBestDealsCountries")
 );
 const BusinessClassCountriesIndex = lazy(() =>
-  import("./admin/businessClass/BusinessClassCountriesIndex")
+  import("./admin/businessClass/BusinessClassCountriesIndex.jsx")
 );
 const CreateBusinessClassCountries = lazy(() =>
   import("./admin/businessClass/CreateBusinessClassCountries")
