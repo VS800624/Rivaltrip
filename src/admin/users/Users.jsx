@@ -70,20 +70,27 @@ export default function Users() {
   };
 
   // Delete User
-  const handleDelete = async(id,user) => {
-    try{
-      await axios.delete(`${BASE_URL}/admin/user/${id}`,{
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`
-        }
-      })
-      toast.success(`Deleted ${user} successfully`);
-      fetchUsers()
-    }catch(err){
-      console.error(err)
-      toast.error(err.response?.data?.message || "Something went wrong");
-    }
+  const handleDelete = async (id, user) => {
+  const confirmDelete = window.confirm(
+    `Are you sure you want to delete ${user}?`
+  );
+  if (!confirmDelete) return;
+  try {
+    await axios.delete(`${BASE_URL}/admin/user/${id}`, {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("token")}`
+      }
+    });
+
+    toast.success(`Deleted ${user} successfully`);
+    fetchUsers();
+
+  } catch (err) {
+    console.error(err);
+    toast.error(err.response?.data?.message || "Something went wrong");
   }
+};
+  
 
   return (
     <div className="p-6 space-y-6">

@@ -6,19 +6,41 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFound from "./components/NotFound";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
-import Loading from "./components/Loading";
-import AdminLayout from "./admin/AdminLayout";
-import PopularDestinationIndex from "./admin/popularDestination/popularDestinationIndex";
-import CreatePopularDestination from "./admin/popularDestination/CreatePopularDestination";
-import EditPopularDestination from "./admin/popularDestination/EditPopularDestinations";
-import AdminDashboard from "./admin/AdminDashboard";
-import BestDealsCountriesIndex from "./admin/bestDeals/BestDealsCountiresInbox";
-import CreateBestDealsCountries from "./admin/bestDeals/CreateBestDealsCountries";
-import EditBestDealsCountries from "./admin/bestDeals/EditBestDealsCountries";
-import BusinessClassCountriesIndex from "./admin/businessClass/BusinessClassCountriesIndex";
-import CreateBusinessClassCountries from "./admin/businessClass/CreateBusinessClassCountries";
-import EditBusinessClassCountries from "./admin/businessClass/EditBusinessClassCountries";
-import Users from "./admin/users/Users";
+const Loading = lazy(() => import("./components/Loading"));
+const AdminLayout = lazy(() => import("./admin/AdminLayout"));
+const PopularDestinationIndex = lazy(() =>
+  import("./admin/popularDestination/popularDestinationIndex")
+);
+const CreatePopularDestination = lazy(() =>
+  import("./admin/popularDestination/CreatePopularDestination")
+);
+const EditPopularDestination = lazy(() =>
+  import("./admin/popularDestination/EditPopularDestinations")
+);
+const AdminDashboard = lazy(() =>
+  import("./admin/AdminDashboard")
+);
+const BestDealsCountriesIndex = lazy(() =>
+  import("./admin/bestDeals/BestDealsCountiresInbox")
+);
+const CreateBestDealsCountries = lazy(() =>
+  import("./admin/bestDeals/CreateBestDealsCountries")
+);
+const EditBestDealsCountries = lazy(() =>
+  import("./admin/bestDeals/EditBestDealsCountries")
+);
+const BusinessClassCountriesIndex = lazy(() =>
+  import("./admin/businessClass/BusinessClassCountriesIndex")
+);
+const CreateBusinessClassCountries = lazy(() =>
+  import("./admin/businessClass/CreateBusinessClassCountries")
+);
+const EditBusinessClassCountries = lazy(() =>
+  import("./admin/businessClass/EditBusinessClassCountries")
+);
+const Users = lazy(() =>
+  import("./admin/users/Users")
+);
 // import Home from "./components/home/Home";
 // import AboutUs from "./components/about_us/AboutUs";
 const AboutUs = lazy(() => import("./components/about_us/AboutUs"));

@@ -1,35 +1,68 @@
-import { BASE_URL } from "@/utils/constants"
-import axios from "axios"
-import { useEffect, useState } from "react"
+import { BASE_URL } from "@/utils/constants";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 // export const useAuth = () => {
-//   const [user, setUser] = useState(null)
+//   const [user, setUser] = useState(null);
+//   const [loading, setLoading] = useState(true);
 
 //   useEffect(() => {
-//     axios.get(BASE_URL + "/me", {withCredentials: true})
-//     .then(res => setUser(res.data.user))
-//     .catch(() => setUser(null))
-//   }, [])
-  
-//   return {user}
-// }
+//     axios
+//       .get(BASE_URL + "/me", { withCredentials: true })
+//       .then(res => setUser(res.data.user))
+//       .catch(() => setUser(null))
+//       .finally(() => setLoading(false));
+//   }, []);
 
-export const useAuth = () => {
+//   return { user, loading };
+// };
+
+// or
+export const userAuth = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // TEMP: Fake admin user for testing
-    const fakeAdmin = {
-      id: 1,
-      name: "Admin Test",
-      email: "admin@test.com",
-      role: "admin",
+    const fetchUser = async () => {
+      try {
+        const res = await axios.get(BASE_URL + "/me", {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        });
+        setUser(res.data.user);
+      } catch (err) {
+        console.error(err);
+        setUser(null);
+      } finally {
+        setLoading(false);
+      }
     };
-
-    setUser(fakeAdmin);
-    setLoading(false);
+    fetchUser();
   }, []);
-
-  return { user, loading };
 };
+
+// export const useAuth = () => {
+//   const [user, setUser] = useState(null);
+//   const [loading, setLoading] = useState(true);
+
+//   useEffect(() => {
+//     // TEMP: Fake admin user for testing
+//     const fakeAdmin = {
+//       id: 1,
+//       name: "Admin Test",
+//       email: "admin@test.com",
+//       role: "admin",
+//     };
+
+//     setUser(fakeAdmin);
+//     setLoading(false);
+//   }, []);
+
+//   return { user, loading };
+// };
+
+
+// API call → Success? → then()
+//           → Error?   → catch()
+//           → Always   → finally()

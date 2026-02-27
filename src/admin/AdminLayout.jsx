@@ -1,14 +1,13 @@
 import Loading from "@/components/Loading";
-import { useAuth } from "@/hook/useAuth"
-import { Navigate, Outlet } from "react-router-dom"
-
+import { useAuth } from "@/hook/useAuth";
+import { Navigate, Outlet } from "react-router-dom";
 
 const AdminLayout = () => {
   const { user, loading } = useAuth();
 
   // Wait for auth
   if (loading) {
-    return <Loading/>
+    return <Loading />;
   }
 
   // Not logged in
@@ -17,7 +16,7 @@ const AdminLayout = () => {
   }
 
   // Not admin
-  if (user.role !== "admin") {
+  if (user.role?.toLowerCase() !== "admin") {
     return <Navigate to="/" />;
   }
 
@@ -29,5 +28,4 @@ const AdminLayout = () => {
   );
 };
 
-
-export default AdminLayout
+export default AdminLayout;
