@@ -5,6 +5,7 @@ import { BASE_URL } from "../utils/constants";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { useAuth } from "@/hook/useAuth";
 
 const LoginPage = () => {
   const [firstName, setFirstName] = useState("");
@@ -14,60 +15,71 @@ const LoginPage = () => {
   const [error, setError] = useState("");
   const [isLoginForm, setIsLoginForm] = useState(true);
   const [showPassword, setShowPassword] = useState(true);
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { user } = useAuth();
 
-  const handleSignup = async() => {
-    setError("")
-     if (!firstName || !lastName || !emailId || !password) {
-    return setError("All fields are required");
-     }
-    try{
-      const res = await axios.post(BASE_URL + "/signup", {
-      firstName,
-      lastName,
-      emailId,
-      password
-    }, {
-      withCredentials: true
-    })
-    dispatch(addUser(res.data.userResponse))
-    navigate("/")
-    }catch(err){
-      setError(err?.response?.data?.message || "Something went wrong")
-      console.log(err)
-    }
-    
-  }
-
-  const handleLogin = async() => {
-    setError("")
-    if ( !emailId || !password) {
-    return setError("All fields are required");
+  const handleSignup = async () => {
+    setError("");
+    if (!firstName || !lastName || !emailId || !password) {
+      return setError("All fields are required");
     }
     try {
-      const res = await axios.post(BASE_URL + "/login", {
-        emailId,
-        password
-      }, 
-      {withCredentials: true}
-    )
-      // console.log(res)
-      dispatch(addUser(res.data.user))
-      navigate("/")
-    }catch(err){
-      setError(err?.response?.data?.message || "Something went wrong")
-      console.log(err)
+      const res = await axios.post(
+        BASE_URL + "/signup",
+        {
+          firstName,
+          lastName,
+          emailId,
+          password,
+        },
+        {
+          withCredentials: true,
+        },
+      );
+      dispatch(addUser(res.data.userResponse));
+      navigate("/");
+    } catch (err) {
+      setError(err?.response?.data?.message || "Something went wrong");
+      console.log(err);
     }
-  }
+  };
+
+  const handleLogin = async () => {
+    setError("");
+    if (!emailId || !password) {
+      return setError("All fields are required");
+    }
+    try {
+      const res = await axios.post(
+        BASE_URL + "/login",
+        {
+          emailId,
+          password,
+        },
+        { withCredentials: true },
+      );
+      // console.log(res)
+      dispatch(addUser(res.data.user));
+      if (res.data.user.role === "admin") {
+        navigate("/admin/dashboard");
+      } else {
+        navigate("/");
+      }
+    } catch (err) {
+      setError(err?.response?.data?.message || "Something went wrong");
+      console.log(err);
+    }
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-blue-500 to-purple-600 px-4">
-      <form className="w-full max-w-md bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl p-8"
-      onSubmit={(e) => {
-        e.preventDefault()
-        isLoginForm ? handleLogin(e) : handleSignup(e)
-      } }
+      <form
+        className="w-full max-w-md bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl p-8"
+        onSubmit={(e) => {
+          e.preventDefault();
+          isLoginForm ? handleLogin(e) : handleSignup(e);
+        }}
       >
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">
           {isLoginForm ? "Welcome Back" : "Create an Account"}
@@ -85,7 +97,7 @@ const LoginPage = () => {
               <input
                 type="text"
                 value={firstName}
-                 onChange={(e) => setFirstName(e.target.value)}
+                onChange={(e) => setFirstName(e.target.value)}
                 placeholder="Enter your First Name"
                 required
                 className="w-full px-4 py-3 border rounded-lg outline-none transition
@@ -145,7 +157,7 @@ const LoginPage = () => {
               onClick={() => setShowPassword(!showPassword)}
               className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-600"
             >
-              {showPassword ? <EyeOff size={20}/> : <Eye size={20}/>}
+              {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
             </button>
           </div>
         </div>

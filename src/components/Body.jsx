@@ -4,6 +4,7 @@ import WingsurgeFooter from "./WingsurgeFooter";
 import { useEffect } from "react";
 // import Search from "./home/Search";
 import Call from "./Call";
+import { BASE_URL } from "@/utils/constants";
 
   const Body = () => {
     const location = useLocation()

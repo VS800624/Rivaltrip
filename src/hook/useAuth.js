@@ -26,9 +26,7 @@ export const useAuth = () => {
     const fetchUser = async () => {
       try {
         const res = await axios.get(BASE_URL + "/me", {
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
-          },
+         withCredentials: true
         });
         setUser(res.data.user);
       } catch (err) {
