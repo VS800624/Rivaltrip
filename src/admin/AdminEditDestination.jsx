@@ -39,7 +39,8 @@ export default function AdminEditDestination({
   const fetchDestination = async () => {
     try {
       const res = await axios.get(
-        BASE_URL + fetchEndPoint + id,
+        BASE_URL + fetchEndPoint + id, 
+        {withCredentials: true}
       );
       // console.log(res.data[dataKey]);
       setForm(res.data[dataKey]);
@@ -132,7 +133,8 @@ export default function AdminEditDestination({
     try {
       const res = await axios.put(
         BASE_URL + updateEndPoint + id,
-        form,
+        form, 
+        {withCredentials: true}
       );
       console.log(res.data);
       toast.success("Destination Updated Successfully");

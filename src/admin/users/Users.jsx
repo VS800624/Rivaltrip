@@ -31,10 +31,7 @@ export default function Users() {
     try {
       setLoading(true);
       const res = await axios.get(BASE_URL + "/admin/users", {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-      });
+        withCredentials: true});
       setUsers(res.data.users);
     } catch (err) {
       console.error(err);
@@ -54,11 +51,7 @@ export default function Users() {
       await axios.put(
         `${BASE_URL}/admin/user/${id}/role`,
         { role },
-        {
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
-          },
-        },
+        {withCredentials: true },
       );
       toast.success(`${user} role changed to ${role} successfully`);
       fetchUsers();
@@ -74,11 +67,7 @@ export default function Users() {
       await axios.put(
         `${BASE_URL}/admin/user/${id}/status`,
         { status },
-        {
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
-          },
-        },
+        {withCredentials: true},
       );
       toast.success(`${user} status changed to ${status}`);
       fetchUsers();
@@ -96,9 +85,7 @@ export default function Users() {
     if (!confirmDelete) return;
     try {
       await axios.delete(`${BASE_URL}/admin/user/${id}`, {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
+        withCredentials: true
       });
 
       toast.success(`Deleted ${user} successfully`);

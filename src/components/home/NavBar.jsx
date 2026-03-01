@@ -32,7 +32,7 @@ const NavBar = () => {
             <div className="flex  items-center  bg-blue-500/90 max-w-[1450px] mx-auto justify-between md:h-[120px] h-[110px] w-full">
             <Link to="/">
                 <div className="flex  flex-col w-[100px] h-[100px] md:w-[120px] md:h-[120px]  mx-auto  lg:ml-[80px] ">
-                    <img src= {logo} className=" w-full h-full object-contain " alt="" />
+                    <img src= {logo} className=" w-full h-full object-contain" alt="" />
                     <p className="md:text-[1.1rem] text-center font-semibold">RIVALTRIP</p>
                 </div>      
             </Link>

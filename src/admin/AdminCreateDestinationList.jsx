@@ -121,7 +121,9 @@ export default function AdminCreateDestinationList({
 
   const handleSubmit = async () => {
     try {
-    const res = await axios.post(BASE_URL+ submitEndpoint, form)
+    const res = await axios.post(BASE_URL+ submitEndpoint, form,
+      {withCredentials: true}
+    )
     // console.log(res.data)
     toast.success("Destination Created Successfully")
     setTimeout(() => {

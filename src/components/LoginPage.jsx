@@ -63,7 +63,11 @@ const LoginPage = () => {
       dispatch(addUser(res.data.user));
       if (res.data.user.role === "admin") {
         navigate("/admin/dashboard");
-      } else {
+      }
+      else if(res.data.user.status === "blocked"){
+        // navigate("/blocked") make this page 
+      } 
+      else {
         navigate("/");
       }
     } catch (err) {

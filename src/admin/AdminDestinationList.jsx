@@ -21,7 +21,9 @@ const AdminDestinationList = ({
   /* ---------------- Fetch ---------------- */
   const fetchDestinations = async () => {
     try {
-      const res = await axios.get(BASE_URL + fetchEndpoint);
+      const res = await axios.get(BASE_URL + fetchEndpoint, 
+        {withCredentials: true}
+      );
       setDestinations(res.data[dataKey]);
     } catch (error) {
       console.error(error);
@@ -43,7 +45,9 @@ const AdminDestinationList = ({
       // If user clicks Cancel, stop here
       if (!isConfirmed) return;
 
-      await axios.delete(BASE_URL + deleteEndpoint + id);
+      await axios.delete(BASE_URL + deleteEndpoint + id , 
+        {withCredentials: true}
+      );
 
       setDestinations((prev) => prev.filter((dest) => dest._id !== id));
 
@@ -95,6 +99,7 @@ const AdminDestinationList = ({
                     src={dest.img}
                     alt={dest.city}
                     className="h-40 w-full object-cover rounded-lg"
+                    loading="lazy" 
                   />
 
                   <div>
