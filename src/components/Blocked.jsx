@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { useNavigate } from 'react-router-dom';
+import { ShieldX } from 'lucide-react';
 
 const Blocked = () => {
     const navigate = useNavigate()

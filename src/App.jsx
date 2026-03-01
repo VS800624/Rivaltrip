@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFound from "./components/NotFound";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+const Blocked = lazy(() => import("./components/Blocked"))
 const Loading = lazy(() => import("./components/Loading"));
 const AdminLayout = lazy(() => import("./admin/AdminLayout"));
 const PopularDestinationIndex = lazy(() =>
@@ -525,6 +526,16 @@ const rout = createBrowserRouter([
   {
     path: "*",
     element: <NotFound />,
+  },
+
+  // Blocked User
+  {
+    path: "/blocked",
+    element: (
+        <Suspense fallback={<Loading />}>
+          <Blocked/>
+        </Suspense>
+      )
   },
 
   // Admin Routes
